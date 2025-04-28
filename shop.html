@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쇼핑 | 이송글로벌</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 50px; }
+    nav ul { display: flex; gap: 16px; list-style: none; padding: 0; }
+    nav a { text-decoration: none; color: #333; font-weight: 500; }
+
+    .cart-icon { position: relative; cursor: pointer; font-size: 1.5rem; }
+    .cart-count {
+      position: absolute; top: -8px; right: -8px;
+      background: red; color: white; border-radius: 50%;
+      width: 20px; height: 20px; display: flex;
+      align-items: center; justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .shop-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 16px;
+    }
+    .shop-card img {
+      width: 80%; max-width: 180px;
+      margin: 0 auto 12px;
+      display: block;
+    }
+    .shop-card h3 { margin: 12px 0 8px; font-size: 1.1rem; }
+    .shop-card p { margin: 4px 0 12px; color: #555; }
+    .shop-card button {
+      padding: 10px 16px;
+      border: none;
+      background: #333;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><img src="images/logo.jpg" alt="이송글로벌 로고"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="about.html">브랜드 소개</a></li>
+        <li><a href="products.html">제품소개</a></li>
+        <li><a href="shop.html" style="font-weight:600;">쇼핑</a></li>
+        <li><a href="blog.html">블로그</a></li>
+        <li><a href="contact.html">문의</a></li>
+        <li><a href="b2b.html">B2B</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      🛒<span class="cart-count" id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; margin-top:20px;">이송글로벌 쇼핑</h1>
+    <div class="shop-grid">
+      <!-- 제품 카드 예시 -->
+      <div class="shop-card" data-id="apollo" data-name="아폴로" data-price="25000">
+        <img src="images/apollo.jpg" alt="아폴로">
+        <h3>아폴로 1kg</h3>
+        <p>₩25,000</p>
+        <button class="add-to-cart">장바구니에 담기</button>
+      </div>
+
+      <div class="shop-card" data-id="phoenix" data-name="피닉스" data-price="25000">
+        <img src="images/phoenix.jpg" alt="피닉스">
+        <h3>피닉스 1kg</h3>
+        <p>₩25,000</p>
+        <button class="add-to-cart">장바구니에 담기</button>
+      </div>
+
+      <div class="shop-card" data-id="venus" data-name="베누스" data-price="25000">
+        <img src="images/venus.jpg" alt="베누스">
+        <h3>베누스 1kg</h3>
+        <p>₩25,000</p>
+        <button class="add-to-cart">장바구니에 담기</button>
+      </div>
+
+      <div class="shop-card" data-id="ares" data-name="아레스" data-price="25000">
+        <img src="images/ares.jpg" alt="아레스">
+        <h3>아레스 1kg</h3>
+        <p>₩25,000</p>
+        <button class="add-to-cart">장바구니에 담기</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const CART_KEY = 'isong_cart';
+    function getCart(){ return JSON.parse(localStorage.getItem(CART_KEY)||'[]'); }
+    function saveCart(cart){ localStorage.setItem(CART_KEY, JSON.stringify(cart)); updateCount(); }
+    function updateCount(){
+      const count = getCart().reduce((sum,i)=>sum+i.qty,0);
+      document.getElementById('cart-count').textContent = count;
+    }
+    document.querySelectorAll('.add-to-cart').forEach(btn=>{
+      btn.addEventListener('click', e=>{
+        const card = e.target.closest('.shop-card');
+        const id = card.dataset.id;
+        const name = card.dataset.name;
+        const price = +card.dataset.price;
+        let cart = getCart();
+        let item = cart.find(i=>i.id===id);
+        if(item) item.qty++;
+        else cart.push({id,name,price,qty:1});
+        saveCart(cart);
+        alert(`${name}이(가) 장바구니에 담겼습니다.`);
+      });
+    });
+    updateCount();
+  </script>
+</body>
+</html>

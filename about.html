@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>브랜드 소개 | 이송글로벌</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- 페이지 전용 스타일 -->
+  <style>
+    /* 히어로 섹션 */
+    .page-hero {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url('images/roaster.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page-hero .hero-text {
+      background: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+    }
+    .page-hero .hero-text h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .about-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+    }
+    .about-section {
+      margin-bottom: 60px;
+    }
+    .about-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    .about-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .about-flex img {
+      flex: 1 1 300px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .about-text {
+      flex: 2 1 400px;
+    }
+    @media (max-width: 768px) {
+      .page-hero { height: 200px; }
+      .page-hero .hero-text h1 { font-size: 1.8rem; }
+      .about-flex { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 + 네비 -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.jpg" alt="이송글로벌 로고" height="50" />
+      </a>
+    </div>
+    <nav>
+      <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="about.html" class="active">브랜드 소개</a></li>
+        <li><a href="products.html">제품 소개</a></li>
+        <li><a href="blog.html">블로그</a></li>
+        <li><a href="contact.html">문의</a></li>
+        <li><a href="b2b.html">B2B</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 히어로 섹션 -->
+  <section class="page-hero">
+    <div class="hero-text">
+      <h1>브랜드 소개</h1>
+      <p>이송글로벌의 철학과 여정을 만나보세요.</p>
+    </div>
+  </section>
+
+  <!-- 본문 컨텐츠 -->
+  <main class="about-container">
+    <!-- 우리의 시작 -->
+    <section class="about-section">
+      <h2>우리의 시작</h2>
+      <p>
+        이송글로벌은 2022년 서울에서 설립된 커피 전문 기업으로, 건강하고 일관된 품질의 커피를 위해 오늘도 정성을 다하고 있습니다.
+        본사는 서울 용산구에 위치하고 있으며, 파주시 탄현면에 위치한 로스팅 공장에서 직접 커피를 생산하고 있습니다.
+      </p>
+      <p>
+        브랜드의 핵심 가치는 단순한 커피 제공을 넘어, 사람들의 일상 속에 스며드는 따뜻한 경험을 함께 만드는 것입니다.
+      </p>
+    </section>
+
+    <!-- 로스팅 철학 -->
+    <section class="about-section about-flex">
+      <div class="about-text">
+        <h2>로스팅의 철학과 기술</h2>
+        <p>
+          이송글로벌은 이스라엘 Coffee Tech Engineering사의 <strong>CTE Ghibli R-15</strong> 로스팅 머신을 사용하고 있습니다.
+          이 기계는 적외선 간접열을 활용하여 유해 가스를 줄이고, 열의 흐름이 완벽하게 설계되어 있어 잡미가 거의 없으며,
+          정교한 파라미터 조절을 통해 원두의 단맛을 섬세하게 이끌어냅니다.
+        </p>
+      </div>
+      <img src="images/roaster.jpg" alt="로스팅 머신" />
+    </section>
+
+    <!-- 대표자 -->
+    <section class="about-section about-flex">
+      <img src="images/ceo.jpg" alt="대표자 이송" />
+      <div class="about-text">
+        <h2>대표자 이송</h2>
+        <p>
+          이송 대표는 30년 이상의 커피 교육 경험과 25년 이상의 로스팅 경험을 갖춘 대한민국 커피 업계의 선구자입니다.
+          국제 커피 대회 심사와 인증, 커피 교육 활동 등 커피 문화의 발전에 기여해 왔으며,
+          SPC, 웅진식품, 이랜드 등 다양한 기업과의 협업 경험도 보유하고 있습니다.
+        </p>
+        <ul>
+          <li>전 WBC 한국 초대 Coordinator 및 대회 위원장</li>
+          <li>WBC 아시아 최초 심사위원</li>
+          <li>전 SCAE 한국 초대 Coordinator</li>
+          <li>현 SCAE 커피 인증 시험감독관</li>
+          <li>현 Coffeeology 아시아지역 Certifier</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 커피 철학 -->
+    <section class="about-section">
+      <h2>이송글로벌의 커피 철학</h2>
+      <p>
+        우리의 커피는 단순히 맛있는 것을 넘어, 건강하고 지속 가능한 가치까지 담고 있습니다.
+        다음 두 가지 원칙은 이송글로벌이 커피를 만들며 지켜가는 중심 축입니다.
+      </p>
+      <ol>
+        <li><strong>건강한 커피 만들기:</strong> 슬로우 로스팅 기법을 통해 유해 성분을 줄이고, 쓴맛과 탄맛을 절제하여 깔끔하고 건강한 맛을 전달합니다.</li>
+        <li><strong>일관된 품질 유지:</strong> 생두 선별에서 납품까지 모든 과정에서 센서리 테스트를 거쳐 항상 같은 품질의 커피를 고객에게 제공합니다.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer style="text-align:center; padding:20px 0;">
+    <p>© 2025 Isong Global Co., Ltd. All rights reserved.</p>
+  </footer>
+
+  <!-- 햄버거 메뉴 스크립트 -->
+  <script>
+    // 예: 메뉴 열기/닫기
+    document.querySelector('.hamburger').addEventListener('click', e => {
+      e.currentTarget.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

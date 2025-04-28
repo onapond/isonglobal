@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이송글로벌 로스터리</title>
+  <!-- 공통 스타일시트: 모든 페이지에 동일한 네비게이션, 푸터 스타일이 포함되어야 합니다 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Swiper CSS: 영웅 배너(히어로 슬라이더) 전용 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- Header Section: 사이트 상단 고정 네비게이션 -->
+  <header> <!-- .header: 공통 헤더 영역, padding 및 background를 style.css에서 관리 -->
+    <div class="logo"> <!-- .logo: 로고 컨테이너, 이미지 크기는 여기서 조절 -->
+      <a href="index.html">
+        <img src="images/logo.jpg" alt="이송글로벌 로고"> <!-- 로고 이미지 -->
+      </a>
+    </div>
+    <nav> <!-- nav: 주 메뉴 영역, 모바일 햄버거 토글 포함 -->
+      <button class="hamburger">☰</button> <!-- .hamburger: 모바일 메뉴 토글 버튼 -->
+      <ul> <!-- ul: 메뉴 리스트, flex 레이아웃 적용 -->
+        <li><a href="index.html">홈</a></li> <!-- 활성 페이지는 .active 클래스 추가 -->
+        <li><a href="about.html">브랜드 소개</a></li>
+        <li><a href="products.html">제품 소개</a></li>
+        <li><a href="blog.html">블로그</a></li>
+        <li><a href="contact.html">문의</a></li>
+        <li><a href="b2b.html">B2B</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Slider Section: Swiper 플러그인을 사용한 배너 -->
+  <section class="hero-slider swiper-container"> <!-- .hero-slider: 높이, 배경 설정, ULTOF -->
+    <div class="swiper-wrapper"> <!-- .swiper-wrapper: 슬라이드 래퍼 -->
+      <div class="swiper-slide"> <!-- .swiper-slide: 개별 슬라이드 -->
+        <img src="images/slide1.jpg" alt="스페셜 블렌드 런칭"> <!-- 슬라이드 이미지 -->
+        <div class="slide-caption"> <!-- .slide-caption: 텍스트 오버레이 위치 조절 -->
+          <h2>스페셜 블렌드 런칭</h2>
+          <a href="products.html" class="btn">자세히 보기</a> <!-- .btn: 공통 버튼 스타일 -->
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slide2.jpg" alt="싱글 오리진 신제품">
+        <div class="slide-caption">
+          <h2>싱글 오리진 신제품</h2>
+          <a href="products.html" class="btn">구경하기</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slide3.jpg" alt="정기배송 혜택">
+        <div class="slide-caption">
+          <h2>정기배송 혜택</h2>
+          <a href="contact.html" class="btn">신청하기</a>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </section>
+
+  <!-- Main Content: 추천 원두 그리드 -->
+  <main class="shop-section"> <!-- .shop-section: main 영역 통일감 있게 클래스 추가 -->
+    <h1 class="section-title">추천 원두</h1> <!-- .section-title: 제목 스타일 -->
+    <div class="shop-grid"> <!-- .shop-grid: CSS grid 레이아웃 -->
+      <div class="shop-card"> <!-- .shop-card: 개별 상품 카드 -->
+        <img src="images/apollo.jpg" alt="아폴로 원두"> <!-- 카드 이미지: object-fit 제어 -->
+        <h3 class="product-name">아폴로</h3> <!-- .product-name: 제품명 스타일 -->
+        <p class="product-desc">1kg / 묵직한 바디감과 초콜릿 향</p>
+        <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a> <!-- .buy-btn: 구매 버튼 -->
+      </div>
+      <div class="shop-card">
+        <img src="images/phoenix.jpg" alt="피닉스 원두">
+        <h3 class="product-name">피닉스</h3>
+        <p class="product-desc">1kg / 견과류의 고소함과 달콤함</p>
+        <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
+      </div>
+      <div class="shop-card">
+        <img src="images/venus.jpg" alt="베누스 원두">
+        <h3 class="product-name">베누스</h3>
+        <p class="product-desc">1kg / 과일 향과 균형 잡힌 산미</p>
+        <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
+      </div>
+      <div class="shop-card">
+        <img src="images/ares.jpg" alt="아레스 원두">
+        <h3 class="product-name">아레스</h3>
+        <p class="product-desc">1kg / 다크 초콜릿과 고소한 바디</p>
+        <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer> <!-- .footer: 공통 하단 영역 -->
+    <p>© 2025 Isong Global Co., Ltd. All rights reserved.</p>
+  </footer>
+
+  <!-- Swiper JS: 슬라이더 동작 스크립트 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // .hero-slider 초기화: loop, autoplay, pagination, navigation 설정
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: { delay: 5000 },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+    });
+
+    // .hamburger 토글 로직: 모바일 메뉴 열고 닫기
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
