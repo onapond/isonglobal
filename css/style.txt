@@ -1,0 +1,695 @@
+<style>
+  @media (max-width: 1023px) {
+    #div-1 {
+      width: calc(100% + 0px) !important; margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important;
+    }
+    #header-1 {
+      width: calc(100% + 0px) !important;
+    }
+    #div-2 {
+      width: 100% !important; top: 0px !important; height: auto !important; padding: 0px !important;
+    }
+    #div-3 {
+      margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important; max-width: 100% !important;
+    }
+    #div-4 {
+      width: calc(100% + 0px) !important;
+    }
+    #div-5 {
+      display: table-cell !important; position: relative !important; left: 0px !important; top: 0px !important; height: 70px !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 5px !important;
+    }
+    #img-1 {
+      height: 60px !important;
+    }
+    #a-1 {
+      top: 8px !important; right: 8px !important;
+    }
+    #aside-1 {
+      display: none !important;
+    }
+    #div-6 {
+      display: none !important;
+    }
+    #div-17 {
+      position: relative !important; width: calc(100% + 0px) !important; margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important;
+    }
+    #section-1 {
+      height: 400px !important; min-height: 400px !important;
+    }
+    #div-18 {
+      height: 400px !important;
+    }
+    #div-19 {
+      top: 48% !important;
+    }
+    #span-1 {
+      padding-top: 20px !important; padding-right: 30px !important; padding-bottom: 15px !important; padding-left: 30px !important;
+    }
+    #ul-7 {
+      position: absolute !important; bottom: 30px !important;
+    }
+    #div-20 {
+      margin-top: 50px !important; margin-right: 0px !important; margin-bottom: 30px !important; margin-left: 0px !important; padding: 0px !important;
+    }
+    #div-21 {
+      width: 100% !important;
+    }
+    #p-1 {
+      padding-top: 22px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important;
+    }
+    #div-22 {
+      width: 100% !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 50px !important; padding-bottom: 30px !important;
+    }
+    #section-2 {
+      width: 100% !important; height: auto !important; padding: 0px !important;
+    }
+    #section-3 {
+      width: 100% !important; height: auto !important; padding-top: 20px !important; padding-right: 10px !important; padding-bottom: 20px !important; padding-left: 10px !important;
+    }
+    #a-14 {
+      width: 90px !important; padding-top: 12px !important; padding-right: 5px !important; padding-bottom: 13px !important; padding-left: 5px !important; margin-top: 25px !important;
+    }
+    #a-15 {
+      width: 90px !important; padding-top: 12px !important; padding-right: 5px !important; padding-bottom: 13px !important; padding-left: 5px !important; margin-top: 25px !important;
+    }
+    #div-23 {
+      padding-top: 20px !important; padding-right: 0px !important; padding-bottom: 20px !important; padding-left: 0px !important; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 30px !important; margin-left: 0px !important;
+    }
+    #div-24 {
+      width: 100% !important;
+    }
+    #p-2 {
+      padding-top: 22px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important;
+    }
+    #div-25 {
+      width: 100% !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 50px !important; padding-bottom: 30px !important;
+    }
+    #section-4 {
+      width: 100% !important; height: auto !important; padding: 0px !important;
+    }
+    #img-2 {
+      width: 100% !important;
+    }
+    #section-5 {
+      width: 100% !important; height: auto !important; padding-top: 20px !important; padding-right: 10px !important; padding-bottom: 20px !important; padding-left: 10px !important;
+    }
+    #a-16 {
+      width: 90px !important; padding-top: 12px !important; padding-right: 5px !important; padding-bottom: 13px !important; padding-left: 5px !important; margin-top: 25px !important;
+    }
+    #a-17 {
+      width: 90px !important; padding-top: 12px !important; padding-right: 5px !important; padding-bottom: 13px !important; padding-left: 5px !important; margin-top: 25px !important;
+    }
+    #div-26 {
+      overflow-x: hidden !important; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 30px !important; margin-left: 0px !important;
+    }
+    #div-27 {
+      width: 100% !important;
+    }
+    #p-3 {
+      padding-top: 22px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important;
+    }
+    #div-28 {
+      width: 100% !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 20px !important; padding-bottom: 20px !important;
+    }
+    #div-29 {
+      width: 100% !important; margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important; padding-top: 0px !important; padding-right: 25px !important; padding-bottom: 0px !important; padding-left: 25px !important;
+    }
+    #div-30 {
+      height: auto !important;
+    }
+    #td-1 {
+      width: 100% !important; display: inline-table !important;
+    }
+    #td-2 {
+      position: relative !important; min-height: 1px !important; padding-right: 10px !important; padding-left: 10px !important;
+    }
+    #img-3 {
+      width: 100% !important; height: auto !important;
+    }
+    #td-3 {
+      position: relative !important; min-height: 1px !important; padding-right: 10px !important; padding-left: 10px !important;
+    }
+    #td-4 {
+      width: 100% !important; display: inline-table !important;
+    }
+    #td-5 {
+      position: relative !important; min-height: 1px !important; padding-right: 10px !important; padding-left: 10px !important;
+    }
+    #img-4 {
+      width: 100% !important; height: auto !important;
+    }
+    #td-6 {
+      position: relative !important; min-height: 1px !important; padding-right: 10px !important; padding-left: 10px !important;
+    }
+    #td-7 {
+      width: 100% !important; display: inline-table !important;
+    }
+    #td-8 {
+      position: relative !important; min-height: 1px !important; padding-right: 10px !important; padding-left: 10px !important;
+    }
+    #img-5 {
+      width: 100% !important; height: auto !important;
+    }
+    #td-9 {
+      position: relative !important; min-height: 1px !important; padding-right: 10px !important; padding-left: 10px !important;
+    }
+    #a-18 {
+      position: absolute !important; top: 35% !important; bottom: 0px !important; left: 0px !important; width: 5% !important;
+    }
+    #img-6 {
+      margin-top: 0px !important; margin-left: 50px !important; width: 25px !important;
+    }
+    #a-19 {
+      position: absolute !important; top: 35% !important; bottom: 0px !important; left: 0px !important; width: 5% !important;
+    }
+    #img-7 {
+      margin-top: 0px !important; margin-left: -70px !important; width: 25px !important;
+    }
+    #div-31 {
+      padding-top: 20px !important; padding-right: 0px !important; padding-bottom: 20px !important; padding-left: 0px !important;
+    }
+    #div-32 {
+      width: 100% !important;
+    }
+    #p-4 {
+      padding-top: 22px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important;
+    }
+    #div-33 {
+      width: 100% !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 20px !important; padding-bottom: 50px !important;
+    }
+    #section-6 {
+      width: 100% !important; height: auto !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 30px !important; padding-left: 0px !important;
+    }
+    #ul-8 {
+      padding: 0px !important;
+    }
+    #li-6 {
+      padding-top: 10px !important; padding-right: 0px !important; padding-bottom: 10px !important; padding-left: 0px !important;
+    }
+    #a-20 {
+      height: 140px !important;
+    }
+    #li-7 {
+      padding-top: 10px !important; padding-right: 0px !important; padding-bottom: 10px !important; padding-left: 0px !important;
+    }
+    #a-21 {
+      height: 140px !important;
+    }
+    #li-8 {
+      padding-top: 10px !important; padding-right: 0px !important; padding-bottom: 10px !important; padding-left: 0px !important;
+    }
+    #a-22 {
+      height: 140px !important;
+    }
+    #li-9 {
+      padding-top: 10px !important; padding-right: 0px !important; padding-bottom: 10px !important; padding-left: 0px !important;
+    }
+    #a-23 {
+      height: 140px !important;
+    }
+    #section-7 {
+      width: 92% !important; height: auto !important; padding-top: 30px !important; padding-right: 25px !important; padding-bottom: 80px !important; padding-left: 25px !important; margin-top: 0px !important; margin-right: 4% !important; margin-bottom: 0px !important; margin-left: 4% !important;
+    }
+    #h3-1 {
+      padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 3px !important; margin: 0px !important;
+    }
+    #p-5 {
+      position: absolute !important; right: 50px !important; bottom: 28px !important;
+    }
+    #img-8 {
+      width: 100% !important;
+    }
+    #td-10 {
+      display: none !important;
+    }
+    #img-9 {
+      width: 100% !important;
+    }
+    #td-11 {
+      display: none !important;
+    }
+    #img-10 {
+      width: 100% !important;
+    }
+    #td-12 {
+      display: none !important;
+    }
+    #div-34 {
+      margin-top: 0px !important;
+    }
+    #div-35 {
+      padding-top: 40px !important; padding-right: 15px !important; padding-bottom: 30px !important; padding-left: 15px !important;
+    }
+    #div-36 {
+      padding-bottom: 10px !important;
+    }
+    #a-24 {
+      padding-top: 0px !important; padding-right: 2px !important; padding-bottom: 0px !important; padding-left: 2px !important;
+    }
+    #img-11 {
+      height: 40px !important;
+    }
+    #a-25 {
+      padding-top: 0px !important; padding-right: 2px !important; padding-bottom: 0px !important; padding-left: 2px !important;
+    }
+    #img-12 {
+      height: 40px !important;
+    }
+    #a-26 {
+      padding-top: 0px !important; padding-right: 2px !important; padding-bottom: 0px !important; padding-left: 2px !important;
+    }
+    #img-13 {
+      height: 40px !important;
+    }
+    #ul-9 {
+      width: 100% !important;
+    }
+    #li-10 {
+      display: inline-block !important;
+    }
+    #a-27 {
+      padding-top: 10px !important; padding-right: 10px !important; padding-bottom: 10px !important; padding-left: 0px !important;
+    }
+    #li-11 {
+      display: inline-block !important;
+    }
+    #a-28 {
+      padding-top: 10px !important; padding-right: 10px !important; padding-bottom: 10px !important; padding-left: 0px !important;
+    }
+    #li-12 {
+      display: block !important;
+    }
+    #li-13 {
+      display: block !important;
+    }
+    #li-14 {
+      display: block !important;
+    }
+    #li-15 {
+      display: block !important;
+    }
+    #li-16 {
+      display: block !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    #img-1 {
+      width: auto !important; height: 70px !important; position: absolute !important; top: 10px !important; margin: auto !important;
+    }
+    #div-6 {
+      position: absolute !important; top: 0px !important; left: 0px !important; width: 100% !important; margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important;
+    }
+    #ul-1 {
+      overflow-x: hidden !important; overflow-y: hidden !important; width: 1200px !important; padding-left: 150px !important; padding-right: 150px !important; margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important;
+    }
+    #li-1 {
+      width: 20% !important; margin: 0px !important;
+    }
+    #div-7 {
+      margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important; padding-top: 0px !important; padding-right: 10px !important; padding-bottom: 0px !important; padding-left: 10px !important; display: block !important;
+    }
+    #div-8 {
+      height: 0px !important; overflow-x: hidden !important; overflow-y: hidden !important;
+    }
+    #ul-2 {
+      padding: 0px !important; margin: 0px !important;
+    }
+    #a-2 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #a-3 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #a-4 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #a-5 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #li-2 {
+      width: 20% !important;
+    }
+    #div-9 {
+      margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important; padding-top: 0px !important; padding-right: 10px !important; padding-bottom: 0px !important; padding-left: 10px !important; display: block !important;
+    }
+    #div-10 {
+      height: 0px !important; overflow-x: hidden !important; overflow-y: hidden !important;
+    }
+    #ul-3 {
+      padding: 0px !important; margin: 0px !important;
+    }
+    #a-6 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #a-7 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #a-8 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #li-3 {
+      width: 20% !important;
+    }
+    #div-11 {
+      margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important; padding-top: 0px !important; padding-right: 10px !important; padding-bottom: 0px !important; padding-left: 10px !important; display: block !important;
+    }
+    #div-12 {
+      height: 0px !important; overflow-x: hidden !important; overflow-y: hidden !important;
+    }
+    #ul-4 {
+      padding: 0px !important; margin: 0px !important;
+    }
+    #a-9 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #a-10 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #li-4 {
+      width: 20% !important;
+    }
+    #div-13 {
+      margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important; padding-top: 0px !important; padding-right: 10px !important; padding-bottom: 0px !important; padding-left: 10px !important; display: block !important;
+    }
+    #div-14 {
+      height: 0px !important; overflow-x: hidden !important; overflow-y: hidden !important;
+    }
+    #ul-5 {
+      padding: 0px !important; margin: 0px !important;
+    }
+    #a-11 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #a-12 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+    #li-5 {
+      width: 20% !important;
+    }
+    #div-15 {
+      margin-top: 0px !important; margin-right: auto !important; margin-bottom: 0px !important; margin-left: auto !important; padding-top: 0px !important; padding-right: 10px !important; padding-bottom: 0px !important; padding-left: 10px !important; display: block !important;
+    }
+    #div-16 {
+      height: 0px !important; overflow-x: hidden !important; overflow-y: hidden !important;
+    }
+    #ul-6 {
+      padding: 0px !important; margin: 0px !important;
+    }
+    #a-13 {
+      padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; display: block !important;
+    }
+  }
+  @media (max-width: 768px) {
+    #div-19 {
+      top: 33% !important;
+    }
+    #span-1 {
+      padding-top: 20px !important; padding-right: 0px !important; padding-bottom: 15px !important; padding-left: 0px !important;
+    }
+  }
+</style>
+<div style="color: rgb(37, 37, 37); font-weight: 500; word-break: keep-all; height: 100%; width: calc(100% + 0px)" id="div-1">
+  <header style="background-color: rgb(255, 255, 255); bottom: 916px; left: 0px; position: fixed; right: 0px; top: 0px; z-index: 10; width: calc(100% + 0px)" id="header-1">
+    <div style="position: absolute; top: 0px; width: 100%; height: 120px" id="div-2">
+      <div style="position: relative; max-width: 100%" id="div-3">
+        <div style="width: 100%">
+          <div style="position: relative">
+            <div style="position: fixed; width: calc(100% + 0px)" id="div-4">
+              <div style="position: absolute; top: 6px; z-index: 123" id="div-5"><img src="https://www.thedrip.co.kr/default/img/hblock/design/menu_04/img/logo.png" style="cursor: pointer" id="img-1" /></div>
+
+              <div>
+                <a href="https://www.thedrip.co.kr/#cd-nav" style="background-color: rgba(255, 255, 255, 0.9); position: absolute; right: 0%; text-indent: 100%; top: 20px; z-index: 30; width: 54px; height: 54px; overflow: hidden" id="a-1"
+                  >Menu
+                  <span style="background-color: rgb(51, 51, 51); cursor: pointer; left: 50%; position: absolute; text-indent: 100%; top: 50%; right: auto; bottom: auto; width: 30px; height: 2px"></span>
+                  <svg x="0px" y="0px" height="54px" viewbox="0 0 54 54" fill="rgb(0, 0, 0)" style="cursor: pointer; left: 0px; position: absolute; text-indent: 100%; top: 0px; width: 54px; height: 54px">
+                    <circle fill="rgba(0, 0, 0, 0)" stroke="#656e79" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157" style="text-indent: 100%"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside style="font-size: 14px; width: 1200px; display: block" id="aside-1"></aside>
+      <div id="div-6">
+        <ul style="list-style-type: none" id="ul-1">
+          <li style="float: left; text-align: center; display: list-item" id="li-1">
+            <div style="font-size: 20px; font-weight: 600; color: rgb(51, 51, 51)" id="div-7"><a href="https://www.thedrip.co.kr/default/company/company_1.php?sub=01&amp;tit=01">About us</a></div>
+            <div style="font-size: 14px; color: rgb(136, 136, 136)" id="div-8">
+              <ul id="ul-2">
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/company/company_1.php?tit=01&amp;sub=01" style="border-radius: 6px" id="a-2">회사소개</a></li>
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/company/company_4.php?tit=01&amp;sub=04" style="border-radius: 6px" id="a-3">경영 프로세스</a></li>
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/company/company_5.php?tit=01&amp;sub=05" style="border-radius: 6px" id="a-4">ESG 경영</a></li>
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/company/company_3.php?tit=01&amp;sub=03" style="border-radius: 6px" id="a-5">오시는길</a></li>
+              </ul>
+            </div>
+          </li>
+          <li style="float: left; text-align: center; display: list-item" id="li-2">
+            <div style="font-size: 20px; font-weight: 600; color: rgb(51, 51, 51)" id="div-9"><a href="https://www.thedrip.co.kr/default/business/business_1.php?tit=02&amp;sub=01">Business</a></div>
+            <div style="font-size: 14px; color: rgb(136, 136, 136)" id="div-10">
+              <ul id="ul-3">
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/business/business_1.php?tit=02&amp;sub=01" style="border-radius: 6px" id="a-6">사업영역</a></li>
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/business/business_2.php?tit=02&amp;sub=02" style="border-radius: 6px" id="a-7">브랜드</a></li>
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/business/business_3.php?tit=02&amp;sub=03" style="border-radius: 6px" id="a-8">R&amp;D</a></li>
+              </ul>
+            </div>
+          </li>
+          <li style="float: left; text-align: center; display: list-item" id="li-3">
+            <div style="font-size: 20px; font-weight: 600; color: rgb(51, 51, 51)" id="div-11"><a href="https://www.thedrip.co.kr/default/product/product_1.php?tit=03&amp;sub=01">Process</a></div>
+            <div style="font-size: 14px; color: rgb(136, 136, 136)" id="div-12">
+              <ul id="ul-4">
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/product/product_1.php?tit=03&amp;sub=01" style="border-radius: 6px" id="a-9">생산인프라</a></li>
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/product/product_2.php?tit=03&amp;sub=02" style="border-radius: 6px" id="a-10">공급망관리 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li style="float: left; text-align: center; display: list-item" id="li-4">
+            <div style="font-size: 20px; font-weight: 600; color: rgb(51, 51, 51)" id="div-13"><a href="https://www.thedripmall.com">Site</a></div>
+            <div style="font-size: 14px; color: rgb(136, 136, 136)" id="div-14">
+              <ul id="ul-5">
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedripmall.com" style="border-radius: 6px" id="a-11">더드립몰</a></li>
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://80pluscoffee.com" style="border-radius: 6px" id="a-12">80+커피</a></li>
+              </ul>
+            </div>
+          </li>
+          <li style="float: left; text-align: center; display: list-item" id="li-5">
+            <div style="font-size: 20px; font-weight: 600; color: rgb(51, 51, 51)" id="div-15"><a href="https://www.thedrip.co.kr/default/customer/customer_1.php?tit=05&amp;sub=01">Notice</a></div>
+            <div style="font-size: 14px; color: rgb(136, 136, 136)" id="div-16">
+              <ul id="ul-6">
+                <li style="display: list-item; color: rgb(51, 51, 51)"><a href="https://www.thedrip.co.kr/default/customer/customer_1.php?tit=05&amp;sub=01" style="border-radius: 6px" id="a-13">공지사항</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div style="padding-top: 70px; color: rgb(239, 239, 239)" id="div-17">
+    <section style="background-color: rgb(45, 48, 66); position: relative; text-align: center; width: 100%; height: 698px; min-height: 500px" id="section-1">
+      <div style="position: relative; overflow: hidden">
+        <div style="position: relative">
+          <div style="float: left; position: relative; height: 698px; min-height: 1px" id="div-18">
+            <figure style="position: relative; height: 100%">
+              <div style='background-image: url("https://www.thedrip.co.kr/default/img/hblock/design/slide/img/slide3.jpg"); background-position: 50% 50%; background-size: cover; filter: blur(4.0771px); height: 100%'></div>
+              <div style="font-size: 28px; opacity: 0.998042; position: absolute; top: 35%; z-index: 1; width: 100%; color: rgb(255, 255, 255)" id="div-19"><span style="padding-bottom: 25px; padding-top: 20px; width: 30%; margin: auto" id="span-1">Coffee business for 29years</span></div>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <ul style="bottom: 50px; position: absolute; list-style-type: none; width: 100%; font-size: 14px; color: rgb(255, 255, 255)" id="ul-7">
+        <li style="vertical-align: top; display: inline-block; margin: 8px"><button style="background-color: rgb(255, 255, 255); cursor: pointer; opacity: 0.4; vertical-align: middle; display: inline-block; width: 16px; height: 16px; border-width: 2px; border-color: rgb(255, 255, 255); border-style: solid; border-radius: 50%">1</button></li>
+        <li style="vertical-align: top; display: inline-block; margin: 8px"><button style="background-color: rgb(255, 255, 255); cursor: pointer; opacity: 0.4; vertical-align: middle; display: inline-block; width: 16px; height: 16px; border-width: 2px; border-color: rgb(255, 255, 255); border-style: solid; border-radius: 50%">2</button></li>
+        <li style="vertical-align: top; display: inline-block; margin: 8px"><button style="background-color: rgb(255, 255, 255); cursor: pointer; vertical-align: middle; display: inline-block; width: 16px; height: 16px; border-width: 2px; border-color: rgb(45, 48, 66); border-style: solid; border-radius: 50%">3</button></li>
+      </ul>
+    </section>
+  </div>
+
+  <div style="background-color: rgb(255, 255, 255); width: 100%; margin-top: 100px; margin-bottom: 100px; overflow: hidden" id="div-20">
+    <div style="padding-bottom: 36px; width: 1200px; overflow: hidden; margin: auto" id="div-21">
+      <h3 style="float: left; font-size: 36px">Company Story</h3>
+      <p style="color: rgb(153, 153, 153); float: left; padding-left: 35px; padding-top: 22px" id="p-1">최고의 커피 공급을 위해 최선을 다하겠습니다.</p>
+    </div>
+    <div style="position: relative; width: 100%; overflow: hidden">
+      <div style="background-color: rgb(245, 245, 245); padding-bottom: 80px; padding-left: 80px; padding-top: 80px; width: 1300px; overflow: hidden" id="div-22">
+        <section style="float: left; width: 50%; height: 380px" id="section-2">
+          <div style="padding-bottom: 56.25%; position: relative; max-width: 100%; overflow: hidden"><iframe src="https://www.youtube.com/embed//10wGHO_EbWQ?autoplay=1&amp;mute=1&amp;loop=3" style="left: 0px; position: absolute; top: 0px; width: 100%; height: 100%"></iframe></div>
+        </section>
+        <section style="float: left; padding-bottom: 70px; padding-left: 100px; padding-right: 100px; padding-top: 70px; width: 50%; height: 380px" id="section-3">
+          <p style="color: rgb(136, 136, 136); padding-top: 16px">
+            세계 곳곳을 누비며 확보한 최고의 생두를 선보이고 있는<br />
+            ㈜더드립은 커피를 사랑하는 모든 고객의 만족을 위해 끊임없이 연구하고 발전해 왔습니다.
+          </p>
+          <a href="https://www.thedripmall.com/" style="color: rgb(51, 51, 51); float: left; font-size: 16px; padding-bottom: 16px; padding-left: 5px; padding-right: 5px; padding-top: 15px; text-align: center; width: 120px; margin-top: 35px; margin-right: 6px; border-width: 2px; border-color: rgb(207, 207, 207); border-style: solid; border-radius: 6px" id="a-14">더드립몰</a><a href="https://www.thedripmall.com/data/price_table/2023_greenbean_price.pdf" style="color: rgb(51, 51, 51); float: left; font-size: 16px; padding-bottom: 16px; padding-left: 5px; padding-right: 5px; padding-top: 15px; text-align: center; width: 120px; margin-top: 35px; margin-right: 6px; border-width: 2px; border-color: rgb(207, 207, 207); border-style: solid; border-radius: 6px" id="a-15">생두리스트</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: rgb(255, 255, 255); width: 100%; margin-bottom: 120px; overflow: hidden" id="div-23">
+    <div style="padding-bottom: 36px; width: 1200px; overflow: hidden; margin: auto" id="div-24">
+      <h3 style="float: left; font-size: 36px">Our Network</h3>
+      <p style="color: rgb(153, 153, 153); float: left; padding-left: 35px; padding-top: 22px" id="p-2">지속 가능한 커피 경영을 위해 더욱 노력하겠습니다.</p>
+    </div>
+    <div style="width: 100%; overflow: hidden">
+      <div style="padding-bottom: 80px; padding-right: 80px; padding-top: 80px; width: 1300px; overflow: hidden" id="div-25">
+        <section style="float: right; width: 50%; height: 380px" id="section-4">
+          <img src="https://www.thedrip.co.kr/default/img/hblock/design/block_07/img/img2.jpg" style="height: 380px" id="img-2" />
+        </section>
+        <section style="float: left; padding-bottom: 70px; padding-left: 100px; padding-right: 100px; padding-top: 70px; width: 50%; height: 380px; color: rgb(255, 255, 255)" id="section-5">
+          <p style="padding-top: 16px">㈜더드립은 29년 이어온 커피 생두 비즈니스 노하우를 비롯해 글로벌 공급망 관리 및 품질 관리 시스템을 기반으로 국내 최고 수준의 품질 가격 경쟁력을 갖추고 있습니다.</p>
+          <a href="https://www.thedrip.co.kr/default/business/business_1.php?tit=02&amp;sub=01" style="float: left; font-size: 16px; padding-bottom: 16px; padding-left: 5px; padding-right: 5px; padding-top: 15px; text-align: center; width: 120px; margin-top: 35px; margin-right: 6px; border-width: 2px; border-color: rgb(255, 255, 255); border-style: solid; border-radius: 6px" id="a-16">사업영역</a><a href="https://www.thedrip.co.kr/default/product/product_1.php?tit=03&amp;sub=01" style="float: left; font-size: 16px; padding-bottom: 16px; padding-left: 5px; padding-right: 5px; padding-top: 15px; text-align: center; width: 120px; margin-top: 35px; margin-right: 6px; border-width: 2px; border-color: rgb(255, 255, 255); border-style: solid; border-radius: 6px" id="a-17">Process</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div style="width: 100%; margin-top: 100px; margin-bottom: 100px; overflow: hidden" id="div-26">
+    <div style="padding-bottom: 36px; width: 1200px; overflow: hidden; margin: auto" id="div-27">
+      <h3 style="float: left; font-size: 36px">Our Product</h3>
+      <p style="color: rgb(153, 153, 153); float: left; padding-left: 35px; padding-top: 22px" id="p-3">다양한 브랜드 개발을 위해 투자를 아끼지 않겠습니다.</p>
+    </div>
+    <div style="background-color: rgb(255, 255, 255); position: relative; width: 100%; overflow: hidden">
+      <div style="background-color: rgb(245, 245, 245); padding-bottom: 55px; padding-top: 60px; width: 1300px; overflow: hidden" id="div-28">
+        <div style="padding-left: 25px; width: 1200px; margin: auto" id="div-29">
+          <div style="padding-top: 30px">
+            <div>
+              <div style="margin: auto">
+                <div style="position: relative">
+                  <div style="width: 100%; overflow: hidden" id="div-30">
+                    <table cellspacing="0" cellpadding="0" width="100%" style="display: table">
+                      <tbody style="display: table-row-group">
+                        <tr>
+                          <td style="word-break: break-all" id="td-1">
+                            <table cellspacing="0" cellpadding="2" border="0" width="98%" style="display: table">
+                              <tbody style="display: table-row-group">
+                                <tr style="display: table-row">
+                                  <td style="padding-left: 28px; padding-right: 28px; padding-top: 4px; vertical-align: middle; word-break: keep-all; display: table-cell; min-height: 1px" id="td-2"><img src="https://www.thedrip.co.kr/bizdemo121713/component/board/board_7/u_image/4/946808174_2.jpg" style="border-radius: 6px" id="img-3" /><br /></td>
+                                </tr>
+                                <tr style="display: table-row">
+                                  <td style="padding-left: 28px; padding-right: 28px; padding-top: 4px; vertical-align: middle; display: table-cell; min-height: 1px" id="td-3"><span style="color: rgb(85, 85, 85); float: left; padding-bottom: 6px; padding-top: 6px; text-align: center; width: 100%; margin-bottom: 20px">더드립 생두 </span><br /></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td style="word-break: break-all" id="td-4">
+                            <table cellspacing="0" cellpadding="2" border="0" width="98%" style="display: table">
+                              <tbody style="display: table-row-group">
+                                <tr style="display: table-row">
+                                  <td style="padding-left: 28px; padding-right: 28px; padding-top: 4px; vertical-align: middle; word-break: keep-all; display: table-cell; min-height: 1px" id="td-5"><img src="https://www.thedrip.co.kr/bizdemo121713/component/board/board_7/u_image/3/1660071441_1.jpg" style="border-radius: 6px" id="img-4" /><br /></td>
+                                </tr>
+                                <tr style="display: table-row">
+                                  <td style="padding-left: 28px; padding-right: 28px; padding-top: 4px; vertical-align: middle; display: table-cell; min-height: 1px" id="td-6"><span style="color: rgb(85, 85, 85); float: left; padding-bottom: 6px; padding-top: 6px; text-align: center; width: 100%; margin-bottom: 20px">더드립 원두 OEM </span><br /></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td style="word-break: break-all" id="td-7">
+                            <table cellspacing="0" cellpadding="2" border="0" width="98%" style="display: table">
+                              <tbody style="display: table-row-group">
+                                <tr style="display: table-row">
+                                  <td style="padding-left: 28px; padding-right: 28px; padding-top: 4px; vertical-align: middle; word-break: keep-all; display: table-cell; min-height: 1px" id="td-8"><img src="https://www.thedrip.co.kr/bizdemo121713/component/board/board_7/u_image/2/1469701744_3.jpg" style="border-radius: 6px" id="img-5" /><br /></td>
+                                </tr>
+                                <tr style="display: table-row">
+                                  <td style="padding-left: 28px; padding-right: 28px; padding-top: 4px; vertical-align: middle; display: table-cell; min-height: 1px" id="td-9"><span style="color: rgb(85, 85, 85); float: left; padding-bottom: 6px; padding-top: 6px; text-align: center; width: 100%; margin-bottom: 20px">에이티플러스커피 드립백 </span><br /></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <a href="https://www.thedrip.co.kr/#carouselInformationGallary" style="color: rgb(255, 255, 255); bottom: 0px; left: 0px; position: absolute; text-align: center; top: 135px; width: 15%; margin-right: -45px; margin-left: -75px" id="a-18">
+                    <img src="https://www.thedrip.co.kr/default/img/hblock/design/product_03/img/arrow_left2.png" style="cursor: pointer; height: 42px; margin-top: 5px; margin-left: 30px" id="img-6" />
+                  </a>
+                  <a href="https://www.thedrip.co.kr/#carouselInformationGallary" style="color: rgb(255, 255, 255); bottom: 0px; position: absolute; right: 0px; text-align: center; top: 135px; left: auto; width: 15%; margin-right: -45px; margin-left: -75px" id="a-19">
+                    <img src="https://www.thedrip.co.kr/default/img/hblock/design/product_03/img/arrow_right2.png" style="cursor: pointer; height: 42px; margin-top: 5px; margin-left: -37px" id="img-7" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: rgb(255, 255, 255); width: 100%; margin-bottom: 20px; overflow: hidden" id="div-31">
+    <div style="padding-bottom: 36px; width: 1200px; overflow: hidden; margin: auto" id="div-32">
+      <h3 style="float: left; font-size: 36px">About Us</h3>
+      <p style="color: rgb(153, 153, 153); float: left; padding-left: 35px; padding-top: 22px" id="p-4">고객만족 극대화로 최고의 기업이 되겠습니다.</p>
+    </div>
+    <div style="position: relative; width: 100%; overflow: hidden">
+      <div style="background-color: rgb(245, 245, 245); padding-bottom: 80px; padding-right: 80px; padding-top: 80px; width: 1300px; overflow: hidden" id="div-33">
+        <section style="float: left; width: 50%; height: 380px" id="section-6">
+          <ul style="padding-left: 50px; padding-right: 50px; list-style-type: none; width: 100%; overflow: hidden; margin: auto" id="ul-8">
+            <li style="float: left; padding-bottom: 20px; padding-top: 20px; display: list-item; width: 50%" id="li-6">
+              <a href="https://www.thedrip.co.kr/default/company/company_1.php?sub=01&amp;tit=01" style='background-image: url("https://www.thedrip.co.kr/default/img/hblock/design/icon_02/img/ico1.png"); background-position: 50% 100%; background-repeat: no-repeat; padding-top: 10px; text-align: center; height: 150px' id="a-20"><span style="cursor: pointer; font-size: 20px; padding-bottom: 10px">회사소개</span><span style="color: rgb(170, 170, 170); cursor: pointer">COMPANY</span></a>
+            </li>
+            <li style="float: left; padding-bottom: 20px; padding-top: 20px; display: list-item; width: 50%" id="li-7">
+              <a href="https://www.thedrip.co.kr/default/company/company_3.php?sub=03&amp;tit=01" style='background-image: url("https://www.thedrip.co.kr/default/img/hblock/design/icon_02/img/ico2.png"); background-position: 50% 100%; background-repeat: no-repeat; padding-top: 10px; text-align: center; height: 150px' id="a-21"><span style="cursor: pointer; font-size: 20px; padding-bottom: 10px">오시는 길</span><span style="color: rgb(170, 170, 170); cursor: pointer">LOCATION</span></a>
+            </li>
+            <li style="float: left; padding-bottom: 20px; padding-top: 20px; display: list-item; width: 50%" id="li-8">
+              <a href="https://www.thedrip.co.kr/default/company/company_4.php?tit=01&amp;sub=04" style='background-image: url("https://www.thedrip.co.kr/default/img/hblock/design/icon_02/img/ico3.png"); background-position: 50% 100%; background-repeat: no-repeat; padding-top: 10px; text-align: center; height: 150px' id="a-22"><span style="cursor: pointer; font-size: 20px; padding-bottom: 10px">경영 프로세스</span><span style="color: rgb(170, 170, 170); cursor: pointer">PROCESS</span></a>
+            </li>
+            <li style="float: left; padding-bottom: 20px; padding-top: 20px; display: list-item; width: 50%" id="li-9">
+              <a href="https://www.thedrip.co.kr/#" style='background-image: url("https://www.thedrip.co.kr/default/img/hblock/design/icon_02/img/ico4.png"); background-position: 50% 100%; background-repeat: no-repeat; padding-top: 10px; text-align: center; height: 150px' id="a-23"><span style="cursor: pointer; font-size: 20px; padding-bottom: 10px">문의전화</span><span style="color: rgb(170, 170, 170); cursor: pointer">02.577.5405</span></a>
+            </li>
+          </ul>
+        </section>
+        <section style="background-color: rgb(255, 255, 255); float: left; padding-bottom: 30px; padding-left: 50px; padding-right: 50px; padding-top: 30px; position: relative; width: 50%; height: 380px" id="section-7">
+          <h3 style="color: rgb(1, 173, 161); font-size: 18px; padding-left: 3px" id="h3-1">Notice</h3>
+          <p style="color: rgb(204, 204, 204); bottom: 28px; padding-top: 16px; position: absolute; right: 50px; text-decoration-line: underline" id="p-5">+ more</p>
+          <table cellspacing="0" cellpadding="0" border="0" width="100%" style="display: table">
+            <tbody style="display: table-row-group">
+              <tr style="display: table-row">
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; vertical-align: middle; display: table-cell; border-style: dashed"><img src="https://www.thedrip.co.kr/bizdemo121713/img/component/board/board_1/output_ol.gif" style="height: 5px" id="img-8" /></td>
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; vertical-align: middle; word-break: break-all; display: table-cell; border-style: dashed">㈜더드립 2022 하반기 채용 공고</td>
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; text-align: -webkit-center; word-break: break-all; border-style: dashed" id="td-10">2022-08-09</td>
+              </tr>
+              <tr style="display: table-row">
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; vertical-align: middle; display: table-cell; border-style: dashed"><img src="https://www.thedrip.co.kr/bizdemo121713/img/component/board/board_1/output_ol.gif" style="height: 5px" id="img-9" /></td>
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; vertical-align: middle; word-break: break-all; display: table-cell; border-style: dashed">[보도자료] ㈜더드립, 커피업계 최초 주4일제 '..</td>
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; text-align: -webkit-center; word-break: break-all; border-style: dashed" id="td-11">2022-07-19</td>
+              </tr>
+              <tr style="display: table-row">
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; vertical-align: middle; display: table-cell; border-style: dashed"><img src="https://www.thedrip.co.kr/bizdemo121713/img/component/board/board_1/output_ol.gif" style="height: 5px" id="img-10" /></td>
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; vertical-align: middle; word-break: break-all; display: table-cell; border-style: dashed">㈜더드립 회사 사이트가 리뉴얼 되었습니다.</td>
+                <td style="border-bottom-color: rgb(223, 223, 223); border-bottom-width: 2px; padding-bottom: 26px; padding-top: 26px; text-align: -webkit-center; word-break: break-all; border-style: dashed" id="td-12">2022-04-20</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div style="color: rgb(136, 136, 136); font-size: 14px; padding-bottom: 20px; width: 95%; margin: auto" id="div-34">
+    <div style="padding-bottom: 50px; padding-top: 50px; width: 100%; overflow: hidden; margin: auto" id="div-35">
+      <div style="padding-bottom: 10px; width: 100%" id="div-36">
+        <a href="https://www.facebook.com/thedripcoffee" style="opacity: 0.9; padding-left: 5px; padding-right: 5px" id="a-24"><img src="https://www.thedrip.co.kr/default/img/hblock/design/footer_03/img/facebook2.png" style="cursor: pointer; width: 36px" id="img-11" /></a>
+        <a href="https://www.instagram.com/thedrip.co.kr/" style="opacity: 0.9; padding-left: 5px; padding-right: 5px" id="a-25"><img src="https://www.thedrip.co.kr/default/img/hblock/design/footer_03/img/instagram2.png" style="cursor: pointer; width: 36px" id="img-12" /></a>
+
+        <a href="https://pf.kakao.com/_yRlsxd" style="opacity: 0.9; padding-left: 5px; padding-right: 5px" id="a-26"><img src="https://www.thedrip.co.kr/default/img/hblock/design/footer_03/img/kakaotalk2.png" style="cursor: pointer; width: 36px" id="img-13" /></a>
+      </div>
+      <ul style="list-style-type: none; margin: auto" id="ul-9">
+        <li style="display: inline-block" id="li-10"><a href="https://www.thedrip.co.kr/default/member/personal.php?tit=06&amp;sub=03" style="padding-bottom: 20px; padding-right: 25px; padding-top: 10px" id="a-27">개인정보처리방침</a></li>
+        <li style="display: inline-block" id="li-11"><a href="https://www.thedrip.co.kr/default/member/email.php?tit=06&amp;sub=04" style="padding-bottom: 20px; padding-right: 25px; padding-top: 10px" id="a-28">이메일무단수집거부</a></li>
+      </ul>
+
+      <div>
+        <ul style="list-style-type: none">
+          <li style="display: inline-block" id="li-12">주소 : 서울시 서초구 양재천로 21길 25 (양재동, 씨앤씨빌딩)</li>
+          <li style="display: inline-block" id="li-13">대표 : 이은혜</li>
+          <li style="display: inline-block" id="li-14">전화 : 02)577-5405</li>
+          <li style="display: inline-block" id="li-15">팩스 : 02)571-5033</li>
+          <li style="display: inline-block" id="li-16">이메일 : master@thedrip.co.kr</li>
+        </ul>
+        Copyright © ㈜더드립. All rights reserved. Design by The Drip
+      </div>
+    </div>
+  </div>
+</div>
