@@ -11,7 +11,7 @@
       position: relative;
       width: 100%;
       height: 300px;
-      background: url('images/products-hero.jpg') center/cover no-repeat;
+      background: url('images/productsimg1.png') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -91,9 +91,9 @@
     <nav>
       <ul>
         <li><a href="index.html">홈</a></li>
-        <li><a href="about.html">브랜드 소개</a></li>
+        <li><a href="about.html">회사 소개</a></li>
         <li><a href="products.html" class="active">제품 소개</a></li>
-        <li><a href="blog.html">블로그</a></li>
+        
         <li><a href="contact.html">문의</a></li>
         <li><a href="b2b.html">B2B</a></li>
       </ul>
@@ -102,14 +102,14 @@
 
   <!-- Hero -->
   <section class="page-hero">
-    <h1>우리의 제품을 만나보세요</h1>
+      <h1>우리의 제품을 만나보세요 <br />good coffee makes a good day</h1>
   </section>
-  <p class="page-intro">이송글로벌이 엄선한 다양한 커피 제품을 만나보실 수 있습니다. 블렌드 커피부터 싱글오리진, 스페셜티 커피백까지 풍부한 선택지를 제공하여 일상의 커피 경험을 더욱 특별하게 만들어 드립니다.</p>
+  <p class="page-intro">이송글로벌이 엄선한 다양한 커피 제품을 만나보실 수 있습니다. 에스프레소 커피부터 싱글오리진, 스페셜티 커피백까지 풍부한 선택지를 제공하여 일상의 커피 경험을 더욱 특별하게 만들어 드립니다.</p>
 
   <main>
     <!-- Tabs -->
     <div class="tabs">
-      <button class="tab-btn active" data-tab="blend">블랜드 커피</button>
+      <button class="tab-btn active" data-tab="blend">에스프레소 커피</button>
       <button class="tab-btn" data-tab="single">싱글오리진 커피</button>
       <button class="tab-btn" data-tab="special">스페셜티 커피백</button>
     </div>
@@ -153,24 +153,42 @@
     <section id="single" class="tab-content">
       <div class="product-grid">
         <div class="product-card">
-          <img src="images/ethio.png" alt="에티오피아">
-          <h2>에티오피아</h2>
-          <p>내용 수정 예정</p>
+          <img src="images/ethio.png" alt="에티오피아 코케허니">
+          <h2>에티오피아 코케허니 G1</h2>
+          <p class="product-desc">향 : 발효된 살구, 복숭아향, 장미향<br>
+                                  미 : 은은한 발효된 산미, 굿 밸런스<br>  
+                                바디 : 중 <br> 
+                         로스터 추천 : 드립 커피, 콜드브루 </p>
         </div>
         <div class="product-card">
-          <img src="images/kenya.png" alt="케냐">
-          <h2>케냐</h2>
-          <p>내용 수정 예정</p>
+            <img src="images/kenya.png" alt="케냐">
+            <h2>케냐 AA </h2>
+            <p class="product-desc">
+                향 : 다크 초콜릿, 카라멜<br>
+                미 : 굿 밸런스, <br>
+                바디 : 강 바디<br>
+                로스터 추천 : 드립 커피, 콜드브루.
+            </p>
         </div>
         <div class="product-card">
-          <img src="images/guate.png" alt="과테말라">
-          <h2>과테말라</h2>
-          <p>내용 수정 예정</p>
+            <img src="images/guate.png" alt="과테말라">
+            <h2>과테말라 SHB</h2>
+            <p class="product-desc">
+                향 : 토스트, 스모키, 넛티<br>
+                미 : 굿 밸런스<br>
+                바디 : 중 바디<br>
+                로스터 추천 : 드립 커피, 콜드브루.
+            </p>
         </div>
         <div class="product-card">
-          <img src="images/brazil.png" alt="브라질">
-          <h2>브라질</h2>
-          <p>내용 수정 예정</p>
+            <img src="images/brazil.png" alt="브라질">
+            <h2>브라질 옐로우 버번</h2>
+            <p class="product-desc">
+                향 : 브라운 슈가, 헤이즐넛<br>
+                미 : 굿 밸런스<br>
+                바디 : 중 바디<br>
+                로스터 추천 : .드립 커피, 콜드브루
+            </p>
         </div>
       </div>
     </section>
@@ -178,25 +196,40 @@
     <!-- Specialty Coffee Bags -->
     <section id="special" class="tab-content">
       <div class="product-grid">
-        <div class="product-card">
-          <img src="images/ethio_bag.jpg" alt="에티오피아 커피백">
-          <h2>에티오피아 커피백</h2>
-          <p>내용 수정 예정</p>
-        </div>
-        <div class="product-card">
-          <img src="images/kenya_bag.jpg" alt="케냐 커피백">
-          <h2>케냐 커피백</h2>
-          <p>내용 수정 예정</p>
-        </div>
-        <div class="product-card">
-          <img src="images/guate_bag.jpg" alt="과테말라 커피백">
-          <h2>과테말라 커피백</h2>
-          <p>내용 수정 예정</p>
-        </div>
+          <div class="product-card">
+              <img src="images/ethio_bag.jpg" alt="에티오피아 커피백">
+                  <h2>에티오피아 커피백</h2>
+              <p>
+                  향 : 자스민의 꽃향과 살구의 과일향<br>
+                  미 : 강한 신맛, 굿 밸런스<br>
+                  바디 : 중 바디<br>
+                  커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.
+              </p>
+          </div>
+          <div class="product-card">
+              <img src="images/kenya_bag.jpg" alt="케냐 커피백">
+              <h2>케냐 커피백</h2>
+              <p>
+                  향 : 좋은 당밀과 카라멜 향<br>
+                  미 : 블랙 커런트의 약한 신맛, 굿 밸런스<br>
+                  바디 : 중 바디<br>
+                  커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.
+              </p>
+          </div>
+          <div class="product-card">
+              <img src="images/guate_bag.jpg" alt="과테말라 커피백">
+              <h2>과테말라 커피백</h2>
+              <p>
+                  향 : 아몬드와 호두의 넛티한 향<br>
+                  미 : 굿 밸런스<br>
+                  바디 : 중 바디<br>
+                  커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.
+              </p>
+          </div>
         <div class="product-card">
           <img src="images/coffeebagset.jpg" alt="커피백 세트">
           <h2>커피백 세트</h2>
-          <p>내용 수정 예정</p>
+          <p>이송글로벌의 좋은 커피백을 좋은 가격에 즐길 수 있는 커피백 세트</p>
         </div>
       </div>
     </section>
