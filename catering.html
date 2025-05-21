@@ -63,9 +63,9 @@
       <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
       <ul>
         <li><a href="index.html">홈</a></li>
-        <li><a href="about.html">회사 소개</a></li>
+        <li><a href="about.html">브랜드 소개</a></li>
         <li><a href="products.html">제품 소개</a></li>
-        <li><a href="catering.html">케이터링</a></li>
+        <li><a href="blog.html">케이터링</a></li>
         <li><a href="contact.html">문의</a></li>
         <li><a href="b2b.html">B2B</a></li>
       </ul>
@@ -77,6 +77,83 @@
   </section>
 
   <main class="catering-section">
-    <h2>준비중입니다.</h2>   
+    <h2>메뉴 소개</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="images/drip-coffee.jpg" alt="커피백" />
+            <h3>커피백</h3>
+            <p>간편하게 즐길 수 있는 커피백</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/drip-coffee.jpg" alt="드립커피" />
+            <h3>드립커피</h3>
+            <p>신선하게 내린 핸드드립 커피</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/cold-brew.jpg" alt="콜드브루" />
+            <h3>콜드브루</h3>
+            <p>부드럽고 깊은 맛의 콜드브루</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/latte.jpg" alt="라떼" />
+            <h3>라떼</h3>
+            <p>좋은 향과 산미의 부드러운 라떼</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/almond-cookie.jpg" alt="아몬드 쿠키" />
+            <h3>아몬드 쿠키</h3>
+            <p>고소한 아몬드의 풍미를 담은 쿠키</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/meringue-cookie.jpg" alt="머랭 쿠키" />
+            <h3>머랭 쿠키</h3>
+            <p>부드럽고 달콤한 머랭 쿠키</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/choco-cookie.jpg" alt="초코쿠키" />
+            <h3>초코쿠키</h3>
+            <p>달콤한 초콜릿이 가득한 쿠키</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/choco-cookie.jpg" alt="티라미수" />
+            <h3>티라미수</h3>
+            <p>커피와 조화로운 고급 디저트</p>
+        </div>
+    </div>
+  </main>
+
+<!-- 🟡 기존 케이터링 소개 이후 footer 바로 위에 추가 -->
+<section style="text-align:center; margin-top:60px;">
+  <a href="#catering-form" style="display:inline-block; background:#333; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none;">
+    케이터링 문의하기
+  </a>
+</section>
+
+<!-- 🟢 실제 폼 위치 (id="catering-form" 추가로 이동 가능하게 함) -->
+<section id="catering-form" class="catering-section" style="margin-top:80px;">
+  <h2>케이터링 서비스 신청</h2>
+  <form action="https://formspree.io/f/mblgvker" method="POST">
+    <label for="name">이름</label>
+    <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-top:5px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc;">
+
+    <label for="email">이메일</label>
+    <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-top:5px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc;">
+
+    <label for="date">행사 날짜</label>
+    <input type="date" id="date" name="date" style="width:100%; padding:10px; margin-top:5px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc;">
+
+    <label for="message">요청 사항</label>
+    <textarea id="message" name="message" rows="5" placeholder="예: 30명 규모 / 핸드드립 2시간 운영 / 1인당 1잔" style="width:100%; padding:10px; margin-top:5px; border-radius:6px; border:1px solid #ccc;"></textarea>
+
+    <button type="submit" style="margin-top:20px; width:100%; padding:12px; background:#333; color:white; border:none; border-radius:6px; cursor:pointer;">
+      케이터링 신청
+    </button>
+  </form>
+</section>
+
+
+  <footer>
+    <p style="text-align:center; padding:20px;">© 2025 Isong Global Co., Ltd. All rights reserved.</p>
+  </footer>
 </body>
 </html>
