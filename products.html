@@ -6,7 +6,6 @@
   <title>제품소개 | 이송글로벌</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Hero section */
     .page-hero {
       position: relative;
       width: 100%;
@@ -30,7 +29,6 @@
       font-size: 1rem;
       line-height: 1.6;
     }
-    /* Tabs */
     .tabs {
       text-align: center;
       margin-top: 40px;
@@ -48,10 +46,8 @@
       background: #333;
       color: #fff;
     }
-    /* Content Panels */
     .tab-content { display: none; }
     .tab-content.active { display: block; }
-    /* Product Grid */
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -100,22 +96,23 @@
     </nav>
   </header>
 
-  <!-- Hero -->
   <section class="page-hero">
-      <h1>우리의 제품을 만나보세요 <br />good coffee makes a good day</h1>
+    <h1>우리의 제품을 만나보세요 <br />good coffee makes a good day</h1>
   </section>
-  <p class="page-intro">이송 글로벌은 SEAR(Sensitive Espresso Aroma Roasting) 테크닉에 의거하여 다양한 제품들을 생산하고 있습니다.<br/>
-  한 모금만 마셔도 고객이 다시 찾게 되는 품질의 커피를 만들고 있습니다.</p>
+
+  <p class="page-intro">
+    이송 글로벌은 SEAR(Sensitive Espresso Aroma Roasting) 테크닉에 의거하여 다양한 제품들을 생산하고 있습니다.<br/>
+    한 모금만 마셔도 고객이 다시 찾게 되는 품질의 커피를 만들고 있습니다.
+  </p>
 
   <main>
-    <!-- Tabs -->
     <div class="tabs">
       <button class="tab-btn active" data-tab="blend">에스프레소 커피</button>
       <button class="tab-btn" data-tab="single">싱글오리진 커피</button>
       <button class="tab-btn" data-tab="special">스페셜티 커피백</button>
     </div>
 
-    <!-- Blend Coffee -->
+    <!-- 에스프레소 커피 -->
     <section id="blend" class="tab-content active">
       <div class="product-grid">
         <div class="product-card">
@@ -123,110 +120,83 @@
           <h2>아폴로</h2>
           <p><strong>블렌딩:</strong> 과테말라, 콜롬비아 외</p>
           <p><strong>로스팅:</strong> 중강배전 (Full City)</p>
-	  <p><strong>테이스트 노트:</strong> 캐러멜의 단맛과 초콜릿 향 묵직한 바디와 향</p>
+          <p><strong>테이스트 노트:</strong> 캐러멜의 단맛과 초콜릿 향 묵직한 바디와 향</p>
         </div>
         <div class="product-card">
           <img src="images/phoenix.jpg" alt="피닉스">
           <h2>피닉스</h2>
           <p><strong>블렌딩:</strong> 콜롬비아, 에티오피아 외</p>
           <p><strong>로스팅:</strong> 중강배전 (Full City)</p>
-	  <p><strong>테이스트 노트:</strong> 견과류의 고소함,  밀크 초콜릿의 단맛</p>
+          <p><strong>테이스트 노트:</strong> 견과류의 고소함, 밀크 초콜릿의 단맛</p>
         </div>
         <div class="product-card">
           <img src="images/venus.jpg" alt="베누스">
           <h2>베누스</h2>
           <p><strong>블렌딩:</strong> 에티오피아 100%</p>
           <p><strong>로스팅:</strong> 중배전 (City)</p>
-   	  <p><strong>테이스트 노트:</strong> 풍부한 과일 향, 감귤의 산미</p>
-
+          <p><strong>테이스트 노트:</strong> 풍부한 과일 향, 감귤의 산미</p>
         </div>
         <div class="product-card">
           <img src="images/ares.jpg" alt="아레스">
           <h2>아레스</h2>
           <p><strong>블렌딩:</strong> 브라질, 에티오피아 외</p>
           <p><strong>로스팅:</strong> 중강배전 (Full City)</p>
- 	  <p><strong>테이스트 노트:</strong> 호두와 볶은 땅콩의 고소한 맛</p>
+          <p><strong>테이스트 노트:</strong> 호두와 볶은 땅콩의 고소한 맛</p>
         </div>
       </div>
     </section>
 
-    <!-- Single Origin -->
+    <!-- 싱글오리진 커피 -->
     <section id="single" class="tab-content">
       <div class="product-grid">
         <div class="product-card">
           <img src="images/ethio.png" alt="에티오피아 코케허니">
           <h2>에티오피아 코케허니 G1</h2>
-          <p class="product-desc">향 : 발효된 살구, 복숭아향, 장미향<br>
-                                  미 : 은은한 발효된 산미, 굿 밸런스<br>  
-                                바디 : 중 <br> 
-                         로스터 추천 : 드립 커피, 콜드브루 </p>
+          <p class="product-desc">향 : 발효된 살구, 복숭아향, 장미향<br>미 : 은은한 발효된 산미, 굿 밸런스<br>바디 : 중<br>로스터 추천 : 드립 커피, 콜드브루</p>
         </div>
         <div class="product-card">
-            <img src="images/kenya.png" alt="케냐">
-            <h2>케냐 AA </h2>
-            <p class="product-desc">
-                향 : 다크 초콜릿, 카라멜<br>
-                미 : 굿 밸런스, <br>
-                바디 : 강 바디<br>
-                로스터 추천 : 드립 커피, 콜드브루.
-            </p>
+          <img src="images/kenya.png" alt="케냐">
+          <h2>케냐 AA</h2>
+          <p class="product-desc">향 : 다크 초콜릿, 카라멜<br>미 : 굿 밸런스<br>바디 : 강 바디<br>로스터 추천 : 드립 커피, 콜드브루</p>
         </div>
         <div class="product-card">
-            <img src="images/guate.png" alt="과테말라">
-            <h2>과테말라 SHB</h2>
-            <p class="product-desc">
-                향 : 토스트, 스모키, 넛티<br>
-                미 : 굿 밸런스<br>
-                바디 : 중 바디<br>
-                로스터 추천 : 드립 커피, 콜드브루.
-            </p>
+          <img src="images/guate.png" alt="과테말라">
+          <h2>과테말라 SHB</h2>
+          <p class="product-desc">향 : 토스트, 스모키, 넛티<br>미 : 굿 밸런스<br>바디 : 중 바디<br>로스터 추천 : 드립 커피, 콜드브루</p>
         </div>
         <div class="product-card">
-            <img src="images/brazil.png" alt="브라질">
-            <h2>브라질 옐로우 버번</h2>
-            <p class="product-desc">
-                향 : 브라운 슈가, 헤이즐넛<br>
-                미 : 굿 밸런스<br>
-                바디 : 중 바디<br>
-                로스터 추천 : .드립 커피, 콜드브루
-            </p>
+          <img src="images/brazil.png" alt="브라질">
+          <h2>브라질 옐로우 버번</h2>
+          <p class="product-desc">향 : 브라운 슈가, 헤이즐넛<br>미 : 굿 밸런스<br>바디 : 중 바디<br>로스터 추천 : 드립 커피, 콜드브루</p>
         </div>
       </div>
     </section>
 
-    <!-- Specialty Coffee Bags -->
+    <!-- 스페셜티 커피백 -->
     <section id="special" class="tab-content">
+      <!-- 설명 문구 추가 시작 -->
+      <p class="page-intro" style="margin-top: 32px;">
+        즉석에서 간단하게 우려도 바리스타가 만든 것 같은 커피를 맛볼 수 있습니다.<br>
+        뜨거운 물에 1분 이상만 우리면 커피 향을 충만하게 즐길 수 있습니다.
+      </p>
+      <!-- 설명 문구 추가 끝 -->
+
       <div class="product-grid">
-          <div class="product-card">
-              <img src="images/ethio_bag.jpg" alt="에티오피아 커피백">
-                  <h2>에티오피아 커피백</h2>
-              <p>
-                  향 : 자스민의 꽃향과 살구의 과일향<br>
-                  미 : 강한 신맛, 굿 밸런스<br>
-                  바디 : 중 바디<br>
-                  커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.
-              </p>
-          </div>
-          <div class="product-card">
-              <img src="images/kenya_bag.jpg" alt="케냐 커피백">
-              <h2>케냐 커피백</h2>
-              <p>
-                  향 : 좋은 당밀과 카라멜 향<br>
-                  미 : 블랙 커런트의 약한 신맛, 굿 밸런스<br>
-                  바디 : 중 바디<br>
-                  커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.
-              </p>
-          </div>
-          <div class="product-card">
-              <img src="images/guate_bag.jpg" alt="과테말라 커피백">
-              <h2>과테말라 커피백</h2>
-              <p>
-                  향 : 아몬드와 호두의 넛티한 향<br>
-                  미 : 굿 밸런스<br>
-                  바디 : 중 바디<br>
-                  커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.
-              </p>
-          </div>
+        <div class="product-card">
+          <img src="images/ethio_bag.jpg" alt="에티오피아 커피백">
+          <h2>에티오피아 커피백</h2>
+          <p>향 : 자스민의 꽃향과 살구의 과일향<br>미 : 강한 신맛, 굿 밸런스<br>바디 : 중 바디<br>커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/kenya_bag.jpg" alt="케냐 커피백">
+          <h2>케냐 커피백</h2>
+          <p>향 : 좋은 당밀과 카라멜 향<br>미 : 블랙 커런트의 약한 신맛, 굿 밸런스<br>바디 : 중 바디<br>커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/guate_bag.jpg" alt="과테말라 커피백">
+          <h2>과테말라 커피백</h2>
+          <p>향 : 아몬드와 호두의 넛티한 향<br>미 : 굿 밸런스<br>바디 : 중 바디<br>커피백 특징 : 각각의 커피백은 향, 미 보존을 위하여 질소 포장이 되어있습니다.</p>
+        </div>
         <div class="product-card">
           <img src="images/coffeebagset.jpg" alt="커피백 세트">
           <h2>커피백 세트</h2>
@@ -234,7 +204,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
@@ -244,9 +213,9 @@
   <script>
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
         document.getElementById(btn.dataset.tab).classList.add('active');
       });
     });
