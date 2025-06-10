@@ -86,6 +86,7 @@ nav a.active {
   height: 60vh;                        /* 뷰포트 높이 기준 */
   min-height: 300px;                   /* 최소 높이 */
   margin-top: 80px;                    /* header 높이만큼 여유 */
+  margin-bottom: 50px;
 }
 .hero-slider .swiper-slide img {
   width: 100%;
