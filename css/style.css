@@ -274,7 +274,7 @@ nav a.active {
 .about-section p, .about-section ol {
     text-align: left; /* 텍스트 왼쪽 정렬 유지 */
     margin-bottom: 15px;
-    font-size: 1.5em; /* 폰트 크기 약간 키움 */
+    font-size: 1.3em; /* 폰트 크기 약간 키움 */
     color: #555;
     padding-left: 20px; /* 여기서 텍스트를 20px 오른쪽으로 이동 */
 }
