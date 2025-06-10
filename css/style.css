@@ -1,202 +1,205 @@
 /* ========== BASIC RESET & TYPOGRAPHY ========== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  /* 레이아웃 예측 가능하게 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 레이아웃 예측 가능하게 */
 }
 body {
-  font-family: 'Noto Sans KR', sans-serif;  /* 본문 전체 폰트 */
-  color: #333;                          /* 기본 텍스트 색상 */
-  line-height: 1.6;                    /* 가독성 확보 */
+    font-family: 'Noto Sans KR', sans-serif; /* 본문 전체 폰트 */
+    color: #333; /* 기본 텍스트 색상 */
+    line-height: 1.6; /* 가독성 확보 */
 }
 a {
-  color: inherit;                       /* 링크 색상은 부모 상속 */
-  text-decoration: none;               /* 밑줄 제거 */
+    color: inherit; /* 링크 색상은 부모 상속 */
+    text-decoration: none; /* 밑줄 제거 */
 }
 ul {
-  list-style: none;                    /* 기본 불릿 제거 */
+    list-style: none; /* 기본 불릿 제거 */
 }
 
 /* ========== HEADER & NAVIGATION ========== */
 header {
-  display: flex;                        /* 로고 + 메뉴 배치 */
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;                  /* 좌우 여백 */
-  background: #fff;
-  position: fixed;                      /* 화면 상단 고정 */
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex; /* 로고 + 메뉴 배치 */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px; /* 좌우 여백 */
+    background: #fff;
+    position: fixed; /* 화면 상단 고정 */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 header .logo img {
-  height: 50px;                        /* 로고 높이 */
+    height: 50px; /* 로고 높이 */
 }
 nav {
-  position: relative;
+    position: relative;
 }
 nav ul {
-  display: flex;                       /* 가로 메뉴 */
-  gap: 2rem;                           /* 메뉴 간격 */
+    display: flex; /* 가로 메뉴 */
+    gap: 2rem; /* 메뉴 간격 */
 }
 nav ul.active {
-  display: block;                      /* 모바일: 토글 시 보여주기 */
+    display: block; /* 모바일: 토글 시 보여주기 */
 }
 nav li a {
-  font-size: 1rem;                     /* 메뉴 텍스트 크기 */
-  font-weight: 500;                    /* 메뉴 텍스트 굵기 */
+    font-size: 1rem; /* 메뉴 텍스트 크기 */
+    font-weight: 500; /* 메뉴 텍스트 굵기 */
 }
 .hamburger {
-  display: none;                       /* 기본 숨김 (데스크탑) */
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+    display: none; /* 기본 숨김 (데스크탑) */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;                    /* 모바일 햄버거 표시 */
-  }
-  nav ul {
-    display: none;                     /* 모바일 기본 숨김 */
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    right: 0;
-    top: 60px;
-    width: 200px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
+    .hamburger {
+        display: block; /* 모바일 햄버거 표시 */
+    }
+    nav ul {
+        display: none; /* 모바일 기본 숨김 */
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 200px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    nav ul.active { /* 모바일에서 햄버거 메뉴 활성화 시 */
+        display: flex; /* flex로 변경하여 세로 정렬 */
+    }
 }
 
 nav a {
-  color: #333;                         /* 메뉴 기본 색상 */
-  font-weight: 500;
-  font-size: 1rem;
+    color: #333; /* 메뉴 기본 색상 */
+    font-weight: 500;
+    font-size: 1rem;
 }
 nav a.active {
-  text-decoration: underline;          /* 활성 메뉴 표시: 밑줄 */
+    text-decoration: underline; /* 활성 메뉴 표시: 밑줄 */
 }
 
 /* ========== HERO SLIDER ========== */
 .hero-slider {
-  position: relative;
-  width: 100%;
-  height: 60vh;                        /* 뷰포트 높이 기준 */
-  min-height: 300px;                   /* 최소 높이 */
-  margin-top: 80px;                    /* header 높이만큼 여유 */
-  margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 60vh; /* 뷰포트 높이 기준 */
+    min-height: 300px; /* 최소 높이 */
+    margin-top: 80px; /* header 높이만큼 여유 */
+    margin-bottom: 50px;
 }
 .hero-slider .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;                   /* 비율 유지 채우기 */
-  object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비율 유지 채우기 */
+    object-position: center;
 }
 .hero-slider .slide-caption {
-  position: absolute;
-  bottom: 20%;
-  left: 10%;
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .hero-slider .slide-caption h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5em;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
 }
 .hero-slider .slide-caption .btn {
-  background: #333;
-  color: #fff;
-  padding: 0.6em 1.2em;
-  border-radius: 4px;
+    background: #333;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
 }
 
 /* ========== SHOP GRID (추천 원두) ========== */
 .shop-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
 .shop-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
 }
 .shop-card img {
-  width: 70%;
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 1rem;
+    width: 70%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 1rem;
 }
 .shop-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 .shop-card p {
-  font-size: 0.9rem;
-  color: #555;
+    font-size: 0.9rem;
+    color: #555;
 }
 .shop-card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background: #333;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 6px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
 }
 
 /* ========== TABS (제품소개) ========== */
 .tab-content {
-  display: none;
-  margin-top: 40px;                    /* 탭과 콘텐츠 사이 여유 */
+    display: none;
+    margin-top: 40px; /* 탭과 콘텐츠 사이 여유 */
 }
 .tab-content.active {
-  display: block;
+    display: block;
 }
 .tab-btn {
-  padding: 0.6em 1.2em;
-  border: none;
-  background: #f0f0f0;
-  cursor: pointer;
-  margin-right: 8px;
+    padding: 0.6em 1.2em;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    margin-right: 8px;
 }
 .tab-btn.active {
-  background: #333;
-  color: #fff;
+    background: #333;
+    color: #fff;
 }
 
 /* ========== PRODUCT CARD IMAGE BG (추가 스타일) ========== */
 .product-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 12px;
-  background-color: #9ac0cd;           /* 이미지 배경색 */
-  padding: 16px;                       /* 이미지 여백 */
-  border-radius: 8px;                  /* 모서리 둥글게 */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    background-color: #9ac0cd; /* 이미지 배경색 */
+    padding: 16px; /* 이미지 여백 */
+    border-radius: 8px; /* 모서리 둥글게 */
 }
 /* ==========왼쪽 정렬 ========== */
 .product-desc {
-  text-align: left;
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
 }
 
 .product-desc strong {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 /* ==========자간 ========== */
 .custom-spacing {
-  letter-spacing: -0.05em;
+    letter-spacing: -0.05em;
 }
 
-page-hero {
+.page-hero { /* 오타 수정: page-hero로 변경 */
     position: relative;
     width: 100%;
     height: 300px;
@@ -206,32 +209,136 @@ page-hero {
     justify-content: center; /* 수평 중앙 정렬 */
 }
 
-    page-hero .hero-text {
-        color: #fff;
-        text-align: center;
-        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-        background: rgba(0, 0, 0, 0.4);
-        padding: 20px 30px;
-        border-radius: 12px;
-    }
+.page-hero .hero-text { /* 오타 수정: page-hero로 변경 */
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 12px;
+}
 
 .buy-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #333;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    background: #333;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 .buy-btn:hover {
-  background: #555;
+    background: #555;
 }
 
-.index-text {
-  padding-left: 24px;  /* 왼쪽 여백 추가 */
-  text-align: left;
-  line-height: 1.7;
+/* .index-text는 이제 사용하지 않고, .about-section 내부에서 직접 조정 */
+/* .index-text {
+    padding-left: 24px;
+    text-align: left;
+    line-height: 1.7;
+} */
+
+
+/* ============================================================== */
+/* 아래는 레이아웃 중앙 정렬 및 여백 조정을 위한 추가/수정된 CSS */
+/* ============================================================== */
+
+/* 메인 컨텐츠 영역의 최대 너비 설정 및 가운데 정렬 */
+.about-container {
+    max-width: 1000px; /* 전체 컨텐츠의 최대 너비 */
+    margin: 40px auto; /* 상하 40px, 좌우 자동 (가운데 정렬) */
+    padding: 0 20px; /* 좌우 내부 여백 추가: 사이드 바에 붙지 않도록 */
 }
 
+/* 각 섹션의 내부 여백 및 정렬 */
+.about-section {
+    padding: 40px 0; /* 상하 여백 추가 */
+    border-bottom: 1px solid #eee; /* 섹션 구분선 */
+    margin-bottom: 20px;
+}
+
+.about-section:last-child {
+    border-bottom: none; /* 마지막 섹션은 구분선 없음 */
+}
+
+.about-section h2 {
+    text-align: center; /* 제목 가운데 정렬 */
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* 모든 p 태그와 ol 태그에 왼쪽 여백을 주어 들여쓰기 */
+.about-section p, .about-section ol {
+    text-align: left; /* 텍스트 왼쪽 정렬 유지 */
+    margin-bottom: 15px;
+    font-size: 1.1em; /* 폰트 크기 약간 키움 */
+    color: #555;
+    padding-left: 20px; /* 여기서 텍스트를 20px 오른쪽으로 이동 */
+}
+
+.about-section ol {
+    padding-left: 45px; /* 리스트 들여쓰기 조정 */
+}
+
+/* 대표자 섹션 (이미지 + 텍스트) */
+.about-flex {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 40px; /* 이미지와 텍스트 간 간격 */
+    flex-wrap: wrap; /* 작은 화면에서 줄바꿈 */
+    justify-content: center; /* 내부 요소들을 가운데 정렬 */
+}
+
+.about-flex img {
+    width: 200px; /* 이미지 고정 너비 (필요에 따라 조절) */
+    height: auto;
+    border-radius: 8px; /* 이미지 모서리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-flex .about-text {
+    flex: 1; /* 남은 공간을 채우도록 함 */
+    min-width: 300px; /* 텍스트 영역 최소 너비 */
+}
+
+.about-flex .about-text h2 {
+    text-align: left; /* 대표자 제목은 왼쪽 정렬 */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* 기존 hero-slider margin-bottom 중복 제거를 위해 조정 */
+.hero-slider {
+    /* 기존 스타일 유지 */
+    margin-bottom: 50px; /* style.css에 이미 있으므로 중복X, 다만 필요에 따라 조정 */
+}
+
+
+/* 모바일 반응형 추가 조정 */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px; /* 모바일 헤더 패딩 조정 */
+    }
+    .hero-slider .slide-caption h2 {
+        font-size: 1.8em; /* 모바일에서 슬라이드 캡션 폰트 크기 조정 */
+    }
+    .about-container {
+        padding: 0 15px; /* 모바일에서 컨테이너 좌우 여백 줄임 */
+    }
+    .about-flex {
+        flex-direction: column; /* 이미지와 텍스트를 세로로 정렬 */
+        align-items: center;
+        gap: 20px; /* 모바일에서 간격 줄임 */
+    }
+    .about-flex img {
+        width: 150px; /* 모바일에서 이미지 크기 조정 */
+    }
+    .about-section p, .about-section ol {
+        padding-left: 10px; /* 모바일에서 텍스트 좌측 여백 줄임 */
+    }
+    .about-section ol {
+        padding-left: 30px; /* 모바일에서 리스트 들여쓰기 줄임 */
+    }
+}
