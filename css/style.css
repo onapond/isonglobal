@@ -256,7 +256,7 @@ nav a.active {
     padding: 40px 0; /* 상하 여백 추가 */
     border-bottom: 1px solid #eee; /* 섹션 구분선 */
     margin-bottom: 20px;
-    font-size: 18px; /* about-section 내의 기본 폰트 크기를 18px로 설정 */
+  /*   font-size: 18px; about-section 내의 기본 폰트 크기를 18px로 설정 */
 }
 
 .about-section:last-child {
@@ -274,7 +274,7 @@ nav a.active {
 .about-section p, .about-section ol {
     text-align: left; /* 텍스트 왼쪽 정렬 유지 */
     margin-bottom: 15px;
-    font-size: 1.1em; /* 폰트 크기 약간 키움 */
+    font-size: 1.3em; /* 폰트 크기 약간 키움 */
     color: #555;
     padding-left: 20px; /* 여기서 텍스트를 20px 오른쪽으로 이동 */
 }
