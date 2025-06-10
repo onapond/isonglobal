@@ -227,3 +227,10 @@ page-hero {
 .buy-btn:hover {
   background: #555;
 }
+
+.index-text {
+  padding-left: 24px;  /* 왼쪽 여백 추가 */
+  text-align: left;
+  line-height: 1.7;
+}
+
