@@ -47,6 +47,11 @@ nav li a {
     font-size: 1rem; /* 메뉴 텍스트 크기 */
     font-weight: 500; /* 메뉴 텍스트 굵기 */
 }
+<style>
+  .my-paragraph {
+    margin-left: 20px; /* 왼쪽에 20px 여백 추가 */
+    padding-right: 10px; /* 오른쪽에 10px 안쪽 여백 추가 */
+  }
 .hamburger {
     display: none; /* 기본 숨김 (데스크탑) */
     background: none;
