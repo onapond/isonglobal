@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>교육 컨설팅 | 이송글로벌</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* 트레이닝 페이지 스타일 */
+        .training-hero {
+            background: url('images/training-banner.png') center/cover no-repeat; /* 배너 이미지 필요 */
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+        .training-hero h1 {
+            font-size: 2.5rem;
+        }
+        .training-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .training-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .class-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 클래스 항목 크기 조절 */
+            gap: 30px;
+        }
+        .class-item {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .class-item:hover {
+            transform: translateY(-5px);
+        }
+        .class-item img {
+            width: 100%;
+            height: 200px; /* 이미지 높이 고정 */
+            object-fit: cover; /* 이미지가 잘리지 않고 채워지도록 */
+            border-bottom: 1px solid #eee;
+        }
+        .class-item-content {
+            padding: 20px;
+        }
+        .class-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .class-item p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* New Tech 텍스트 스타일 (style.css로 옮기는 것을 권장) */
+        .header-new-tech {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-right: 20px;
+        }
+        header {
+            justify-content: space-between;
+        }
+        @media (max-width: 768px) {
+            .header-new-tech {
+                font-size: 0.9rem;
+                margin-right: 10px;
+            }
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            header .logo {
+                margin-right: auto;
+            }
+            .class-grid {
+                grid-template-columns: 1fr; /* 모바일에서 한 줄에 하나씩 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="이송글로벌 로고" />
+            </a>
+        </div>
+        <div class="header-new-tech">New Tech</div>
+        <nav>
+            <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="products.html">제품 소개</a></li>
+                <li><a href="traning.html">교육 컨설팅</a></li>
+                <li><a href="blog.html">케이터링</a></li>
+                <li><a href="contact.html">문의</a></li>
+                <li><a href="b2b.html">B2B</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="training-hero">
+        <h1>교육 컨설팅</h1>
+    </section>
+
+    <main class="training-section">
+        <h2>이송글로벌 교육 프로그램</h2>
+        <div class="class-grid">
+            <div class="class-item">
+                <img src="images/sca-barista.png" alt="SCA 바리스타 교육" />
+                <div class="class-item-content">
+                    <h3>SCA 바리스타, 브루잉, 로스팅 교육</h3>
+                    <p>세계 스페셜티 커피 협회(SCA)의 공인된 교육 과정을 통해 전문 바리스타, 브루잉 마스터, 로스터로 성장할 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="class-item">
+                <img src="images/coffieology.png" alt="Coffieology 교육" />
+                <div class="class-item-content">
+                    <h3>Coffieology 교육</h3>
+                    <p>커피의 과학과 예술을 깊이 탐구하는 코피올로지 교육으로, 커피에 대한 심층적인 이해를 돕습니다.</p>
+                </div>
+            </div>
+            <div class="class-item">
+                <img src="images/konditorei.png" alt="Konditorei (독일 베이커리) 클래스" />
+                <div class="class-item-content">
+                    <h3>Konditorei (독일 베이커리) 클래스</h3>
+                    <p>독일 전통 베이킹 기술과 레시피를 배우는 콘디토라이 클래스에서 정통 유럽 베이커리의 진수를 경험하세요.</p>
+                </div>
+            </div>
+            <div class="class-item">
+                <img src="images/one-day-class.png" alt="One Day 클래스 (커피, 베이커리)" />
+                <div class="class-item-content">
+                    <h3>One Day 클래스 (커피, 베이커리)</h3>
+                    <p>커피 추출의 기본부터 간단한 베이킹까지, 짧은 시간 안에 핵심을 배우는 흥미로운 원데이 클래스입니다.</p>
+                </div>
+            </div>
+            <div class="class-item">
+                <img src="images/store-barista.png" alt="매장 바리스타 교육" />
+                <div class="class-item-content">
+                    <h3>매장 바리스타 교육</h3>
+                    <p>실제 매장 운영에 필요한 바리스타 기술, 고객 서비스, 위생 관리 등 실무 중심의 교육을 제공합니다.</p>
+                </div>
+            </div>
+            <div class="class-item">
+                <img src="images/cafe-consulting.png" alt="카페 메뉴 & 운영 컨설팅" />
+                <div class="class-item-content">
+                    <h3>카페 메뉴 & 운영 컨설팅</h3>
+                    <p>성공적인 카페 창업 및 운영을 위한 맞춤형 메뉴 개발, 효율적인 공간 활용, 마케팅 전략 등 전반적인 컨설팅을 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p style="text-align:center; padding:20px;">© 2025 Isong Global Co., Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
