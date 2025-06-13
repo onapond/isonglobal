@@ -178,6 +178,16 @@ nav a.active {
 }
 
 /* ========== PRODUCT CARD IMAGE BG (추가 스타일) ========== */
+
+.product-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* 최소 너비 조정 */
+ gap: 24px;
+ margin: 30px auto;
+ max-width: 1200px;
+ padding: 0 16px;
+}
+
 .product-card img {
     width: 100%;
     height: auto;
