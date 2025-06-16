@@ -79,4 +79,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 아폴로 이미지 호버 효과
+    const apolloImage = document.getElementById('apollo-image');
+    if (apolloImage) {
+        // 마우스가 이미지 위로 올라갔을 때
+        apolloImage.addEventListener('mouseover', () => {
+            const hoverSrc = apolloImage.dataset.hoverSrc;
+            if (hoverSrc) {
+                apolloImage.src = hoverSrc;
+            }
+        });
+
+        // 마우스가 이미지 밖으로 나갔을 때
+        apolloImage.addEventListener('mouseout', () => {
+            const originalSrc = apolloImage.dataset.originalSrc;
+            if (originalSrc) {
+                apolloImage.src = originalSrc;
+            }
+        });
+    }
 });
