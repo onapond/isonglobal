@@ -63,29 +63,7 @@
             color: #666;
             line-height: 1.6;
         }
-
-        /* New Tech 텍스트 스타일 (style.css로 옮기는 것을 권장) */
-        .header-new-tech {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #007bff;
-            margin-right: 20px;
-        }
-        header {
-            justify-content: space-between;
-        }
         @media (max-width: 768px) {
-            .header-new-tech {
-                font-size: 0.9rem;
-                margin-right: 10px;
-            }
-            header {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            header .logo {
-                margin-right: auto;
-            }
             .class-grid {
                 grid-template-columns: 1fr; /* 모바일에서 한 줄에 하나씩 */
             }
@@ -153,7 +131,7 @@
         </div>
         <div class="header-new-tech">New Tech</div>
         <nav>
-            <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+            <button class="hamburger">☰</button>
             <ul>
                 <li><a href="index.html">홈</a></li>
                 <li><a href="products.html">제품 소개</a></li>
@@ -254,5 +232,7 @@
     <footer>
         <p style="text-align:center; padding:20px;">© 2025 Isong Global Co., Ltd. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
