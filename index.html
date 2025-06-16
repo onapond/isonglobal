@@ -1,252 +1,165 @@
-<!DOCTYPE html>
+<!DOCTYPE html>More actions
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>제품소개 | 이송글로벌</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이송글로벌 로스터리</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>Add commentMore actions
+        /* New Tech 텍스트 스타일 추가 (style.css로 옮기는 것을 권장) */
+        .header-new-tech {
+            font-size: 1.1rem; /* 폰트 크기 조정 */
+            font-weight: bold;
+         color: #007bff; /* 강조 색상 */Add commentMore actions
+            margin-right: 20px; /* 로고와 메뉴 사이 간격 조절 */
+            /* 필요에 따라 다른 스타일 추가 가능 (예: background-color, padding, border-radius 등) */
+        }
+
+        /* 헤더 flex 속성 조절 (New Tech 추가 위치를 위해) */
+        header {
+            justify-content: space-between; /* 기존 유지 */
+            /* 새로운 요소 추가로 인해 중앙 정렬 방식이 변경될 수 있으니,
+               필요에 따라 justify-content: flex-start; gap: 30px; 등 조정 가능 */
+        }
+   @media (max-width: 768px) {
+    .header-new-tech {Add commentMore actions
+                font-size: 0.9rem; /* 모바일에서 폰트 크기 조정 */
+                margin-right: 10px;
+            }
+            /* 모바일에서 header의 정렬 방식 조정이 필요할 수 있습니다. */
+            header {
+                flex-wrap: wrap; /* 요소가 너무 많으면 줄바꿈 */
+                justify-content: center; /* 필요시 중앙 정렬 */
+            }
+            header .logo { /* 로고가 중앙에 오도록 */
+                 margin-right: auto;
+            }
+        }
+    </style>
+</head>Add commentMore actions
 <body>
-  <header>
-    <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="이송글로벌 로고" width="150"></a></div>
-    <div class="header-new-tech">New Tech</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">홈</a></li>
-        <li><a href="products.html" class="active">제품 소개</a></li>
-        <li><a href="traning.html">교육 컨설팅</a></li>
-        <li><a href="catering.html">케이터링</a></li>
-        <li><a href="contact.html">문의</a></li>
-        <li><a href="b2b.html">B2B</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header>Add commentMore actions
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="이송글로벌 로고">
+            </a>
+        </div>
+   Add commentMore actions
+        <div class="header-new-tech">New Tech</div>
 
-  <section class="page-hero">
-    <h1>우리의 제품을 만나보세요 <br />good coffee makes a good day</h1>
-  </section>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul>
+   <li><a href="index.html" class="active">홈</a></li>Add commentMore actions
+                <li><a href="products.html">제품 소개</a></li>
+                <li><a href="traning.html">교육 컨설팅</a></li>
+                <li><a href="catering.html">케이터링</a></li>
+                <li><a href="contact.html">문의</a></li>
+                <li><a href="b2b.html">B2B</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <p class="page-intro">
-    이송 글로벌은 SEAR(Sensitive Espresso Aroma Roasting) 테크닉에 의거하여 다양한 제품들을 생산하고 있습니다.<br/>
-    한 모금만 마셔도 고객이 다시 찾게 되는 품질의 커피를 만들고 있습니다.
-  </p>
+    <section class="hero-slider swiper-container"> <div class="swiper-wrapper"> <div class="swiper-slide"> <img src="images/slide1.png" alt="스페셜 블렌드 런칭"> <div class="slide-caption"> <h2>good coffee makes a good day <br> 스페셜 블렌드 런칭</h2>
+                    <a href="products.html" class="btn">자세히 보기</a> </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slide2.png" alt="싱글 오리진 신제품">
+                <div class="slide-caption">
+                    <h2>good coffee makes a good day <br> 싱글 오리진 신제품</h2>
+                    <a href="products.html" class="btn">구경하기</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slide3.png" alt="정기배송 혜택">
+                <div class="slide-caption">
+                    <h2>good coffee makes a good day <br>정기배송 혜택</h2>
+                    <a href="contact.html" class="btn">신청하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
 
-  <main>
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="blend">에스프레소 커피</button>
-      <button class="tab-btn" data-tab="single">싱글오리진 커피</button>
-      <button class="tab-btn" data-tab="special">스페셜티 커피백</button>
-    </div>
+    <main class="about-container">
+        <section class="about-section">
+            <h2>첨단 커피 로스팅 - 새로운 기술</h2>
+            <p>500년이 넘는 커피 문화의 역사 속에서, 저희는 로스팅 기술을 획기적으로 개선하는 데 성공했습니다.  이는 커피 문화를 한 단계 더 높은 수준으로 끌어올리고 맛의 새로운 품질을 제시하는 기술입니다. </p>
+            <p>저희는 이 혁신적인 기술을 <span class="highlight">'SEAR TECH (Sensitive Espresso - Aroma Roasting)™'</span>이라고 부르며, 이는 한국과 아시아에서 독보적인 기술입니다.  저희는 모든 원두가 동일한 양의 열을 받을 수 있도록 로스팅하며,  과도하거나 덜 로스팅되는 것을 방지하여 원두 하나하나를 완벽한 정도로 로스팅합니다. </p>
+            <p>저희 커피를 경험하는 고객과 소비자들은 특별한 품질과 풍부한 향에 매료됩니다.  저희 커피는 현재 한국 전역 100개 이상의 매장에서 만나볼 수 있습니다. </p>
+        </section>
 
-  <section id="blend" class="tab-content active">
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="product-image-wrapper">
-          <img src="images/apollo.png" alt="아폴로" data-hover="images/자산 1@4x.jpg">
-        </div>
-        <h2>아폴로</h2>
-        <p class="product-desc"><strong>블렌딩 :</strong> 과테말라, 콜롬비아 외</p>
-        <p class="product-desc"><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-        <p class="product-desc"><strong>향 :</strong> 풍부한 초콜렛과 카라멜 향</p>
-        <p class="product-desc"><strong>미 :</strong> 굿 밸런스</p>
-        <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-        <p class="product-desc"><strong>중량 :</strong> 500g, 1kg</p>
-        <p class="product-desc"><strong>로스터 추천 </strong> <br>
-        <span class="custom-spacing">후미가 깨끗하고 우아한 커피입니다.</span><br>
-        우리의 베스트 셀러입니다.</p>
-      </div>
-      <div class="product-card">
-        <div class="product-image-wrapper">
-          <img src="images/phoenix.png" alt="피닉스" data-hover="images/phoenix_label.png">
-        </div>
-        <h2>피닉스</h2>
-        <p class="product-desc"><strong>블렌딩 :</strong> 콜롬비아, 에티오피아 외</p>
-        <p class="product-desc"><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-        <p class="product-desc"><strong>향 :</strong> 구운 아몬드의 고소함</p>
-        <p class="product-desc"><strong>미 :</strong> 굿 밸런스</p>
-        <p class="product-desc"><strong>바디 :</strong> 중강 바디</p>
-        <p class="product-desc"><strong>중량 :</strong> 500g, 1kg</p>
-        <p class="product-desc"><strong>로스터 추천 </strong> <br>
-        <span class="custom-spacing">은은한 신맛과 다양성이 좋은 커피입니다. 우유/아이스크림과의 하모니가 엑셀렌트합니다.</span></p>
-      </div>
-      <div class="product-card">
-        <div class="product-image-wrapper">
-          <img src="images/venus.png" alt="베누스" data-hover="images/venus_label.png">
-        </div>
-        <h2>베누스</h2>
-        <p class="product-desc"><strong>블렌딩 :</strong> 에티오피아 100%</p>
-        <p class="product-desc"><strong>로스팅 :</strong> 중배전 (City)</p>
-        <p class="product-desc"><strong>향 :</strong> 발효된 과일향</p>
-        <p class="product-desc"><strong>미 :</strong> 묵직한 산미의 밸런스</p>
-        <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-        <p class="product-desc"><strong>중량 :</strong> 500g, 1kg</p>
-        <p class="product-desc"><strong>로스터 추천 </strong> <br>
-        <span class="custom-spacing">에티오피아의 특유의 과일향과 꽃향이 어우러진 커피입니다. 짙은 향의 라떼를 즐길 수 있습니다.</span></p>
-      </div>
-      <div class="product-card">
-        <div class="product-image-wrapper">
-          <img src="images/ares.png" alt="아레스" data-hover="images/ares_label.png">
-        </div>
-        <h2>아레스</h2>
-        <p class="product-desc"><strong>블렌딩 :</strong> 브라질, 에티오피아 외</p>
-        <p class="product-desc"><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-        <p class="product-desc"><strong>향 :</strong> 비스켓, 토스트</p>
-        <p class="product-desc"><strong>미 :</strong> 브라운 슈가, 다양성</p>
-        <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-        <p class="product-desc"><strong>중량 :</strong> 500g, 1kg</p>
-        <p class="product-desc"><strong>로스터 추천 </strong> <br>
-        <span class="custom-spacing">대중적이면서도 풍부한 풍미를 지닌 커피입니다. 모두가 즐길 수 있는 커피입니다. </span></p>
-      </div>
-      <div class="product-card">
-        <div class="product-image-wrapper">
-          <img src="images/costom.png" alt="커스텀 원두" data-hover="images/costom_label.png">
-        </div>
-        <h2>커스텀</h2>
-        <p class="product-desc"><strong>블렌딩 :</strong> 당신이 원하는 블랜딩</p>
-        <p class="product-desc"><strong>로스팅 :</strong> 당신이 원하는 배전도</p>
-        <p class="product-desc"><strong>향 :</strong> 당신이 원하는 향</p>
-        <p class="product-desc"><strong>미 :</strong> 당신이 원하는 맛</p>
-        <p class="product-desc"><strong>바디 :</strong> 당신이 원하는 바디</p>
-        <p class="product-desc"><strong>중량 :</strong> 500g, 1kg</p>
-        <p class="product-desc"><strong>로스터 추천 </strong> <br>
-        <span class="custom-spacing">고객이 원하는대로 블랜딩하여 나만의 커피를 만들 수 있습니다. 고객 맞춤형 커피입니다.</span></p>
-      </div>
-    </div>
-  </section>
+        <section class="about-section">
+            <h2>고객과 커피숍을 지원하는 방법</h2>
+            <ul>
+                <li>합리적인 가격으로 우수한 커피 품질을 제공합니다. </li>
+                <li>추출 및 인증 교육(SCAE)을 제공합니다. </li>
+                <li>음료 메뉴를 제안해 드립니다. </li>
+                <li>인테리어 계획을 제안해 드립니다. </li>
+                <li>푸드 컨설팅을 제공합니다. </li>
+                <li>머신 전문 청소 및 살균 서비스를 제공합니다. </li>
+                <li>비상 바리스타 지원: 대기 바리스타를 통해 시간 단위로 지원을 제공합니다. </li>
+                <li>품질 + 서비스 + 환경 보호는 시장에서의 성공을 증대시킬 것입니다. </li>
+            </ul>
+        </section>
 
-    <section id="single" class="tab-content">
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/ethio.png" alt="에티오피아 코케허니" data-hover="images/ethio_label.png">
-          </div>
-          <h2>에티오피아 코케허니 G1</h2>
-          <p class="product-desc"><strong>향 :</strong> 발효된 살구, 복숭아향, 장미향</p>
-          <p class="product-desc"><strong>미 :</strong> 은은한 발효된 산미, 굿 밸런스</p>
-          <p class="product-desc"><strong>바디 :</strong> 중</p>
-          <p class="product-desc"><strong>중량 :</strong> 200g, 500g</p>
-          <p class="product-desc"><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/kenya.png" alt="케냐" data-hover="images/kenya_label.png">
-          </div>
-          <h2>케냐 AA</h2>
-          <p class="product-desc"><strong>향 :</strong> 다크 초콜릿, 카라멜</p>
-          <p class="product-desc"><strong>미 :</strong> 굿 밸런스</p>
-          <p class="product-desc"><strong>바디 :</strong> 강 바디</p>
-          <p class="product-desc"><strong>중량 :</strong> 200g, 500g</p>
-          <p class="product-desc"><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/guate.png" alt="과테말라" data-hover="images/guate_label.png">
-          </div>
-          <h2>과테말라 SHB</h2>
-          <p class="product-desc"><strong>향 :</strong> 토스트, 스모키, 넛티</p>
-          <p class="product-desc"><strong>미 :</strong> 굿 밸런스</p>
-          <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-          <p class="product-desc"><strong>중량 :</strong> 200g, 500g</p>
-          <p class="product-desc"><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/brazil.png" alt="브라질" data-hover="images/brazil_label.png">
-          </div>
-          <h2>브라질 옐로우 버번</h2>
-          <p class="product-desc"><strong>향 :</strong> 브라운 슈가, 헤이즐넛</p>
-          <p class="product-desc"><strong>미 :</strong> 굿 밸런스</p>
-          <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-          <p class="product-desc"><strong>중량 :</strong> 200g, 500g</p>
-          <p class="product-desc"><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-      </div>
-    </section>
+        <section class="about-section">
+            <h2>추가 품질 정보 및 더욱 건강한 커피</h2>
+            <p>하루 3~4잔의 커피는 건강에 좋은 것으로 알려져 있으며, 커피에는 항산화제와 카페인이 함유되어 있습니다.  SEAR 슬로우 로스팅 기술은 과도하게 로스팅되거나 덜 로스팅된 원두가 없도록 하여, 기존 로스팅 과정에서 일부 원두가 너무 어둡게 되어 발생할 수 있는 불필요한 물질 생성을 방지합니다.  쓴맛 성분이나 탄 맛은 형성되지 않습니다.  또한, 원두 선별부터 생두 배송까지 전체 생산 과정에서 품질 관리를 수행하며,  고객에게 항상 동일하면서도 우수한 품질의 커피를 제공하기 위해 각 로스팅 배치별로 관능 테스트를 실시합니다. </p>
+        </section>
 
-    <section id="special" class="tab-content">
-      <p class="page-intro" style="margin-top: 32px;">
-        즉석에서 간단하게 우려도 바리스타가 만든 것 같은 커피를 맛볼 수 있습니다.<br>
-        뜨거운 물에 1분 이상만 우리면 커피 향을 충만하게 즐길 수 있습니다.
-      </p>
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/ethio_bag.jpg" alt="에티오피아 커피백" data-hover="images/ethio_bag_label.jpg">
-          </div>
-          <h2>에티오피아 커피백</h2>
-          <p class="product-desc"><strong>향 :</strong> 자스민의 꽃향과 살구의 과일향</p>
-          <p class="product-desc"><strong>미 :</strong> 강한 신맛, 굿 밸런스</p>
-          <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-          <p class="product-desc"><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/kenya_bag.jpg" alt="케냐 커피백" data-hover="images/kenya_bag_label.jpg">
-          </div>
-          <h2>케냐 커피백</h2>
-          <p class="product-desc"><strong>향 :</strong> 좋은 당밀과 카라멜 향</p>
-          <p class="product-desc"><strong>미 :</strong> 블랙 커런트의 신맛, 굿 밸런스</p>
-          <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-          <p class="product-desc"><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/guate_bag.jpg" alt="과테말라 커피백" data-hover="images/guate_bag_label.jpg">
-          </div>
-          <h2>과테말라 커피백</h2>
-          <p class="product-desc"><strong>향 :</strong> 아몬드와 호두의 넛티한 향</p>
-          <p class="product-desc"><strong>미 :</strong> 굿 밸런스</p>
-          <p class="product-desc"><strong>바디 :</strong> 중 바디</p>
-          <p class="product-desc"><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-        <div class="product-card">
-          <div class="product-image-wrapper">
-            <img src="images/coffeebagset.jpg" alt="커피백 세트" data-hover="images/coffeebagset_label.jpg">
-          </div>
-          <h2>커피백 세트</h2>
-          <p class="product-desc">이송글로벌의 좋은 커피백을 좋은 가격에 즐길 수 있는 커피백 세트</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-      </div>
-    </section>
-  </main>
+        <section class="about-section about-flex">
+            <h2>대표 소개</h2>
+            <img src="images/ceo.jpg" alt="대표자 이송" />
+            <div class="about-text">
+                <p>
+                    이송 대표는 30년 이상의 커피 교육 경험과 25년 이상의 로스팅 경험을 가진 대한민국 커피 산업의 선구자입니다.  그는 국제 커피 대회 심사 및 인증, 커피 교육 활동 등 다양한 커피 문화 발전에 기여해 왔으며,  SPC, 웅진식품, 이랜드 등 기업 활동에도 활발히 참여했습니다. 
+                </p>
+                <ul>
+                    <li>前 WBC KOREA 코디네이터 및 대회 의장 </li>
+                    <li>WBC 아시아 최초 심사위원 </li>
+                    <li>前 SCAE KOREA 코디네이터 </li>
+                    <li>現 SCAE 커피 인증 시험 감독관 </li>
+                    <li>現 Coffeeology 아시아 지역 인증관 </li>
+                </ul>
+            </div>
+        </section>
 
-  <footer>
-    <p>© 2025 Isong Global Co., Ltd. All rights reserved.</p>
-  </footer>
+        <section class="about-section">
+            <h2>이송글로벌의 커피 전문성</h2>
+            <p>
+                저희 커피는 단순히 맛있는 것을 넘어, 건강하고 지속 가능한 가치를 담고 있습니다.  이송글로벌이 커피를 만들 때 고수하는 두 가지 원칙은 다음과 같습니다. 
+            </p>
+            <ol>
+                <li><strong>건강한 커피 만들기</strong><br/> 슬로우 로스팅 기법을 통해 로스팅 과정에서 발생되는 유해 성분을 줄이고 쓴맛과 탄맛을 절제하여 깔끔하고 건강한 맛을 만들어냅니다.</li>
+                <li><strong>일관된 품질 유지</strong><br /> 생두 선별에서 납품까지의 전생산 과정에서 QC를 행하며 각 배치별 센서리 테스트를 거쳐 항상 같은 품질의 커피를 고객에게 제공하려 노력합니다.</li>
+            </ol>
+        </section>
+    </main>
 
-  <script>
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-        document.getElementById(btn.dataset.tab).classList.add('active');
-      });
-    });
+    <footer> <p>© 2025 Isong Global Co., Ltd. All rights reserved.</p>
+    </footer>
 
-     // 이미지 롤오버 스크립트
-     document.querySelectorAll('.product-card').forEach(card => {
-         const img = card.querySelector('img');
-         const originalSrc = img.src;
-         const hoverSrc = img.dataset.hover || originalSrc;
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // .hero-slider 초기화: loop, autoplay, pagination, navigation 설정
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false }, /* 사용자 상호작용 후에도 자동 재생 지속 */
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+        });
 
-         if (hoverSrc !== originalSrc) {
-             const preLoadImg = new Image();
-             preLoadImg.src = hoverSrc; // hover 이미지 미리 로드
-         }
-
-         card.addEventListener('mouseenter', () => {
-             img.src = hoverSrc;
-         });
-
-         card.addEventListener('mouseleave', () => {
-             img.src = originalSrc;
-         });
-     });
-  </script>
+        // .hamburger 토글 로직: 모바일 메뉴 열고 닫기
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
