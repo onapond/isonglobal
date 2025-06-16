@@ -51,12 +51,17 @@ nav ul {
     display: flex; /* 가로 메뉴 */
     gap: 2rem; /* 메뉴 간격 */
 }
+/* 모바일 햄버거 메뉴 토글 시 활성화 */
 nav ul.active {
     display: block; /* 모바일: 토글 시 보여주기 */
 }
 nav li a {
     font-size: 1rem; /* 메뉴 텍스트 크기 */
     font-weight: 500; /* 메뉴 텍스트 굵기 */
+    color: #333; /* 메뉴 기본 색상 */
+}
+nav a.active {
+    text-decoration: underline; /* 활성 메뉴 표시: 밑줄 */
 }
 
 .hamburger {
@@ -76,12 +81,17 @@ nav li a {
         background: #fff;
         position: absolute;
         right: 0;
-        top: 60px;
+        top: 60px; /* 헤더 높이에 맞게 조정 */
         width: 200px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        padding: 10px 0; /* 메뉴 내부 패딩 */
     }
     nav ul.active { /* 모바일에서 햄버거 메뉴 활성화 시 */
         display: flex; /* flex로 변경하여 세로 정렬 */
+    }
+    nav ul li {
+        padding: 10px 20px; /* 메뉴 항목별 패딩 */
+        text-align: left;
     }
     header {
         padding: 15px 20px; /* 모바일 헤더 패딩 조정 */
@@ -107,169 +117,8 @@ nav li a {
     }
 }
 
-nav a {
-    color: #333; /* 메뉴 기본 색상 */
-    font-weight: 500;
-    font-size: 1rem;
-}
-nav a.active {
-    text-decoration: underline; /* 활성 메뉴 표시: 밑줄 */
-}
 
-/* ========== HERO SLIDER ========== */
-.hero-slider {
-    position: relative;
-    width: 100%;
-    height: 60vh; /* 뷰포트 높이 기준 */
-    min-height: 300px; /* 최소 높이 */
-    margin-top: 80px; /* header 높이만큼 여유 */
-    margin-bottom: 50px;
-}
-.hero-slider .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 비율 유지 채우기 */
-    object-position: center;
-}
-.hero-slider .slide-caption {
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-}
-.hero-slider .slide-caption h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5em;
-}
-.hero-slider .slide-caption .btn {
-    background: #333;
-    color: #fff;
-    padding: 0.6em 1.2em;
-    border-radius: 4px;
-}
-
-/* ========== SHOP GRID (추천 원두) ========== */
-.shop-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-}
-.shop-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    text-align: center;
-}
-.shop-card img {
-    width: 70%;
-    max-width: 180px;
-    height: auto;
-    margin-bottom: 1rem;
-}
-.shop-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-.shop-card p {
-    font-size: 0.9rem;
-    color: #555;
-}
-.shop-card a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    background: #333;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 6px;
-}
-
-/* ========== TABS (제품소개) ========== */
-.tab-content {
-    display: none;
-    margin-top: 40px; /* 탭과 콘텐츠 사이 여유 */
-}
-.tab-content.active {
-    display: block;
-}
-.tab-btn {
-    padding: 0.6em 1.2em;
-    border: none;
-    background: #f0f0f0;
-    cursor: pointer;
-    margin-right: 8px;
-}
-.tab-btn.active {
-    background: #333;
-    color: #fff;
-}
-
-/* ========== PRODUCT CARD IMAGE & Container Sizing ========== */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 최소 너비 조정, 220px로 변경 */
-    gap: 24px;
-    margin: 30px auto;
-    max-width: 1200px;
-    padding: 0 16px;
-}
-
-.product-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    overflow: hidden;
-    text-align: center;
-    padding: 16px;
-    display: flex; /* 내부 콘텐츠 정렬을 위해 flexbox 사용 */
-    flex-direction: column; /* 세로 정렬 */
-    justify-content: flex-start; /* 상단부터 채우기 */
-    align-items: center; /* 수평 가운데 정렬 */
-    height: 100%; /* 부모 그리드 아이템의 높이를 채우도록 */
-}
-
-/* 이미지 컨테이너 역할을 하는 div 추가 (크기 유지를 위해) */
-.product-image-wrapper {
-    width: 100%; /* 부모 product-card의 너비만큼 */
-    padding-top: 100%; /* 1:1 비율 (정사각형) 유지, 이미지 비율에 따라 조정 가능 */
-    position: relative;
-    margin-bottom: 12px;
-    background-color: #9ac0cd; /* 이미지 배경색 */
-    border-radius: 8px; /* 모서리 둥글게 */
-}
-
-.product-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
-    padding: 16px; /* 이미지 내부 여백 */
-    transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
-}
-
-/* ==========왼쪽 정렬 ========== */
-.product-desc {
-    text-align: left;
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.5;
-    width: 100%; /* product-card 내에서 너비 100% 사용 */
-}
-
-.product-desc strong {
-    font-weight: 700;
-}
-
-/* ==========자간 ========== */
-.custom-spacing {
-    letter-spacing: -0.05em;
-}
-
-/* Page Hero Section (배너) */
+/* ========== PAGE HERO SECTION (배너) ========== */
 .page-hero {
     position: relative;
     width: 100%;
@@ -285,7 +134,6 @@ nav a.active {
     color: #fff;
     text-align: center;
     text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-    /* background: rgba(0, 0, 0, 0.4); */ /* 회색 배경 제거 */
     padding: 20px 30px;
     border-radius: 12px;
     font-size: 2.5rem;
@@ -303,20 +151,137 @@ nav a.active {
     width: 100%; /* 부모 요소의 전체 너비 차지 */
 }
 
+/* ========== TABS (제품소개) ========== */
+.tabs {
+    text-align: center;
+    margin-top: 40px;
+}
+.tab-btn {
+    padding: 0.6em 1.2em;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    margin-right: 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.tab-btn.active {
+    background: #333;
+    color: #fff;
+}
+.tab-btn:hover {
+    background: #ccc;
+}
+.tab-btn.active:hover {
+    background: #333; /* 활성 탭은 호버 시 색상 유지 */
+}
+
+.tab-content {
+    display: none;
+    margin-top: 40px; /* 탭과 콘텐츠 사이 여유 */
+}
+.tab-content.active {
+    display: block;
+}
+
+/* ========== PRODUCT CARD GRID ========== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 최소 너비 조정, 220px로 변경 */
+    gap: 24px;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 16px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    text-align: center; /* 카드 내부 모든 콘텐츠 중앙 정렬 */
+    padding: 16px;
+    display: flex; /* 내부 콘텐츠 정렬을 위해 flexbox 사용 */
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: flex-start; /* 상단부터 채우기 */
+    align-items: center; /* 수평 가운데 정렬 */
+    height: 100%; /* 부모 그리드 아이템의 높이를 채우도록 */
+}
+
+/* 이미지 컨테이너 역할을 하는 div 추가 (크기 유지를 위해) */
+.product-image-wrapper {
+    width: 100%; /* 부모 product-card의 너비만큼 */
+    padding-top: 100%; /* 1:1 비율 (정사각형) 유지, 이미지 비율에 따라 조정 가능 */
+    position: relative;
+    margin-bottom: 12px;
+    background-color: #9ac0cd; /* 이미지 배경색 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    overflow: hidden; /* 이미지가 튀어나오지 않도록 */
+}
+
+.product-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
+    padding: 16px; /* 이미지 내부 여백 */
+    transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.product-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* ========== 제품 설명 (왼쪽 정렬) ========== */
+.product-desc {
+    text-align: left; /* 이 부분만 왼쪽 정렬 */
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    width: 100%; /* product-card 내에서 너비 100% 사용 */
+    margin-bottom: 5px; /* 각 문단 아래 간격 */
+}
+
+.product-desc strong {
+    font-weight: 700;
+}
+
+/* ==========자간 ========== */
+.custom-spacing {
+    letter-spacing: -0.05em;
+}
+
 .buy-btn {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px; /* 버튼 위 여백 */
     background: #333;
     color: white;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+    transition: background 0.3s ease;
 }
 .buy-btn:hover {
     background: #555;
 }
 
+/* ========== Footer ========== */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f8f8;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 60px; /* 컨텐츠와 푸터 사이 간격 */
+}
 
 /* ============================================================== */
 /* 아래는 레이아웃 중앙 정렬 및 여백 조정을 위한 추가/수정된 CSS (about 페이지용으로 추정) */
