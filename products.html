@@ -331,4 +331,57 @@
        </div>
        <div class="product-card">
          <img src="images/guate_bag.jpg" alt="과테말라 커피백" data-hover="images/guate_bag_label.jpg" style="max-height: 200px;">
-         <h2>과테
+         <h2>과테말라 커피백</h2>
+         <p><strong>향 :</strong> 아몬드와 호두의 넛티한 향</p>
+         <p><strong>미 :</strong> 굿 밸런스</p>
+         <p><strong>바디 :</strong> 중 바디</p>
+         <p><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
+         <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
+       </div>
+       <div class="product-card">
+         <img src="images/coffeebagset.jpg" alt="커피백 세트" data-hover="images/coffeebagset_label.jpg" style="max-height: 200px;">
+         <h2>커피백 세트</h2>
+         <p>이송글로벌의 좋은 커피백을 좋은 가격에 즐길 수 있는 커피백 세트</p>
+         <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
+       </div>
+     </div>
+ </section>
+ </main>
+
+
+ <footer>
+   <p>© 2025 Isong Global Co., Ltd. All rights reserved.</p>
+ </footer>
+
+ <script>
+   document.querySelectorAll('.tab-btn').forEach(btn => {
+     btn.addEventListener('click', () => {
+       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+       btn.classList.add('active');
+       document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+       document.getElementById(btn.dataset.tab).classList.add('active');
+     });
+   });
+
+     // 이미지 롤오버 스크립트 추가
+     document.querySelectorAll('.product-card').forEach(card => {
+         const img = card.querySelector('img');
+         const originalSrc = img.src;
+         const hoverSrc = img.dataset.hover || originalSrc;
+
+         if (hoverSrc !== originalSrc) {
+             const preLoadImg = new Image();
+             preLoadImg.src = hoverSrc;
+         }
+
+         card.addEventListener('mouseenter', () => {
+             img.src = hoverSrc;
+         });
+
+         card.addEventListener('mouseleave', () => {
+             img.src = originalSrc;
+         });
+     });
+   </script>
+</body>
+</html>
