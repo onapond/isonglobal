@@ -414,4 +414,15 @@ footer {
     .about-flex {
         flex-direction: column; /* 이미지와 텍스트를 세로로 정렬 */
         align-items: center;
-        gap: 20px; /* 모바일에서 간
+        gap: 20px; /* 모바일에서 간격 줄임 */
+    }
+    .about-flex img {
+        width: 150px; /* 모바일에서 이미지 크기 조정 */
+    }
+    .about-section p, .about-section ol {
+        padding-left: 10px; /* 모바일에서 텍스트 좌측 여백 줄임 */
+    }
+    .about-section ol {
+        padding-left: 30px; /* 모바일에서 리스트 들여쓰기 줄임 */
+    }
+}
