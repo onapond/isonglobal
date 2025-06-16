@@ -21,7 +21,7 @@ ul {
 header {
     display: flex; /* 로고 + 메뉴 배치 */
     align-items: center;
-    justify-content: space-between; /* 로고, New Tech, 네비게이션을 양 끝으로 정렬 */
+    justify-content: space-between;
     padding: 20px 40px; /* 좌우 여백 */
     background: #fff;
     position: fixed; /* 화면 상단 고정 */
@@ -30,20 +30,9 @@ header {
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 header .logo img {
     height: 50px; /* 로고 높이 */
 }
-
-/* New Tech 텍스트 스타일 */
-.header-new-tech {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #007bff; /* 파란색 계열 */
-    margin-left: 20px; /* 로고와의 간격 */
-    margin-right: auto; /* New Tech 이후 요소(nav)를 오른쪽 끝으로 밀어냄 */
-}
-
 nav {
     position: relative;
 }
@@ -51,19 +40,18 @@ nav ul {
     display: flex; /* 가로 메뉴 */
     gap: 2rem; /* 메뉴 간격 */
 }
-/* 모바일 햄버거 메뉴 토글 시 활성화 */
 nav ul.active {
     display: block; /* 모바일: 토글 시 보여주기 */
 }
 nav li a {
     font-size: 1rem; /* 메뉴 텍스트 크기 */
     font-weight: 500; /* 메뉴 텍스트 굵기 */
-    color: #333; /* 메뉴 기본 색상 */
 }
-nav a.active {
-    text-decoration: underline; /* 활성 메뉴 표시: 밑줄 */
-}
-
+<style>
+  .my-paragraph {
+    margin-left: 20px; /* 왼쪽에 20px 여백 추가 */
+    padding-right: 10px; /* 오른쪽에 10px 안쪽 여백 추가 */
+  }
 .hamburger {
     display: none; /* 기본 숨김 (데스크탑) */
     background: none;
@@ -81,57 +69,32 @@ nav a.active {
         background: #fff;
         position: absolute;
         right: 0;
-        top: 60px; /* 헤더 높이에 맞게 조정 */
+        top: 60px;
         width: 200px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        padding: 10px 0; /* 메뉴 내부 패딩 */
     }
     nav ul.active { /* 모바일에서 햄버거 메뉴 활성화 시 */
         display: flex; /* flex로 변경하여 세로 정렬 */
     }
-    nav ul li {
-        padding: 10px 20px; /* 메뉴 항목별 패딩 */
-        text-align: left;
-    }
-    header {
-        padding: 15px 20px; /* 모바일 헤더 패딩 조정 */
-        flex-wrap: wrap; /* 요소들이 한 줄에 다 안 들어갈 경우 다음 줄로 넘어가도록 */
-        justify-content: space-between; /* 로고와 햄버거 버튼만 양 끝 정렬 */
-    }
-    header .logo {
-        margin-right: auto; /* 로고를 왼쪽으로 */
-    }
-    .header-new-tech {
-        order: 1; /* New Tech를 로고와 네비게이션 사이에 오도록 순서 조정 */
-        width: 100%; /* 너비 100%로 설정하여 다음 줄로 이동 */
-        text-align: center;
-        margin: 10px 0; /* 상하 여백 추가 */
-    }
-    nav {
-        order: 2; /* 네비게이션을 마지막으로 순서 조정 */
-        width: 100%;
-        text-align: center;
-    }
-    nav ul {
-        width: 100%; /* 모바일에서 메뉴 전체 너비 사용 */
-    }
 }
 
+nav a {
+    color: #333; /* 메뉴 기본 색상 */
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav a.active {
+    text-decoration: underline; /* 활성 메뉴 표시: 밑줄 */
+}
 
-/* ========== HERO SLIDER (index.html) ========== */
+/* ========== HERO SLIDER ========== */
 .hero-slider {
     position: relative;
     width: 100%;
-    height: 60vh; /* 뷰포트 높이의 60% */
+    height: 60vh; /* 뷰포트 높이 기준 */
     min-height: 300px; /* 최소 높이 */
     margin-top: 80px; /* header 높이만큼 여유 */
     margin-bottom: 50px;
-}
-.hero-slider .swiper-slide {
-    width: 100%;
-    height: 100%;
-    /* 슬라이드 자체에 position: relative; 가 있어야 내부 absolute 요소(caption)가 정확히 배치됩니다.
-       이것은 HTML에 인라인으로 추가했습니다. */
 }
 .hero-slider .swiper-slide img {
     width: 100%;
@@ -143,7 +106,7 @@ nav a.active {
     position: absolute;
     bottom: 20%;
     left: 10%;
-    color: #fff; /* 캡션 텍스트 색상 흰색으로 설정 */
+    color: #fff;
     text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .hero-slider .slide-caption h2 {
@@ -155,177 +118,14 @@ nav a.active {
     color: #fff;
     padding: 0.6em 1.2em;
     border-radius: 4px;
-    transition: background 0.3s ease; /* 호버 효과 추가 */
-}
-.hero-slider .slide-caption .btn:hover {
-    background: #555;
 }
 
-
-/* ========== PAGE HERO SECTION (products.html 배너) ========== */
-.page-hero {
-    position: relative;
-    width: 100%;
-    height: 300px; /* 배너 높이 */
-    background: url('images/productsimg.png') center/cover no-repeat; /* 이미지 경로 확인 */
-    display: flex;
-    align-items: center; /* 수직 중앙 정렬 */
-    justify-content: center; /* 수평 중앙 정렬 */
-    margin-top: 80px; /* 헤더 높이만큼 여백 */
-}
-
-.page-hero h1 {
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-    padding: 20px 30px;
-    border-radius: 12px;
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-/* 중간 문구 (page-intro) 중앙 정렬 */
-.page-intro {
-    text-align: center;
-    max-width: 800px;
-    margin: 24px auto; /* 상하 24px, 좌우 자동 (가운데 정렬) */
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
-    width: 100%; /* 부모 요소의 전체 너비 차지 */
-}
-
-/* ========== TABS (제품소개) ========== */
-.tabs {
-    text-align: center;
-    margin-top: 40px;
-}
-.tab-btn {
-    padding: 0.6em 1.2em;
-    border: none;
-    background: #f0f0f0;
-    cursor: pointer;
-    margin-right: 8px;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #555;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-.tab-btn.active {
-    background: #333;
-    color: #fff;
-}
-.tab-btn:hover {
-    background: #ccc;
-}
-.tab-btn.active:hover {
-    background: #333; /* 활성 탭은 호버 시 색상 유지 */
-}
-
-.tab-content {
-    display: none;
-    margin-top: 40px; /* 탭과 콘텐츠 사이 여유 */
-}
-.tab-content.active {
-    display: block;
-}
-
-/* ========== PRODUCT CARD GRID ========== */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 최소 너비 조정 */
-    gap: 24px;
-    margin: 30px auto;
-    max-width: 1200px;
-    padding: 0 16px;
-}
-
-.product-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    overflow: hidden;
-    text-align: center; /* 카드 내부 모든 콘텐츠 중앙 정렬 */
-    padding: 16px;
-    display: flex; /* 내부 콘텐츠 정렬을 위해 flexbox 사용 */
-    flex-direction: column; /* 세로 정렬 */
-    justify-content: flex-start; /* 상단부터 채우기 */
-    align-items: center; /* 수평 가운데 정렬 */
-    height: 100%; /* 부모 그리드 아이템의 높이를 채우도록 */
-}
-
-/* 이미지 컨테이너 역할을 하는 div 추가 (크기 유지를 위해) */
-.product-image-wrapper {
-    width: 100%; /* 부모 product-card의 너비만큼 */
-    padding-top: 100%; /* 1:1 비율 (정사각형) 유지, 이미지 비율에 따라 조정 가능 */
-    position: relative;
-    margin-bottom: 12px;
-    background-color: #9ac0cd; /* 이미지 배경색 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    overflow: hidden; /* 이미지가 튀어나오지 않도록 */
-}
-
-.product-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
-    padding: 16px; /* 이미지 내부 여백 */
-    transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
-}
-
-.product-card h2 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-/* ========== 제품 설명 (왼쪽 정렬) ========== */
-.product-desc {
-    text-align: left; /* 이 부분만 왼쪽 정렬 */
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.5;
-    width: 100%; /* product-card 내에서 너비 100% 사용 */
-    margin-bottom: 5px; /* 각 문단 아래 간격 */
-}
-
-.product-desc strong {
-    font-weight: 700;
-}
-
-/* ==========자간 ========== */
-.custom-spacing {
-    letter-spacing: -0.05em;
-}
-
-.buy-btn {
-    display: inline-block;
-    margin-top: 15px; /* 버튼 위 여백 */
-    background: #333;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-.buy-btn:hover {
-    background: #555;
-}
-
-/* ========== SHOP GRID (index.html 추천 원두) - 현재는 사용하지 않는 것으로 보이나, 혹시 몰라 유지 ========== */
+/* ========== SHOP GRID (추천 원두) ========== */
 .shop-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     justify-items: center;
-    margin: 50px auto; /* 중앙 정렬 및 여백 */
-    max-width: 1200px;
-    padding: 0 16px;
 }
 .shop-card {
     background: #fff;
@@ -355,15 +155,108 @@ nav a.active {
     color: #fff;
     padding: 8px 16px;
     border-radius: 6px;
-    transition: background 0.3s ease;
 }
-.shop-card a:hover {
+
+/* ========== TABS (제품소개) ========== */
+.tab-content {
+    display: none;
+    margin-top: 40px; /* 탭과 콘텐츠 사이 여유 */
+}
+.tab-content.active {
+    display: block;
+}
+.tab-btn {
+    padding: 0.6em 1.2em;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.tab-btn.active {
+    background: #333;
+    color: #fff;
+}
+
+/* ========== PRODUCT CARD IMAGE BG (추가 스타일) ========== */
+
+.product-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* 최소 너비 조정 */
+ gap: 24px;
+ margin: 30px auto;
+ max-width: 1200px;
+ padding: 0 16px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    background-color: #9ac0cd; /* 이미지 배경색 */
+    padding: 16px; /* 이미지 여백 */
+    border-radius: 8px; /* 모서리 둥글게 */
+}
+/* ==========왼쪽 정렬 ========== */
+.product-desc {
+    text-align: left;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.product-desc strong {
+    font-weight: 700;
+}
+
+/* ==========자간 ========== */
+.custom-spacing {
+    letter-spacing: -0.05em;
+}
+
+.page-hero { /* 오타 수정: page-hero로 변경 */
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('images/your-banner.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+}
+
+.page-hero .hero-text { /* 오타 수정: page-hero로 변경 */
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 12px;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #333;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.buy-btn:hover {
     background: #555;
 }
 
+/* .index-text는 이제 사용하지 않고, .about-section 내부에서 직접 조정 */
+/* .index-text {
+    padding-left: 24px;
+    text-align: left;
+    line-height: 1.7;
+} */
+
 
 /* ============================================================== */
-/* About 페이지 (index.html의 주요 컨텐츠) 관련 CSS */
+/* 아래는 레이아웃 중앙 정렬 및 여백 조정을 위한 추가/수정된 CSS */
 /* ============================================================== */
 
 /* 메인 컨텐츠 영역의 최대 너비 설정 및 가운데 정렬 */
@@ -378,6 +271,7 @@ nav a.active {
     padding: 40px 0; /* 상하 여백 추가 */
     border-bottom: 1px solid #eee; /* 섹션 구분선 */
     margin-bottom: 20px;
+  /*   font-size: 18px; about-section 내의 기본 폰트 크기를 18px로 설정 */
 }
 
 .about-section:last-child {
@@ -392,7 +286,7 @@ nav a.active {
 }
 
 /* 모든 p 태그와 ol 태그에 왼쪽 여백을 주어 들여쓰기 */
-.about-section p, .about-section ol, .about-section ul { /* ul도 포함 */
+.about-section p, .about-section ol {
     text-align: left; /* 텍스트 왼쪽 정렬 유지 */
     margin-bottom: 15px;
     font-size: 1.1em; /* 폰트 크기 약간 키움 */
@@ -400,8 +294,8 @@ nav a.active {
     padding-left: 20px; /* 여기서 텍스트를 20px 오른쪽으로 이동 */
 }
 
-.about-section ol, .about-section ul { /* ol, ul 들여쓰기 조정 */
-    padding-left: 45px;
+.about-section ol {
+    padding-left: 45px; /* 리스트 들여쓰기 조정 */
 }
 
 /* 대표자 섹션 (이미지 + 텍스트) */
@@ -431,15 +325,12 @@ nav a.active {
     margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    background: #f8f8f8;
-    color: #777;
-    font-size: 0.9rem;
-    margin-top: 60px; /* 컨텐츠와 푸터 사이 간격 */
+/* 기존 hero-slider margin-bottom 중복 제거를 위해 조정 */
+.hero-slider {
+    /* 기존 스타일 유지 */
+    margin-bottom: 50px; /* style.css에 이미 있으므로 중복X, 다만 필요에 따라 조정 */
 }
+
 
 /* 모바일 반응형 추가 조정 */
 @media (max-width: 768px) {
@@ -460,10 +351,10 @@ footer {
     .about-flex img {
         width: 150px; /* 모바일에서 이미지 크기 조정 */
     }
-    .about-section p, .about-section ol, .about-section ul {
+    .about-section p, .about-section ol {
         padding-left: 10px; /* 모바일에서 텍스트 좌측 여백 줄임 */
     }
-    .about-section ol, .about-section ul {
+    .about-section ol {
         padding-left: 30px; /* 모바일에서 리스트 들여쓰기 줄임 */
     }
 }
