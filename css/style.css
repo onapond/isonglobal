@@ -361,6 +361,50 @@ footer {
 
 /* 모바일 반응형 추가 조정 */
 @media (max-width: 768px) {
+    .hamburger {
+        display: block; /* 모바일 햄버거 표시 */
+    }
+    nav ul {
+        display: none; /* 모바일 기본 숨김 */
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        right: 0;
+        top: 60px; /* 헤더 높이에 맞게 조정 */
+        width: 200px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        padding: 10px 0; /* 메뉴 내부 패딩 */
+    }
+    nav ul.active { /* 모바일에서 햄버거 메뉴 활성화 시 */
+        display: flex; /* flex로 변경하여 세로 정렬 */
+    }
+    nav ul li {
+        padding: 10px 20px; /* 메뉴 항목별 패딩 */
+        text-align: left;
+    }
+    header {
+        padding: 15px 20px; /* 모바일 헤더 패딩 조정 */
+        flex-wrap: wrap; /* 요소들이 한 줄에 다 안 들어갈 경우 다음 줄로 넘어가도록 */
+        justify-content: space-between; /* 로고와 햄버거 버튼만 양 끝 정렬 */
+    }
+    header .logo {
+        margin-right: auto; /* 로고를 왼쪽으로 */
+    }
+    .header-new-tech {
+        order: 1; /* New Tech를 로고와 네비게이션 사이에 오도록 순서 조정 */
+        width: 100%; /* 너비 100%로 설정하여 다음 줄로 이동 */
+        text-align: center;
+        margin: 10px 0; /* 상하 여백 추가 */
+    }
+    nav {
+        order: 2; /* 네비게이션을 마지막으로 순서 조정 */
+        width: 100%;
+        text-align: center;
+    }
+    nav ul {
+        width: 100%; /* 모바일에서 메뉴 전체 너비 사용 */
+    }
+
     .hero-slider .slide-caption h2 {
         font-size: 1.8em; /* 모바일에서 슬라이드 캡션 폰트 크기 조정 */
     }
