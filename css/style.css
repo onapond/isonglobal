@@ -238,30 +238,6 @@ nav a.active {
     margin-bottom: 10px;
     color: #222;
 }
-/* ========== PRODUCT CARD GRID ========== */
-
-.product-image-wrapper {
-    width: 100%; /* 부모 product-card의 너비만큼 */
-    padding-top: 100%; /* 1:1 비율 (정사각형) 유지, 이미지 비율에 따라 조정 가능 */
-    position: relative;
-    margin-bottom: 12px;
-    background-color: #9ac0cd; /* 이미지 배경색 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    overflow: hidden; /* 이미지가 튀어나오지 않도록 */
-}
-
-.product-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
-    padding: 16px; /* 이미지 내부 여백 */
-    transition: opacity 0.3s ease; /* 새로 추가/수정될 부분: 부드러운 전환 효과 */
-}
-
-/* ... (나머지 코드 유지) ... */
 
 /* ========== 제품 설명 (왼쪽 정렬) ========== */
 .product-desc {
@@ -438,15 +414,4 @@ footer {
     .about-flex {
         flex-direction: column; /* 이미지와 텍스트를 세로로 정렬 */
         align-items: center;
-        gap: 20px; /* 모바일에서 간격 줄임 */
-    }
-    .about-flex img {
-        width: 150px; /* 모바일에서 이미지 크기 조정 */
-    }
-    .about-section p, .about-section ol {
-        padding-left: 10px; /* 모바일에서 텍스트 좌측 여백 줄임 */
-    }
-    .about-section ol {
-        padding-left: 30px; /* 모바일에서 리스트 들여쓰기 줄임 */
-    }
-}
+        gap: 20px; /* 모바일에서 간
