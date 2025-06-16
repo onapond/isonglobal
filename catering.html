@@ -49,36 +49,6 @@
       font-size: 0.95rem;
       color: #555;
     }
-          /* New Tech 텍스트 스타일 추가 (style.css로 옮기는 것을 권장) */
-        .header-new-tech {
-            font-size: 1.1rem; /* 폰트 크기 조정 */
-            font-weight: bold;
-            color: #007bff; /* 강조 색상 */
-            margin-right: 20px; /* 로고와 메뉴 사이 간격 조절 */
-            /* 필요에 따라 다른 스타일 추가 가능 (예: background-color, padding, border-radius 등) */
-        }
-
-        /* 헤더 flex 속성 조절 (New Tech 추가 위치를 위해) */
-        header {
-            justify-content: space-between; /* 기존 유지 */
-            /* 새로운 요소 추가로 인해 중앙 정렬 방식이 변경될 수 있으니,
-               필요에 따라 justify-content: flex-start; gap: 30px; 등 조정 가능 */
-        }
-
-        @media (max-width: 768px) {
-            .header-new-tech {
-                font-size: 0.9rem; /* 모바일에서 폰트 크기 조정 */
-                margin-right: 10px;
-            }
-            /* 모바일에서 header의 정렬 방식 조정이 필요할 수 있습니다. */
-            header {
-                flex-wrap: wrap; /* 요소가 너무 많으면 줄바꿈 */
-                justify-content: center; /* 필요시 중앙 정렬 */
-            }
-            header .logo { /* 로고가 중앙에 오도록 */
-                 margin-right: auto;
-            }
-        }
   </style>
 </head>
 <body>
@@ -91,7 +61,7 @@
     </div>
     <div class="header-new-tech">New Tech</div>
     <nav>
-      <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+      <button class="hamburger">☰</button>
       <ul>
         <li><a href="index.html">홈</a></li>
         <li><a href="products.html">제품 소개</a></li>
@@ -110,7 +80,7 @@
   <main class="catering-section">
     <h2>메뉴 소개</h2>
     <div class="menu-grid">
-         <div class="menu-item">
+        <div class="menu-item">
             <img src="images/espresso.png" alt="에스프레소" />
             <h3>에스프레소</h3>
             <p>깊은 향미의 에스프레소 커피</p>
@@ -130,7 +100,7 @@
             <h3>커피백</h3>
             <p>언제 어디서나 동일한 즐길 수 있는 커피백</p>
         </div>
-<div class="menu-item">
+        <div class="menu-item">
             <img src="images/almond-cookie.png" alt="아몬드 쿠키" />
             <h3>아몬드 쿠키</h3>
             <p>고소한 아몬드의 풍미를 담은 쿠키,1883년 오스트리아 빈 유래</p>
@@ -150,17 +120,15 @@
             <h3>티라미수</h3>
             <p>커피와 조화로운 이탈리아식 고급 디저트</p>
         </div>
-
     </div>
   </main>
-<!-- 🟡 기존 케이터링 소개 이후 footer 바로 위에 추가 -->
+
 <section style="text-align:center; margin-top:60px;">
   <a href="#catering-form" style="display:inline-block; background:#333; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none;">
     케이터링 문의하기
   </a>
 </section>
 
-<!-- 🟢 실제 폼 위치 (id="catering-form" 추가로 이동 가능하게 함) -->
 <section id="catering-form" class="catering-section" style="margin-top:80px;">
   <h2>케이터링 서비스 신청</br>
   최대 250분까지의 케이터링 서비스가 가능하며</br>
@@ -189,5 +157,7 @@
   <footer>
     <p style="text-align:center; padding:20px;">© 2025 Isong Global Co., Ltd. All rights reserved.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
