@@ -47,11 +47,6 @@ nav li a {
     font-size: 1rem; /* 메뉴 텍스트 크기 */
     font-weight: 500; /* 메뉴 텍스트 굵기 */
 }
-<style>
-  .my-paragraph {
-    margin-left: 20px; /* 왼쪽에 20px 여백 추가 */
-    padding-right: 10px; /* 오른쪽에 10px 안쪽 여백 추가 */
-  }
 .hamburger {
     display: none; /* 기본 숨김 (데스크탑) */
     background: none;
@@ -59,25 +54,6 @@ nav li a {
     font-size: 1.5rem;
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .hamburger {
-        display: block; /* 모바일 햄버거 표시 */
-    }
-    nav ul {
-        display: none; /* 모바일 기본 숨김 */
-        flex-direction: column;
-        background: #fff;
-        position: absolute;
-        right: 0;
-        top: 60px;
-        width: 200px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
-    nav ul.active { /* 모바일에서 햄버거 메뉴 활성화 시 */
-        display: flex; /* flex로 변경하여 세로 정렬 */
-    }
-}
-
 nav a {
     color: #333; /* 메뉴 기본 색상 */
     font-weight: 500;
@@ -85,6 +61,14 @@ nav a {
 }
 nav a.active {
     text-decoration: underline; /* 활성 메뉴 표시: 밑줄 */
+}
+
+/* New Tech 텍스트 스타일 */
+.header-new-tech {
+    font-size: 1.1rem; /* 폰트 크기 조정 */
+    font-weight: bold;
+    color: #007bff; /* 강조 색상 */
+    margin-right: 20px; /* 로고와 메뉴 사이 간격 조절 */
 }
 
 /* ========== HERO SLIDER ========== */
@@ -271,7 +255,7 @@ nav a.active {
     padding: 40px 0; /* 상하 여백 추가 */
     border-bottom: 1px solid #eee; /* 섹션 구분선 */
     margin-bottom: 20px;
-  /*   font-size: 18px; about-section 내의 기본 폰트 크기를 18px로 설정 */
+  /* font-size: 18px; about-section 내의 기본 폰트 크기를 18px로 설정 */
 }
 
 .about-section:last-child {
@@ -336,6 +320,15 @@ nav a.active {
 @media (max-width: 768px) {
     header {
         padding: 15px 20px; /* 모바일 헤더 패딩 조정 */
+        flex-wrap: wrap; /* 요소가 너무 많으면 줄바꿈 */
+        justify-content: center; /* 필요시 중앙 정렬 */
+    }
+    header .logo { /* 로고가 중앙에 오도록 */
+        margin-right: auto;
+    }
+    .header-new-tech {
+        font-size: 0.9rem; /* 모바일에서 폰트 크기 조정 */
+        margin-right: 10px;
     }
     .hero-slider .slide-caption h2 {
         font-size: 1.8em; /* 모바일에서 슬라이드 캡션 폰트 크기 조정 */
