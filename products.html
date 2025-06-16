@@ -85,22 +85,6 @@
       color: #555;
       margin: 4px 0;
     }
-    /* New Tech 텍스트 스타일 추가 (style.css로 옮기는 것을 권장) */
-    .header-new-tech {
-        font-size: 1.1rem; /* 폰트 크기 조정 */
-        font-weight: bold;
-        color: #007bff; /* 강조 색상 */
-        margin-right: 20px; /* 로고와 메뉴 사이 간격 조절 */
-        /* 필요에 따라 다른 스타일 추가 가능 (예: background-color, padding, border-radius 등) */
-    }
-
-    /* 헤더 flex 속성 조절 (New Tech 추가 위치를 위해) */
-    header {
-        justify-content: space-between; /* 기존 유지 */
-        /* 새로운 요소 추가로 인해 중앙 정렬 방식이 변경될 수 있으니,
-            필요에 따라 justify-content: flex-start; gap: 30px; 등 조정 가능 */
-    }
-
     /* 구매하기 버튼 스타일 */
     .buy-btn {
         display: inline-block;
@@ -115,21 +99,6 @@
     .buy-btn:hover {
         background-color: #0056b3;
     }
-
-    @media (max-width: 768px) {
-        .header-new-tech {
-            font-size: 0.9rem; /* 모바일에서 폰트 크기 조정 */
-            margin-right: 10px;
-        }
-        /* 모바일에서 header의 정렬 방식 조정이 필요할 수 있습니다. */
-        header {
-            flex-wrap: wrap; /* 요소가 너무 많으면 줄바꿈 */
-            justify-content: center; /* 필요시 중앙 정렬 */
-        }
-        header .logo { /* 로고가 중앙에 오도록 */
-            margin-right: auto;
-        }
-    }
   </style>
 </head>
 <body>
@@ -137,6 +106,7 @@
     <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="이송글로벌 로고" width="150"></a></div>
     <div class="header-new-tech">New Tech</div>
     <nav>
+      <button class="hamburger">☰</button>
       <ul>
         <li><a href="index.html">홈</a></li>
         <li><a href="products.html" class="active">제품 소개</a></li>
@@ -164,71 +134,71 @@
       <button class="tab-btn" data-tab="special">스페셜티 커피백</button>
     </div>
 
-  <section id="blend" class="tab-content active">
- <div class="product-grid">
-  <div class="product-card">
-   <img src="images/apollo.png" alt="아폴로">
-   <h2>아폴로</h2>
-   <p><strong>블렌딩 :</strong> 과테말라, 콜롬비아 외</p>
-   <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-   <p><strong>향 :</strong> 풍부한 초콜렛과 카라멜 향</p>
-   <p><strong>미 :</strong> 굿 밸런스</p>
-   <p><strong>바디 :</strong> 중 바디</p>
-   <p><strong>중량 :</strong> 500g, 1kg</p>
-   <p><strong>로스터 추천 </strong> <br>
-   <span class="custom-spacing">후미가 깨끗하고 우아한 커피입니다.</span><br>
-   우리의 베스트 셀러입니다.</p>
-  </div>
-  <div class="product-card">
-   <img src="images/phoenix.png" alt="피닉스">
-   <h2>피닉스</h2>
-   <p><strong>블렌딩 :</strong> 콜롬비아, 에티오피아 외</p>
-   <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-   <p><strong>향 :</strong> 구운 아몬드의 고소함</p>
-   <p><strong>미 :</strong> 굿 밸런스</p>
-   <p><strong>바디 :</strong> 중강 바디</p>
-   <p><strong>중량 :</strong> 500g, 1kg</p>
-   <p><strong>로스터 추천 </strong> <br>
-   <span class="custom-spacing">은은한 신맛과 다양성이 좋은 커피입니다. 우유/아이스크림과의 하모니가 엑셀렌트합니다.</span></p>
-  </div>
-  <div class="product-card">
-   <img src="images/venus.png" alt="베누스">
-   <h2>베누스</h2>
-   <p><strong>블렌딩 :</strong> 에티오피아 100%</p>
-   <p><strong>로스팅 :</strong> 중배전 (City)</p>
-   <p><strong>향 :</strong> 발효된 과일향</p>
-   <p><strong>미 :</strong> 묵직한 산미의 밸런스</p>
-   <p><strong>바디 :</strong> 중 바디</p>
-   <p><strong>중량 :</strong> 500g, 1kg</p>
-   <p><strong>로스터 추천 </strong> <br>
-   <span class="custom-spacing">에티오피아의 특유의 과일향과 꽃향이 어우러진 커피입니다. 짙은 향의 라떼를 즐길 수 있습니다.</span></p>
-  </div>
-  <div class="product-card">
-   <img src="images/ares.png" alt="아레스">
-   <h2>아레스</h2>
-   <p><strong>블렌딩 :</strong> 브라질, 에티오피아 외</p>
-   <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-   <p><strong>향 :</strong> 비스켓, 토스트</p>
-   <p><strong>미 :</strong> 브라운 슈가, 다양성</p>
-   <p><strong>바디 :</strong> 중 바디</p>
-   <p><strong>중량 :</strong> 500g, 1kg</p>
-   <p><strong>로스터 추천 </strong> <br>
-   <span class="custom-spacing">대중적이면서도 풍부한 풍미를 지닌 커피입니다. 모두가 즐길 수 있는 커피입니다. </span></p>
-  </div>
-  <div class="product-card">
-   <img src="images/costom.png" alt="커스텀 원두">
-   <h2>커스텀</h2>
-   <p><strong>블렌딩 :</strong> 당신이 원하는 블랜딩</p>
-   <p><strong>로스팅 :</strong> 당신이 원하는 배전도</p>
-   <p><strong>향 :</strong> 당신이 원하는 향</p>
-   <p><strong>미 :</strong> 당신이 원하는 맛</p>
-   <p><strong>바디 :</strong> 당신이 원하는 바디</p>
-   <p><strong>중량 :</strong> 500g, 1kg</p>
-   <p><strong>로스터 추천 </strong> <br>
-   <span class="custom-spacing">고객이 원하는대로 블랜딩하여 나만의 커피를 만들 수 있습니다. 고객 맞춤형 커피입니다.</span></p>
-  </div>
- </div>
-</section>
+    <section id="blend" class="tab-content active">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/apollo.png" alt="아폴로">
+                <h2>아폴로</h2>
+                <p><strong>블렌딩 :</strong> 과테말라, 콜롬비아 외</p>
+                <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
+                <p><strong>향 :</strong> 풍부한 초콜렛과 카라멜 향</p>
+                <p><strong>미 :</strong> 굿 밸런스</p>
+                <p><strong>바디 :</strong> 중 바디</p>
+                <p><strong>중량 :</strong> 500g, 1kg</p>
+                <p><strong>로스터 추천 </strong> <br>
+                <span class="custom-spacing">후미가 깨끗하고 우아한 커피입니다.</span><br>
+                우리의 베스트 셀러입니다.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/phoenix.png" alt="피닉스">
+                <h2>피닉스</h2>
+                <p><strong>블렌딩 :</strong> 콜롬비아, 에티오피아 외</p>
+                <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
+                <p><strong>향 :</strong> 구운 아몬드의 고소함</p>
+                <p><strong>미 :</strong> 굿 밸런스</p>
+                <p><strong>바디 :</strong> 중강 바디</p>
+                <p><strong>중량 :</strong> 500g, 1kg</p>
+                <p><strong>로스터 추천 </strong> <br>
+                <span class="custom-spacing">은은한 신맛과 다양성이 좋은 커피입니다. 우유/아이스크림과의 하모니가 엑셀렌트합니다.</span></p>
+            </div>
+            <div class="product-card">
+                <img src="images/venus.png" alt="베누스">
+                <h2>베누스</h2>
+                <p><strong>블렌딩 :</strong> 에티오피아 100%</p>
+                <p><strong>로스팅 :</strong> 중배전 (City)</p>
+                <p><strong>향 :</strong> 발효된 과일향</p>
+                <p><strong>미 :</strong> 묵직한 산미의 밸런스</p>
+                <p><strong>바디 :</strong> 중 바디</p>
+                <p><strong>중량 :</strong> 500g, 1kg</p>
+                <p><strong>로스터 추천 </strong> <br>
+                <span class="custom-spacing">에티오피아의 특유의 과일향과 꽃향이 어우러진 커피입니다. 짙은 향의 라떼를 즐길 수 있습니다.</span></p>
+            </div>
+            <div class="product-card">
+                <img src="images/ares.png" alt="아레스">
+                <h2>아레스</h2>
+                <p><strong>블렌딩 :</strong> 브라질, 에티오피아 외</p>
+                <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
+                <p><strong>향 :</strong> 비스켓, 토스트</p>
+                <p><strong>미 :</strong> 브라운 슈가, 다양성</p>
+                <p><strong>바디 :</strong> 중 바디</p>
+                <p><strong>중량 :</strong> 500g, 1kg</p>
+                <p><strong>로스터 추천 </strong> <br>
+                <span class="custom-spacing">대중적이면서도 풍부한 풍미를 지닌 커피입니다. 모두가 즐길 수 있는 커피입니다. </span></p>
+            </div>
+            <div class="product-card">
+                <img src="images/costom.png" alt="커스텀 원두">
+                <h2>커스텀</h2>
+                <p><strong>블렌딩 :</strong> 당신이 원하는 블랜딩</p>
+                <p><strong>로스팅 :</strong> 당신이 원하는 배전도</p>
+                <p><strong>향 :</strong> 당신이 원하는 향</p>
+                <p><strong>미 :</strong> 당신이 원하는 맛</p>
+                <p><strong>바디 :</strong> 당신이 원하는 바디</p>
+                <p><strong>중량 :</strong> 500g, 1kg</p>
+                <p><strong>로스터 추천 </strong> <br>
+                <span class="custom-spacing">고객이 원하는대로 블랜딩하여 나만의 커피를 만들 수 있습니다. 고객 맞춤형 커피입니다.</span></p>
+            </div>
+        </div>
+    </section>
 
     <section id="single" class="tab-content">
       <div class="product-grid">
@@ -314,20 +284,10 @@
     </section>
   </main>
 
-
   <footer>
     <p>© 2025 Isong Global Co., Ltd. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-        document.getElementById(btn.dataset.tab).classList.add('active');
-      });
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
