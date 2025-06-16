@@ -62,7 +62,7 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       overflow: hidden;
-      text-align: left; /* 여기를 left로 변경 */
+      text-align: center; /* 원래대로 중앙 정렬로 되돌림 */
       padding: 16px;
     }
     .product-card img {
@@ -70,7 +70,6 @@
       height: auto;
       object-fit: contain;
       margin-bottom: 12px;
-      text-align: center; /* 이미지는 중앙 정렬 유지 */
       display: block; /* img는 inline-block이므로 block으로 변경하여 margin auto 적용 가능 */
       margin-left: auto; /* 이미지 중앙 정렬 */
       margin-right: auto; /* 이미지 중앙 정렬 */
@@ -80,10 +79,11 @@
       font-size: 1.1rem;
       text-align: center; /* 상품명은 중앙 정렬 유지 */
     }
-    .product-card p {
+    .product-card p {
       font-size: 0.95rem;
       color: #555;
       margin: 4px 0;
+      text-align: left; /* 설명 텍스트는 좌측 정렬 */
     }
     /* New Tech 텍스트 스타일 추가 (style.css로 옮기는 것을 권장) */
     .header-new-tech {
@@ -333,17 +333,22 @@
     document.querySelectorAll('.product-card').forEach(card => {
         const img = card.querySelector('img');
         const originalSrc = img.src;
-        const hoverSrc = img.dataset.hover; // data-hover 속성 값 가져오기
+        // data-hover 속성이 없는 경우를 대비하여 기본값 설정 또는 처리 로직 추가
+        const hoverSrc = img.dataset.hover || originalSrc; // data-hover가 없으면 원본 이미지 유지
 
-        if (hoverSrc) { // data-hover 속성이 있는 경우에만 이벤트 리스너 추가
-            card.addEventListener('mouseenter', () => {
-                img.src = hoverSrc;
-            });
-
-            card.addEventListener('mouseleave', () => {
-                img.src = originalSrc;
-            });
+        // 이미지를 미리 로드하여 롤오버 시 깜빡임 방지 (선택 사항)
+        if (hoverSrc !== originalSrc) {
+            const preLoadImg = new Image();
+            preLoadImg.src = hoverSrc;
         }
+
+        card.addEventListener('mouseenter', () => {
+            img.src = hoverSrc;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            img.src = originalSrc;
+        });
     });
   </script>
 </body>
