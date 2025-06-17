@@ -125,22 +125,3 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-
-    // 커피백 사용법 슬라이더 초기화
-    // .coffee-bag-slider-container 클래스를 가진 Swiper 컨테이너를 찾습니다.
-    const coffeeBagSwiperContainer = document.querySelector('.coffee-bag-slider-container');
-    if (typeof Swiper !== 'undefined' && coffeeBagSwiperContainer) {
-        new Swiper(coffeeBagSwiperContainer, {
-            loop: true, // 무한 루프
-            pagination: {
-                el: '.swiper-pagination', // 페이지네이션 요소
-                clickable: true, // 클릭 가능하도록 설정
-            },
-            navigation: {
-                nextEl: '.swiper-button-next', // 다음 버튼 요소
-                prevEl: '.swiper-button-prev', // 이전 버튼 요소
-            },
-        });
-    }
-});
