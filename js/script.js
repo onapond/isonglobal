@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 모든 제품 이미지에 대한 호버 효과 적용 (아폴로, 피닉스, 베누스 등)
+    // 모든 제품 이미지에 대한 호버 효과 적용
     // 'product-hover-image' 클래스를 가진 모든 이미지를 선택합니다.
     const productHoverImages = document.querySelectorAll('.product-hover-image');
 
@@ -102,26 +102,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // 커피백 이미지에 대한 호버 효과 적용 (케냐, 에티오피아, 과테말라, 커피백 세트)
-    // 'coffee-bag-hover-image' 클래스를 가진 모든 이미지를 선택합니다.
-    const coffeeBagHoverImages = document.querySelectorAll('.coffee-bag-hover-image');
-
-    // 각 이미지에 대해 이벤트 리스너를 추가합니다.
-    coffeeBagHoverImages.forEach(image => {
-        // 마우스가 이미지 위로 올라갔을 때
-        image.addEventListener('mouseover', () => {
-            const hoverSrc = image.dataset.hoverSrc; // data-hover-src 속성 값 가져오기
-            if (hoverSrc) {
-                image.src = hoverSrc; // 이미지 소스를 호버 이미지로 변경
-            }
-        });
-
-        // 마우스가 이미지 밖으로 나갔을 때
-        image.addEventListener('mouseout', () => {
-            const originalSrc = image.dataset.originalSrc; // data-original-src 속성 값 가져오기
-            if (originalSrc) {
-                image.src = originalSrc; // 이미지 소스를 원본 이미지로 변경
-            }
-        });
-    });
+});
