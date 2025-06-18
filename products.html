@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>제품소개 | 이송글로벌</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!-- Swiper CSS 추가 -->
   <style>
     /* 기존 스타일 유지 */
     .page-hero {
@@ -100,27 +99,6 @@
     .buy-btn:hover {
         background-color: #0056b3;
     }
-    /* 커피백 설명 슬라이더 스타일 */
-    .coffee-bag-slider-container {
-      max-width: 400px; /* 슬라이더 최대 너비 */
-      margin: 40px auto; /* 중앙 정렬 및 여백 */
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    .coffee-bag-slider-container .swiper-slide img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .coffee-bag-slider-container .swiper-button-prev,
-    .coffee-bag-slider-container .swiper-button-next {
-      color: #333; /* 버튼 색상 */
-    }
-    .coffee-bag-slider-container .swiper-pagination-bullet-active {
-        background: #333; /* 페이지네이션 활성 점 색상 */
-    }
   </style>
 </head>
 <body>
@@ -200,7 +178,7 @@
                 <img class="product-hover-image" src="images/ares.png" alt="아레스" data-original-src="images/ares.png" data-hover-src="images/ares_label.png">
                 <h2>아레스</h2>
                 <p><strong>블렌딩 :</strong> 브라질, 에티오피아 외</p>
-                <p><strong>로스팅 :</b> 중강배전 (Full City)</p>
+                <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
                 <p><strong>향 :</strong> 비스켓, 토스트</p>
                 <p><strong>미 :</strong> 브라운 슈가, 다양성</p>
                 <p><strong>바디 :</strong> 중 바디</p>
@@ -259,7 +237,7 @@
           <p><strong>미 :</strong> 굿 밸런스</p>
           <p><strong>바디 :</strong> 중 바디</p>
           <p><strong>중량 :</strong> 200g, 500g</p>
-          <p><strong>로스터 추천 :</b> 드립 커피, 콜드브루</p>
+          <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
         </div>
       </div>
     </section>
@@ -271,8 +249,7 @@
       </p>
       <div class="product-grid">
         <div class="product-card">
-          <!-- 커피백 이미지에 호버 효과를 위한 class 및 data 속성 추가 -->
-          <img class="coffee-bag-hover-image" src="images/ethio_bag.jpg" alt="에티오피아 커피백" data-original-src="images/ethio_bag.jpg" data-hover-src="images/coffeebag_DES.png">
+          <img src="images/ethio_bag.jpg" alt="에티오피아 커피백">
           <h2>에티오피아 커피백</h2>
           <p><strong>향 :</strong> 자스민의 꽃향과 살구의 과일향</p>
           <p><strong>미 :</strong> 강한 신맛, 굿 밸런스</p>
@@ -281,7 +258,7 @@
           <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
         </div>
         <div class="product-card">
-          <img class="coffee-bag-hover-image" src="images/kenya_bag.jpg" alt="케냐 커피백" data-original-src="images/kenya_bag.jpg" data-hover-src="images/coffeebag_DES.png">
+          <img src="images/kenya_bag.jpg" alt="케냐 커피백">
           <h2>케냐 커피백</h2>
           <p><strong>향 :</strong> 좋은 당밀과 카라멜 향</p>
           <p><strong>미 :</strong> 블랙 커런트의 신맛, 굿 밸런스</p>
@@ -290,7 +267,7 @@
           <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
         </div>
         <div class="product-card">
-          <img class="coffee-bag-hover-image" src="images/guate_bag.jpg" alt="과테말라 커피백" data-original-src="images/guate_bag.jpg" data-hover-src="images/coffeebag_DES.png">
+          <img src="images/guate_bag.jpg" alt="과테말라 커피백">
           <h2>과테말라 커피백</h2>
           <p><strong>향 :</strong> 아몬드와 호두의 넛티한 향</p>
           <p><strong>미 :</strong> 굿 밸런스</p>
@@ -299,9 +276,19 @@
           <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
         </div>
         <div class="product-card">
-          <img class="coffee-bag-hover-image" src="images/coffeebagset.jpg" alt="커피백 세트" data-original-src="images/coffeebagset.jpg" data-hover-src="images/coffeebag_DES.png">
+          <img src="images/coffeebagset.jpg" alt="커피백 세트">
           <h2>커피백 세트</h2>
           <p>이송글로벌의 좋은 커피백을 좋은 가격에 즐길 수 있는 커피백 세트</p>
           <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Isong Global Co., Ltd. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
