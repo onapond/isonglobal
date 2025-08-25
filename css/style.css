@@ -31,7 +31,7 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 header .logo img {
-    height: 30px; /* 로고 높이 */
+    height: 50px; /* 로고 높이 */
 }
 header .logo a {
     display: flex;
@@ -361,6 +361,7 @@ nav a.active {
         padding-left: 30px; /* 모바일에서 리스트 들여쓰기 줄임 */
     }
 }
+
 
 
 
