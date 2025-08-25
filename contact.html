@@ -1,151 +1,146 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>신청 폼 | (주)씨앤씨테크</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      padding: 100px 20px 40px;
-    }
-
-    /* 버튼 탭 */
-    .toggle-buttons {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .toggle-buttons button {
-      padding: 10px 20px;
-      margin: 0 10px;
-      font-size: 1rem;
-      background: #eee;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .toggle-buttons button.active {
-      background: #333;
-      color: #fff;
-    }
-
-    /* 폼 영역 */
-    .form-container {
-      max-width: 600px;
-      margin: 0 auto 50px;
-      padding: 30px;
-      background: #fdfdfd;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-radius: 12px;
-      display: none;
-    }
-    .form-container.active {
-      display: block;
-    }
-    .form-container h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .form-container label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-    .form-container input,
-    .form-container textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    .form-container button[type="submit"] {
-      margin-top: 20px;
-      width: 100%;
-      padding: 12px;
-      background: #333;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기 | 주식회사 씨앤씨테크 </title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/c&c logo.png" alt="C&C 로고">
+                <span>C&C TECH</span>
+            </a>
+        </div>
+        <div class="header-new-tech">New Tech</div>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="products.html">제품 소개</a></li>
+                <li><a href="traning.html">교육 컨설팅</a></li>
+                <li><a href="catering.html">케이터링</a></li>
+                <li><a href="contact.html" class="active">문의</a></li>
+                <li><a href="b2b.html">B2B</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- ⬆️ 네비게이션 바 복원 -->
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/c&c logo.png" alt="C&C 로고">
-      </a>
-    </div>
-    <div class="header-new-tech">New Tech</div>
-    <nav>
-      <button class="hamburger">☰</button>
-      <ul>
-        <li><a href="index.html">홈</a></li>
-        <li><a href="products.html">제품 소개</a></li>
-        <li><a href="traning.html">교육 컨설팅</a></li>
-        <li><a href="catering.html">케이터링</a></li>        
-        <li><a href="contact.html" class="active">문의</a></li>
-        <li><a href="b2b.html">B2B</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <div class="toggle-buttons">
+            <button id="btn-inquiry" class="active">일반 문의</button>
+            <button id="btn-b2b">B2B 문의</button>
+            <button id="btn-training">교육 컨설팅 문의</button>
+            <button id="btn-catering">케이터링 문의</button>
+        </div>
+    
+        <div id="form-inquiry" class="form-container active">
+            <h2>일반 문의 및 기타 상담</h2>
+            <form action="https://formspree.io/f/mblgvker" method="POST">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" required>
 
-  <!-- 버튼 탭 -->
-  <div class="toggle-buttons">
-    <button id="btn-subscription" class="active">주문 신청</button>
-    <button id="btn-catering">케이터링 신청</button>
-  </div>
+                <label for="phone">연락처 (선택 사항)</label>
+                <input type="tel" id="phone" name="phone">
+    
+                <label for="message">문의 내용</label>
+                <textarea id="message" name="message" rows="5" placeholder="예: 제품 정기 배송, 쇼핑몰 이용 관련 문의 등"></textarea>
+    
+                <button type="submit">문의 보내기</button>
+            </form>
+        </div>
+    
+        <div id="form-b2b" class="form-container">
+            <h2>B2B 도매 및 제휴 문의</h2>
+            <form action="https://formspree.io/f/mblgvker" method="POST">
+                <label for="b2b-company">회사/매장명</label>
+                <input type="text" id="b2b-company" name="company" required>
 
-  <!-- 주문 신청 폼 -->
-  <div id="form-subscription" class="form-container active">
-    <h2>주문 신청</h2>
-    <form action="https://formspree.io/f/mblgvker" method="POST">
-      <label for="name">이름</label>
-      <input type="text" id="name" name="name" required>
+                <label for="b2b-name">담당자 이름</label>
+                <input type="text" id="b2b-name" name="name" required>
 
-      <label for="email">이메일</label>
-      <input type="email" id="email" name="email" required>
+                <label for="b2b-email">이메일</label>
+                <input type="email" id="b2b-email" name="email" required>
+                
+                <label for="b2b-phone">연락처</label>
+                <input type="tel" id="b2b-phone" name="phone" required>
+    
+                <label for="b2b-message">문의 내용</label>
+                <textarea id="b2b-message" name="message" rows="5" placeholder="예: 납품 원두 종류, 예상 월 주문량, 기타 요청 사항"></textarea>
+    
+                <button type="submit">문의 보내기</button>
+            </form>
+        </div>
 
-      <label for="message">원하는 주문 내용</label>
-      <textarea id="message" name="message" rows="5" placeholder="예: 아폴로 1kg / 월 2회 배송 희망"></textarea>
+        <div id="form-training" class="form-container">
+            <h2>교육 컨설팅 문의</h2>
+            <form action="https://formspree.io/f/mblgvker" method="POST">
+                <label for="training-name">이름</label>
+                <input type="text" id="training-name" name="name" required>
+    
+                <label for="training-email">이메일</label>
+                <input type="email" id="training-email" name="email" required>
 
-      <button type="submit">신청하기</button>
-    </form>
-  </div>
+                <label for="training-phone">연락처</label>
+                <input type="tel" id="training-phone" name="phone" placeholder="예: 010-1234-5678">
 
-  <!-- 케이터링 신청 폼 -->
-  <div id="form-catering" class="form-container">
-    <h2>케이터링 신청</h2>
-    <form action="https://formspree.io/f/mjvnlrkd" method="POST">
-      <label for="catering-name">이름</label>
-      <input type="text" id="catering-name" name="name" required>
+                <label for="training-class">희망 교육 과정</label>
+                <select id="training-class" name="class_interest" required>
+                    <option value="">선택하세요</option>
+                    <option value="SCA 교육">SCA 바리스타, 브루잉, 로스팅 교육</option>
+                    <option value="Coffieology 교육">Coffieology 교육</option>
+                    <option value="Konditorei 클래스">Konditorei (독일 베이커리) 클래스</option>
+                    <option value="One Day 클래스">One Day 클래스 (커피, 베이커리)</option>
+                    <option value="매장 바리스타 교육">매장 바리스타 교육</option>
+                    <option value="카페 메뉴 & 운영 컨설팅">카페 메뉴 & 운영 컨설팅</option>
+                    <option value="기타">기타</option>
+                </select>
+    
+                <label for="training-message">문의 내용</label>
+                <textarea id="training-message" name="message" rows="5" placeholder="궁금한 점이나 특별히 요청할 사항을 자세히 적어주세요."></textarea>
+    
+                <button type="submit">교육 상담 신청하기</button>
+            </form>
+        </div>
+        
+        <div id="form-catering" class="form-container">
+            <h2>케이터링 서비스 신청</h2>
+            <p>최대 250분까지의 케이터링 서비스가 가능하며 모든 식음료는 고객의 요청에 따라 맞춤 변경이 가능합니다.</p>
+            <form action="https://formspree.io/f/mblgvker" method="POST">
+                <label for="catering-name">이름</label>
+                <input type="text" id="catering-name" name="name" required>
+    
+                <label for="catering-email">이메일</label>
+                <input type="email" id="catering-email" name="email" required>
+                
+                <label for="catering-date">행사 날짜</label>
+                <input type="date" id="catering-date" name="date">
+    
+                <label for="catering-message">요청 사항</label>
+                <textarea id="catering-message" name="message" rows="5" placeholder="예: 30명 규모 / 핸드드립 2시간 운영 / 1인당 1잔"></textarea>
+    
+                <button type="submit">케이터링 신청</button>
+            </form>
+        </div>
 
-      <label for="catering-email">이메일</label>
-      <input type="email" id="catering-email" name="email" required>
+        <section class="contact-info">
+            <h2>연락처 정보</h2>
+            <p><strong>📧 이메일:</strong> 4everlll@naver.com</p>
+            <p><strong>📞 전화:</strong> 02-371-3771</p>
+            <p><strong>📍 주소:</strong> 경기도 고양시 덕양구 오금동 686 (삼막5길5) 삼송한강듀클래스지식산업센터 402호</p>
+            <p><strong>🕘 운영 시간:</strong> 평일 오전 8시 ~ 오후 5시</p>
+        </section>
+    </main>
 
-      <label for="catering-date">행사 날짜</label>
-      <input type="date" id="catering-date" name="date" required>
+    <footer>
+        <p>© 2025 C&C Tech Co., Ltd. All rights reserved.</p>
+    </footer>
 
-      <label for="catering-message">요청 사항</label>
-      <textarea id="catering-message" name="message" rows="5" placeholder="예: 30명 규모 / 핸드드립 2시간 운영 / 1인당 1잔"></textarea>
-
-      <button type="submit">케이터링 신청</button>
-    </form>
-  </div>
-
-  <footer style="text-align:center; padding:30px; color:#777;">
-    © 2025 C&C Tech Co., Ltd. All rights reserved.</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
