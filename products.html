@@ -1,294 +1,203 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>제품소개 | (주)씨앤씨테크</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* 기존 스타일 유지 */
-    .page-hero {
-      position: relative;
-      width: 100%;
-      height: 300px;
-      background: url('images/productsimg.png') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-    }
-    .page-hero h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    .page-intro {
-      text-align: center;
-      max-width: 800px;
-      margin: 24px auto;
-      color: #333;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .tabs {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .tabs button {
-      margin: 0 8px;
-      padding: 8px 16px;
-      border: none;
-      background: #eee;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    .tabs button.active {
-      background: #333;
-      color: #fff;
-    }
-    .tab-content { display: none; }
-    .tab-content.active { display: block; }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      margin: 30px auto;
-      max-width: 1200px;
-      padding: 0 16px;
-    }
-    .product-card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      overflow: hidden;
-      text-align: left; /* 여기를 left로 변경 */
-      padding: 16px;
-    }
-    .product-card img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      margin-bottom: 12px;
-      text-align: center; /* 이미지는 중앙 정렬 유지 */
-      display: block; /* img는 inline-block이므로 block으로 변경하여 margin auto 적용 가능 */
-      margin-left: auto; /* 이미지 중앙 정렬 */
-      margin-right: auto; /* 이미지 중앙 정렬 */
-    }
-    .product-card h2 {
-      margin: 12px 0 8px;
-      font-size: 1.1rem;
-      text-align: center; /* 상품명은 중앙 정렬 유지 */
-    }
-    .product-card p {
-      font-size: 0.95rem;
-      color: #555;
-      margin: 4px 0;
-    }
-    /* 구매하기 버튼 스타일 */
-    .buy-btn {
-        display: inline-block;
-        background-color: #007bff;
-        color: #fff;
-        padding: 8px 15px;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-top: 10px;
-        transition: background-color 0.3s ease;
-    }
-    .buy-btn:hover {
-        background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품소개 | (주)씨앤씨테크</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="logo"><a href="index.html"><img src="images/c&c logo.png" alt="이송글로벌 로고" width="150"></a></div>
-    <div class="header-new-tech">New Tech</div>
-    <nav>
-      <button class="hamburger">☰</button>
-      <ul>
-        <li><a href="index.html">홈</a></li>
-        <li><a href="products.html" class="active">제품 소개</a></li>
-        <li><a href="traning.html">교육 컨설팅</a></li>
-        <li><a href="catering.html">케이터링</a></li>
-        <li><a href="contact.html">문의</a></li>
-        <li><a href="b2b.html">B2B</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/c&c logo.png" alt="(주) 씨앤씨테크 로고">
+                <span>C&C TECH</span>
+            </a>
+        </div>
+        <div class="header-new-tech">New Tech</div>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="products.html" class="active">제품 소개</a></li>
+                <li><a href="traning.html">교육 컨설팅</a></li>
+                <li><a href="catering.html">케이터링</a></li>
+                <li><a href="contact.html">문의</a></li>
+                <li><a href="b2b.html">B2B</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="page-hero">
-    <h1>우리의 제품을 만나보세요 <br />good coffee makes a good day</h1>
-  </section>
+    <section class="page-hero">
+        <h1>우리의 제품을 만나보세요 <br />good coffee makes a good day</h1>
+    </section>
 
-  <p class="page-intro">
-    (주)씨앤씨테크는는 SEAR(Sensitive Espresso Aroma Roasting) 테크닉에 의거하여 다양한 제품들을 생산하고 있습니다.<br/>
-    한 모금만 마셔도 고객이 다시 찾게 되는 품질의 커피를 만들고 있습니다.
-  </p>
+    <p class="page-intro">
+        (주)씨앤씨테크는 SEAR(Sensitive Espresso Aroma Roasting) 테크닉에 의거하여 다양한 제품들을 생산하고 있습니다.<br/>
+        한 모금만 마셔도 고객이 다시 찾게 되는 품질의 커피를 만들고 있습니다.
+    </p>
 
-  <main>
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="blend">에스프레소 커피</button>
-      <button class="tab-btn" data-tab="single">싱글오리진 커피</button>
-      <button class="tab-btn" data-tab="special">스페셜티 커피백</button>
-    </div>
+    <main>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="blend">에스프레소 커피</button>
+            <button class="tab-btn" data-tab="single">싱글오리진 커피</button>
+            <button class="tab-btn" data-tab="special">스페셜티 커피백</button>
+        </div>
 
-    <section id="blend" class="tab-content active">
-        <div class="product-grid">
-            <div class="product-card">
-                <!-- 아폴로 이미지에 호버 효과를 위한 data 속성 추가 -->
-                <img class="product-hover-image" src="images/apollo.png" alt="아폴로" data-original-src="images/apollo.png" data-hover-src="images/apollo_label.png">
-                <h2>아폴로</h2>
-                <p><strong>블렌딩 :</strong> 과테말라, 콜롬비아 외</p>
-                <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-                <p><strong>향 :</strong> 풍부한 초콜렛과 카라멜 향</p>
-                <p><strong>미 :</strong> 굿 밸런스</p>
-                <p><strong>바디 :</strong> 중 바디</p>
-                <p><strong>중량 :</strong> 500g, 1kg</p>
-                <p><strong>로스터 추천 </strong> <br>
-                <span class="custom-spacing">후미가 깨끗하고 우아한 커피입니다.</span><br>
-                우리의 베스트 셀러입니다.</p>
-            </div>
-            <div class="product-card">
-                <img class="product-hover-image" src="images/phoenix.png" alt="피닉스" data-original-src="images/phoenix.png" data-hover-src="images/phoenix_label.png">
-                <h2>피닉스</h2>
-                <p><strong>블렌딩 :</strong> 콜롬비아, 에티오피아 외</p>
-                <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-                <p><strong>향 :</strong> 구운 아몬드의 고소함</p>
-                <p><strong>미 :</strong> 굿 밸런스</p>
-                <p><strong>바디 :</strong> 중강 바디</p>
-                <p><strong>중량 :</strong> 500g, 1kg</p>
-                <p><strong>로스터 추천 </strong> <br>
-                <span class="custom-spacing">은은한 신맛과 다양성이 좋은 커피입니다. 우유/아이스크림과의 하모니가 엑셀렌트합니다.</span></p>
-            </div>
-            <div class="product-card">
-                <img class="product-hover-image" src="images/venus.png" alt="베누스" data-original-src="images/venus.png" data-hover-src="images/venus_label.png">
-                <h2>베누스</h2>
-                <p><strong>블렌딩 :</strong> 에티오피아 100%</p>
-                <p><strong>로스팅 :</strong> 중배전 (City)</p>
-                <p><strong>향 :</strong> 발효된 과일향</p>
-                <p><strong>미 :</strong> 묵직한 산미의 밸런스</p>
-                <p><strong>바디 :</strong> 중 바디</p>
-                <p><strong>중량 :</strong> 500g, 1kg</p>
-                <p><strong>로스터 추천 </strong> <br>
-                <span class="custom-spacing">에티오피아의 특유의 과일향과 꽃향이 어우러진 커피입니다. 짙은 향의 라떼를 즐길 수 있습니다.</span></p>
-            </div>
-            <div class="product-card">
-                <img class="product-hover-image" src="images/ares.png" alt="아레스" data-original-src="images/ares.png" data-hover-src="images/ares_label.png">
-                <h2>아레스</h2>
-                <p><strong>블렌딩 :</strong> 브라질, 에티오피아 외</p>
-                <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
-                <p><strong>향 :</strong> 비스켓, 토스트</p>
-                <p><strong>미 :</strong> 브라운 슈가, 다양성</p>
-                <p><strong>바디 :</strong> 중 바디</p>
-                <p><strong>중량 :</strong> 500g, 1kg</p>
-                <p><strong>로스터 추천 </strong> <br>
-                <span class="custom-spacing">대중적이면서도 풍부한 풍미를 지닌 커피입니다. 모두가 즐길 수 있는 커피입니다. </span></p>
-            </div>
-            <div class="product-card">
-                <img class="product-hover-image" src="images/costom.png" alt="커스텀 원두" data-original-src="images/costom.png" data-hover-src="images/costom_label.png">
-                <h2>커스텀</h2>
-                <p><strong>블렌딩 :</strong> 당신이 원하는 블랜딩</p>
-                <p><strong>로스팅 :</strong> 당신이 원하는 배전도</p>
-                <p><strong>향 :</strong> 당신이 원하는 향</p>
-                <p><strong>미 :</strong> 당신이 원하는 맛</p>
-                <p><strong>바디 :</strong> 당신이 원하는 바디</p>
-                <p><strong>중량 :</strong> 500g, 1kg</p>
-                <p><strong>로스터 추천 </strong> <br>
-                <span class="custom-spacing">고객이 원하는대로 블랜딩하여 나만의 커피를 만들 수 있습니다. 고객 맞춤형 커피입니다.</span></p>
-            </div>
-        </div>
-    </section>
+        <section id="blend" class="tab-content active">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/apollo.png" alt="아폴로" data-original-src="images/apollo.png" data-hover-src="images/apollo_label.png">
+                    <h2>아폴로</h2>
+                    <p><strong>블렌딩 :</strong> 과테말라, 콜롬비아 외</p>
+                    <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
+                    <p><strong>향 :</strong> 풍부한 초콜렛과 카라멜 향</p>
+                    <p><strong>미 :</strong> 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>중량 :</strong> 500g, 1kg</p>
+                    <p><strong>로스터 추천 </strong> <br>
+                    <span class="custom-spacing">후미가 깨끗하고 우아한 커피입니다.</span><br>
+                    우리의 베스트 셀러입니다.</p>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/phoenix.png" alt="피닉스" data-original-src="images/phoenix.png" data-hover-src="images/phoenix_label.png">
+                    <h2>피닉스</h2>
+                    <p><strong>블렌딩 :</strong> 콜롬비아, 에티오피아 외</p>
+                    <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
+                    <p><strong>향 :</strong> 구운 아몬드의 고소함</p>
+                    <p><strong>미 :</strong> 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중강 바디</p>
+                    <p><strong>중량 :</strong> 500g, 1kg</p>
+                    <p><strong>로스터 추천 </strong> <br>
+                    <span class="custom-spacing">은은한 신맛과 다양성이 좋은 커피입니다. 우유/아이스크림과의 하모니가 엑셀렌트합니다.</span></p>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/venus.png" alt="베누스" data-original-src="images/venus.png" data-hover-src="images/venus_label.png">
+                    <h2>베누스</h2>
+                    <p><strong>블렌딩 :</strong> 에티오피아 100%</p>
+                    <p><strong>로스팅 :</strong> 중배전 (City)</p>
+                    <p><strong>향 :</strong> 발효된 과일향</p>
+                    <p><strong>미 :</strong> 묵직한 산미의 밸런스</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>중량 :</strong> 500g, 1kg</p>
+                    <p><strong>로스터 추천 </strong> <br>
+                    <span class="custom-spacing">에티오피아의 특유의 과일향과 꽃향이 어우러진 커피입니다. 짙은 향의 라떼를 즐길 수 있습니다.</span></p>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/ares.png" alt="아레스" data-original-src="images/ares.png" data-hover-src="images/ares_label.png">
+                    <h2>아레스</h2>
+                    <p><strong>블렌딩 :</strong> 브라질, 에티오피아 외</p>
+                    <p><strong>로스팅 :</strong> 중강배전 (Full City)</p>
+                    <p><strong>향 :</strong> 비스켓, 토스트</p>
+                    <p><strong>미 :</strong> 브라운 슈가, 다양성</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>중량 :</strong> 500g, 1kg</p>
+                    <p><strong>로스터 추천 </strong> <br>
+                    <span class="custom-spacing">대중적이면서도 풍부한 풍미를 지닌 커피입니다. 모두가 즐길 수 있는 커피입니다. </span></p>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/costom.png" alt="커스텀 원두" data-original-src="images/costom.png" data-hover-src="images/costom_label.png">
+                    <h2>커스텀</h2>
+                    <p><strong>블렌딩 :</strong> 당신이 원하는 블랜딩</p>
+                    <p><strong>로스팅 :</strong> 당신이 원하는 배전도</p>
+                    <p><strong>향 :</strong> 당신이 원하는 향</p>
+                    <p><strong>미 :</strong> 당신이 원하는 맛</p>
+                    <p><strong>바디 :</strong> 당신이 원하는 바디</p>
+                    <p><strong>중량 :</strong> 500g, 1kg</p>
+                    <p><strong>로스터 추천 </strong> <br>
+                    <span class="custom-spacing">고객이 원하는대로 블랜딩하여 나만의 커피를 만들 수 있습니다. 고객 맞춤형 커피입니다.</span></p>
+                </div>
+            </div>
+        </section>
 
-    <section id="single" class="tab-content">
-      <div class="product-grid">
-        <div class="product-card">
-          <img class="product-hover-image" src="images/ethio.png" alt="에티오피아 코케허니" data-original-src="images/ethio.png" data-hover-src="images/ethio_label.png">
-          <h2>에티오피아 코케허니 G1</h2>
-          <p><strong>향 :</strong> 발효된 살구, 복숭아향, 장미향</p>
-          <p><strong>미 :</strong> 은은한 발효된 산미, 굿 밸런스</p>
-          <p><strong>바디 :</strong> 중</p>
-          <p><strong>중량 :</strong> 200g, 500g</p>
-          <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-        <div class="product-card">
-          <img class="product-hover-image" src="images/kenya.png" alt="케냐" data-original-src="images/kenya.png" data-hover-src="images/kenya_label.png">
-          <h2>케냐 AA</h2>
-          <p><strong>향 :</strong> 다크 초콜릿, 카라멜</p>
-          <p><strong>미 :</strong> 굿 밸런스</p>
-          <p><strong>바디 :</strong> 강 바디</p>
-          <p><strong>중량 :</strong> 200g, 500g</p>
-          <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-        <div class="product-card">
-          <img class="product-hover-image" src="images/guate.png" alt="과테말라" data-original-src="images/guate.png" data-hover-src="images/guate_label.png">
-          <h2>과테말라 SHB</h2>
-          <p><strong>향 :</strong> 토스트, 스모키, 넛티</p>
-          <p><strong>미 :</strong> 굿 밸런스</p>
-          <p><strong>바디 :</strong> 중 바디</p>
-          <p><strong>중량 :</strong> 200g, 500g</p>
-          <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-        <div class="product-card">
-          <img class="product-hover-image" src="images/brazil.png" alt="브라질" data-original-src="images/brazil.png" data-hover-src="images/brazil_label.png">
-          <h2>브라질 옐로우 버번</h2>
-          <p><strong>향 :</strong> 브라운 슈가, 헤이즐넛</p>
-          <p><strong>미 :</strong> 굿 밸런스</p>
-          <p><strong>바디 :</strong> 중 바디</p>
-          <p><strong>중량 :</strong> 200g, 500g</p>
-          <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
-        </div>
-      </div>
-    </section>
+        <section id="single" class="tab-content">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/ethio.png" alt="에티오피아 코케허니" data-original-src="images/ethio.png" data-hover-src="images/ethio_label.png">
+                    <h2>에티오피아 코케허니 G1</h2>
+                    <p><strong>향 :</strong> 발효된 살구, 복숭아향, 장미향</p>
+                    <p><strong>미 :</strong> 은은한 발효된 산미, 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중</p>
+                    <p><strong>중량 :</strong> 200g, 500g</p>
+                    <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/kenya.png" alt="케냐" data-original-src="images/kenya.png" data-hover-src="images/kenya_label.png">
+                    <h2>케냐 AA</h2>
+                    <p><strong>향 :</strong> 다크 초콜릿, 카라멜</p>
+                    <p><strong>미 :</strong> 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 강 바디</p>
+                    <p><strong>중량 :</strong> 200g, 500g</p>
+                    <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/guate.png" alt="과테말라" data-original-src="images/guate.png" data-hover-src="images/guate_label.png">
+                    <h2>과테말라 SHB</h2>
+                    <p><strong>향 :</strong> 토스트, 스모키, 넛티</p>
+                    <p><strong>미 :</strong> 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>중량 :</strong> 200g, 500g</p>
+                    <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/brazil.png" alt="브라질" data-original-src="images/brazil.png" data-hover-src="images/brazil_label.png">
+                    <h2>브라질 옐로우 버번</h2>
+                    <p><strong>향 :</strong> 브라운 슈가, 헤이즐넛</p>
+                    <p><strong>미 :</strong> 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>중량 :</strong> 200g, 500g</p>
+                    <p><strong>로스터 추천 :</strong> 드립 커피, 콜드브루</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="special" class="tab-content">
-      <p class="page-intro" style="margin-top: 32px;">
-        즉석에서 간단하게 우려도 바리스타가 만든 것 같은 커피를 맛볼 수 있습니다.<br>
-        뜨거운 물에 1분 이상만 우리면 커피 향을 충만하게 즐길 수 있습니다.
-      </p>
-      <div class="product-grid">
-        <div class="product-card">
-          <img class="product-hover-image" src="images/ethio_bag.jpg" alt="에티오피아 커피백" data-original-src="images/ethio_bag.jpg" data-hover-src="images/coffeebag_DES.png">
-          <h2>에티오피아 커피백</h2>
-          <p><strong>향 :</strong> 자스민의 꽃향과 살구의 과일향</p>
-          <p><strong>미 :</strong> 강한 신맛, 굿 밸런스</p>
-          <p><strong>바디 :</strong> 중 바디</p>
-          <p><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-        <div class="product-card">
-          <img class="product-hover-image" src="images/kenya_bag.jpg" alt="케냐 커피백" data-original-src="images/kenya_bag.jpg" data-hover-src="images/coffeebag_DES.png">
-          <h2>케냐 커피백</h2>
-          <p><strong>향 :</strong> 좋은 당밀과 카라멜 향</p>
-          <p><strong>미 :</strong> 블랙 커런트의 신맛, 굿 밸런스</p>
-          <p><strong>바디 :</strong> 중 바디</p>
-          <p><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-        <div class="product-card">
-          <img class="product-hover-image" src="images/guate_bag.jpg" alt="과테말라 커피백" data-original-src="images/guate_bag.jpg" data-hover-src="images/coffeebag_DES.png">
-          <h2>과테말라 커피백</h2>
-          <p><strong>향 :</strong> 아몬드와 호두의 넛티한 향</p>
-          <p><strong>미 :</strong> 굿 밸런스</p>
-          <p><strong>바디 :</strong> 중 바디</p>
-          <p><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-        <div class="product-card">
-          <img class="product-hover-image" src="images/coffeebagset.jpg" alt="커피백 세트" data-original-src="images/coffeebagset.jpg" data-hover-src="images/coffeebag_DES.png">
-          <h2>커피백 세트</h2>
-          <p>이송글로벌의 좋은 커피백을 좋은 가격에 즐길 수 있는 커피백 세트</p>
-          <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
-        </div>
-      </div>
-    </section>
-  </main>
+        <section id="special" class="tab-content">
+            <p class="page-intro" style="margin-top: 32px;">
+                즉석에서 간단하게 우려도 바리스타가 만든 것 같은 커피를 맛볼 수 있습니다.<br>
+                뜨거운 물에 1분 이상만 우리면 커피 향을 충만하게 즐길 수 있습니다.
+            </p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/ethio_bag.jpg" alt="에티오피아 커피백" data-original-src="images/ethio_bag.jpg" data-hover-src="images/coffeebag_DES.png">
+                    <h2>에티오피아 커피백</h2>
+                    <p><strong>향 :</strong> 자스민의 꽃향과 살구의 과일향</p>
+                    <p><strong>미 :</strong> 강한 신맛, 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
+                    <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/kenya_bag.jpg" alt="케냐 커피백" data-original-src="images/kenya_bag.jpg" data-hover-src="images/coffeebag_DES.png">
+                    <h2>케냐 커피백</h2>
+                    <p><strong>향 :</strong> 좋은 당밀과 카라멜 향</p>
+                    <p><strong>미 :</strong> 블랙 커런트의 신맛, 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
+                    <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/guate_bag.jpg" alt="과테말라 커피백" data-original-src="images/guate_bag.jpg" data-hover-src="images/coffeebag_DES.png">
+                    <h2>과테말라 커피백</h2>
+                    <p><strong>향 :</strong> 아몬드와 호두의 넛티한 향</p>
+                    <p><strong>미 :</strong> 굿 밸런스</p>
+                    <p><strong>바디 :</strong> 중 바디</p>
+                    <p><strong>커피백 특징 :</strong> 커피백은 향,미 보존을 위해 질소 포장이 되어있습니다.</p>
+                    <a href="https://smartstore.naver.com/isongglobal/products/8148970698" class="buy-btn" target="_blank">구매하기</a>
+                </div>
+                <div class="product-card">
+                    <img class="product-hover-image" src="images/coffeebagset.jpg" alt="커피백 세트" data-original-src="images/coffeebagset.jpg" data-hover-src="images/coffeebag_DES.png">
+                    <h2>커피백 세트</h2>
+                    <p>이송글로벌의 좋은 커피백을 좋은 가격에 즐길 수 있는 커피백 세트</p>
+                    <a href="https://smartstore.naver.com/isongglobal/products/9144928295" class="buy-btn" target="_blank">구매하기</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2025 C&C Tech Co., Ltd. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>© 2025 C&C Tech Co., Ltd. All rights reserved.</p>
+    </footer>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html>.
