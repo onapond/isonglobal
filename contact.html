@@ -3,15 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문의하기 | 주식회사 씨앤씨테크 </title>
+    <title>문의하기 | (주)씨앤씨테크</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-hero {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            /* 배경 이미지와 중앙 정렬, 크기 설정을 담당합니다. */
+            background: url('images/contact-banner.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+        .contact-hero h1 {
+            font-size: 2.5em;
+        }
+        .contact-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .contact-item {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        .contact-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact-item p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .contact-form-section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        .contact-form-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-form-section form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form-section form input[type="text"],
+        .contact-form-section form input[type="email"],
+        .contact-form-section form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form-section form textarea {
+            resize: vertical;
+        }
+        .contact-form-section form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form-section form button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/c&c logo.png" alt="C&C 로고">
-                <span>C&C TECH</span>
+                <img src="images/c&c logo.png" alt="(주) 씨앤씨테크 로고" />
             </a>
         </div>
         <div class="header-new-tech">New Tech</div>
@@ -28,113 +122,47 @@
         </nav>
     </header>
 
-    <main>
-        <div class="toggle-buttons">
-            <button id="btn-inquiry" class="active">일반 문의</button>
-            <button id="btn-b2b">B2B 문의</button>
-            <button id="btn-training">교육 컨설팅 문의</button>
-            <button id="btn-catering">케이터링 문의</button>
-        </div>
-    
-        <div id="form-inquiry" class="form-container active">
-            <h2>일반 문의 및 기타 상담</h2>
-            <form action="https://formspree.io/f/mblgvker" method="POST">
+    <section class="contact-hero">
+        <h1>문의하기</h1>
+    </section>
+
+    <main class="contact-section">
+        <h2>문의 양식</h2>
+        <section class="contact-form-section">
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">
+                궁금한 점이 있으시면 아래 양식을 작성해 주시거나 전화로 문의해 주세요.
+            </p>
+            <form action="#" method="post">
                 <label for="name">이름</label>
                 <input type="text" id="name" name="name" required>
-    
+
                 <label for="email">이메일</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="phone">연락처 (선택 사항)</label>
-                <input type="tel" id="phone" name="phone">
-    
-                <label for="message">문의 내용</label>
-                <textarea id="message" name="message" rows="5" placeholder="예: 제품 정기 배송, 쇼핑몰 이용 관련 문의 등"></textarea>
-    
-                <button type="submit">문의 보내기</button>
+                <label for="subject">제목</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">메시지</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">문의하기</button>
             </form>
-        </div>
-    
-        <div id="form-b2b" class="form-container">
-            <h2>B2B 도매 및 제휴 문의</h2>
-            <form action="https://formspree.io/f/mblgvker" method="POST">
-                <label for="b2b-company">회사/매장명</label>
-                <input type="text" id="b2b-company" name="company" required>
-
-                <label for="b2b-name">담당자 이름</label>
-                <input type="text" id="b2b-name" name="name" required>
-
-                <label for="b2b-email">이메일</label>
-                <input type="email" id="b2b-email" name="email" required>
-                
-                <label for="b2b-phone">연락처</label>
-                <input type="tel" id="b2b-phone" name="phone" required>
-    
-                <label for="b2b-message">문의 내용</label>
-                <textarea id="b2b-message" name="message" rows="5" placeholder="예: 납품 원두 종류, 예상 월 주문량, 기타 요청 사항"></textarea>
-    
-                <button type="submit">문의 보내기</button>
-            </form>
-        </div>
-
-        <div id="form-training" class="form-container">
-            <h2>교육 컨설팅 문의</h2>
-            <form action="https://formspree.io/f/mblgvker" method="POST">
-                <label for="training-name">이름</label>
-                <input type="text" id="training-name" name="name" required>
-    
-                <label for="training-email">이메일</label>
-                <input type="email" id="training-email" name="email" required>
-
-                <label for="training-phone">연락처</label>
-                <input type="tel" id="training-phone" name="phone" placeholder="예: 010-1234-5678">
-
-                <label for="training-class">희망 교육 과정</label>
-                <select id="training-class" name="class_interest" required>
-                    <option value="">선택하세요</option>
-                    <option value="SCA 교육">SCA 바리스타, 브루잉, 로스팅 교육</option>
-                    <option value="Coffieology 교육">Coffieology 교육</option>
-                    <option value="Konditorei 클래스">Konditorei (독일 베이커리) 클래스</option>
-                    <option value="One Day 클래스">One Day 클래스 (커피, 베이커리)</option>
-                    <option value="매장 바리스타 교육">매장 바리스타 교육</option>
-                    <option value="카페 메뉴 & 운영 컨설팅">카페 메뉴 & 운영 컨설팅</option>
-                    <option value="기타">기타</option>
-                </select>
-    
-                <label for="training-message">문의 내용</label>
-                <textarea id="training-message" name="message" rows="5" placeholder="궁금한 점이나 특별히 요청할 사항을 자세히 적어주세요."></textarea>
-    
-                <button type="submit">교육 상담 신청하기</button>
-            </form>
-        </div>
-        
-        <div id="form-catering" class="form-container">
-            <h2>케이터링 서비스 신청</h2>
-            <p>최대 250분까지의 케이터링 서비스가 가능하며 모든 식음료는 고객의 요청에 따라 맞춤 변경이 가능합니다.</p>
-            <form action="https://formspree.io/f/mblgvker" method="POST">
-                <label for="catering-name">이름</label>
-                <input type="text" id="catering-name" name="name" required>
-    
-                <label for="catering-email">이메일</label>
-                <input type="email" id="catering-email" name="email" required>
-                
-                <label for="catering-date">행사 날짜</label>
-                <input type="date" id="catering-date" name="date">
-    
-                <label for="catering-message">요청 사항</label>
-                <textarea id="catering-message" name="message" rows="5" placeholder="예: 30명 규모 / 핸드드립 2시간 운영 / 1인당 1잔"></textarea>
-    
-                <button type="submit">케이터링 신청</button>
-            </form>
-        </div>
-
-        <section class="contact-info">
-            <h2>연락처 정보</h2>
-            <p><strong>📧 이메일:</strong> 4everlll@naver.com</p>
-            <p><strong>📞 전화:</strong> 02-371-3771</p>
-            <p><strong>📍 주소:</strong> 경기도 고양시 덕양구 오금동 686 (삼막5길5) 삼송한강듀클래스지식산업센터 402호</p>
-            <p><strong>🕘 운영 시간:</strong> 평일 오전 8시 ~ 오후 5시</p>
         </section>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>주식회사 씨앤씨테크</h3>
+                <p><strong>대표이사 :</strong> 이송</p>
+                <p><strong>사업자등록번호 :</strong> 412-87-01309</p>
+                <p><strong>주소 :</strong> 경기도 고양시 일산서구 주엽로 80, 211-1호 (주엽동, 태영프라자)</p>
+            </div>
+            <div class="contact-item">
+                <h3>연락 정보</h3>
+                <p><strong>전화번호 :</strong> 031-925-8321</p>
+                <p><strong>이메일 :</strong> isongglobal@naver.com</p>
+                <p><strong>네이버 스마트스토어 :</strong> <a href="https://smartstore.naver.com/isongglobal" target="_blank">바로가기</a></p>
+            </div>
+        </div>
     </main>
 
     <footer>
