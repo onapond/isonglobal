@@ -5,122 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>교육 컨설팅 | (주)씨앤씨테크</title>
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-        /* 트레이닝 페이지 스타일 */
-        .training-hero {
-            background: url('images/training-banner.png') center/cover no-repeat; /* 배너 이미지 필요 */
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-        }
-        .training-hero h1 {
-            font-size: 2.5rem;
-        }
-        .training-section {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .training-section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .class-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 클래스 항목 크기 조절 */
-            gap: 30px;
-        }
-        .class-item {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .class-item:hover {
-            transform: translateY(-5px);
-        }
-        .class-item img {
-            width: 100%;
-            height: 200px; /* 이미지 높이 고정 */
-            object-fit: cover; /* 이미지가 잘리지 않고 채워지도록 */
-            border-bottom: 1px solid #eee;
-        }
-        .class-item-content {
-            padding: 20px;
-        }
-        .class-item h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        .class-item p {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-            .class-grid {
-                grid-template-columns: 1fr; /* 모바일에서 한 줄에 하나씩 */
-            }
-        }
-        /* 폼 관련 추가 스타일 */
-        .form-section {
-            max-width: 800px; /* 폼 컨테이너 너비 조정 */
-            margin: 80px auto 40px auto; /* 상단 여백 추가 */
-            padding: 40px 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .form-section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #222;
-        }
-        .form-section label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #444;
-        }
-        .form-section input[type="text"],
-        .form-section input[type="email"],
-        .form-section input[type="date"],
-        .form-section select,
-        .form-section textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-sizing: border-box; /* 패딩이 너비에 포함되도록 */
-            font-size: 1rem;
-        }
-        .form-section textarea {
-            resize: vertical; /* 세로 크기 조절 가능 */
-            min-height: 100px;
-        }
-        .form-section button {
-            width: 100%;
-            padding: 15px;
-            background-color: #007bff; /* 버튼 색상 변경 */
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .form-section button:hover {
-            background-color: #0056b3; /* 호버 시 색상 변경 */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -194,48 +78,11 @@
             </div>
         </div>
     </main>
-
-    <hr> <section id="training-form" class="form-section">
-        <h2>교육 문의 신청</h2>
-        <form action="https://formspree.io/f/mblgvker" method="POST">
-            <label for="training_name">이름</label>
-            <input type="text" id="training_name" name="name" required>
-
-            <label for="training_email">이메일</label>
-            <input type="email" id="training_email" name="email" required>
-
-            <label for="training_phone">연락처</label>
-            <input type="text" id="training_phone" name="phone" placeholder="예: 010-1234-5678">
-
-            <label for="training_class">희망 교육 과정</label>
-            <select id="training_class" name="class_interest" required>
-                <option value="">선택하세요</option>
-                <option value="SCA 교육">SCA 바리스타, 브루잉, 로스팅 교육</option>
-                <option value="Coffieology 교육">Coffieology 교육</option>
-                <option value="Konditorei 클래스">Konditorei (독일 베이커리) 클래스</option>
-                <option value="One Day 클래스">One Day 클래스 (커피, 베이커리)</option>
-                <option value="매장 바리스타 교육">매장 바리스타 교육</option>
-                <option value="카페 메뉴 & 운영 컨설팅">카페 메뉴 & 운영 컨설팅</option>
-                <option value="기타">기타</option>
-            </select>
-
-            <label for="training_date_pref">희망 교육 날짜/요일 (선택 사항)</label>
-            <input type="text" id="training_date_pref" name="date_preference" placeholder="예: 주말, 평일 저녁, 7월 중">
-
-            <label for="training_message">문의 내용</label>
-            <textarea id="training_message" name="message" rows="7" placeholder="궁금한 점이나 특별히 요청할 사항을 자세히 적어주세요. 예: 2인 그룹 수업 가능 여부, 특정 날짜 교육 가능 여부"></textarea>
-
-            <button type="submit">교육 상담 신청하기</button>
-        </form>
-    </section>
-
+    
     <footer>
-        <p style="text-align:center; padding:20px;">© 2025 C&C Tech Co., Ltd. All rights reserved.</p>
+        <p>© 2025 C&C Tech Co., Ltd. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
