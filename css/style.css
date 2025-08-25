@@ -48,7 +48,7 @@ header .logo img {
 header .logo a {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 /* 로고 옆 텍스트 스타일 */
@@ -540,3 +540,4 @@ footer {
         padding: 20px;
     }
 }
+
