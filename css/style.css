@@ -360,5 +360,22 @@ nav a.active {
     .about-section ol {
         padding-left: 30px; /* 모바일에서 리스트 들여쓰기 줄임 */
     }
+    
+    /* 헤더 높이만큼 메인 콘텐츠를 아래로 밀어냅니다. */
+.b2b-container {
+    max-width: 900px;
+    margin: 50px auto; /* 현재 50px로는 부족 */
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
+
+/* 정확한 헤더 높이(예: 70px)를 계산하여 적용 */
+/* body 또는 main 요소에 padding-top을 추가합니다. */
+body {
+  padding-top: 110px; /* 헤더 높이(약 70px) + 여백(40px) */
+}
+}
+
 
